@@ -77,7 +77,7 @@ It can also watch for changes and rebuild incrementally.
 ## Deploy the site to Github Pages
 
 ```
-mvn site-deploy
+mvn deploy
 ```
 
 ## Links

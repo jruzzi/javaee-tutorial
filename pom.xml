@@ -124,7 +124,7 @@
                         </goals>
                         <configuration>
                             <scmBranch>gh-pages</scmBranch>
-                            <skipDeletedFiles>true</skipDeletedFiles>
+                            <skipDeletedFiles>false</skipDeletedFiles>
                             <checkinComment>Update site</checkinComment>
                         </configuration>
                     </execution>

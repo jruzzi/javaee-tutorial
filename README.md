@@ -11,9 +11,12 @@ The basic idea is to have templates for the structure of the page, and the body 
 - JDK8+
 
 Deploying to Github will require password less authentication.
+
 This is done by exporting your SSH public key into your Github account.
 
 ## Create an empty gh-pages branch
+
+The instructions below assume the current directory to be the root of the clone.
 
 ```
 git checkout --orphan gh-pages
@@ -24,12 +27,23 @@ git commit -m "add empy_file"
 git push origin gh-pages
 ```
 
+Now that you created the gh-pages branch, get back to master:
+
+```
+git checkout master
+```
+
 ## Update site.url in pom.xml
 
 The pom.xml file references the Github repo URL.
+
 Update distributionManagement.site.url to point at your repository.
 
 ## Build the site locally
+
+The site is generated under target/staging.
+
+Open file:///PATH_TO_PROJECT_DIR/target/staging in a browser to view the site.
 
 ```
 mvn generate-resources
@@ -48,6 +62,7 @@ mvn jbake:watch
 ```
 
 If you keep this command running, changes to the sources will be detected and the site will be rendered incrementally.
+
 This is convenient when writing content.
 
 ### Serve the site locally
@@ -56,7 +71,7 @@ This is convenient when writing content.
 mvn jbake:serve
 ```
 
-If a webserver is required (e.g. absolute path are used), this command will start a webserver (jetty) for you.
+If a webserver is required (e.g. absolute path are used), this command will start a webserver (jetty) at http://localhost:8820.
 It can also watch for changes and rebuild incrementally.
 
 ## Deploy the site to Github Pages

@@ -86,15 +86,15 @@
                 <groupId>com.blazebit</groupId>
                 <artifactId>jbake-maven-plugin</artifactId>
                 <version>1.0.0</version>
+                <configuration>
+                    <outputDirectory>${site.output.dir}</outputDirectory>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>generate-resources</phase>
                         <goals>
                             <goal>build</goal>
                         </goals>
-                        <configuration>
-                            <outputDirectory>${site.output.dir}</outputDirectory>
-                        </configuration>
                     </execution>
                 </executions>
                 <dependencies>

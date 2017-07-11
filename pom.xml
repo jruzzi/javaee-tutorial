@@ -55,7 +55,7 @@
 
     <distributionManagement>
         <site>
-            <url>git@github.com:romain-grecourt/javaee-tutorial.git</url>
+            <url>scm:git:git@github.com:romain-grecourt/javaee-tutorial.git</url>
         </site>
     </distributionManagement>
 
@@ -91,6 +91,7 @@
                 </configuration>
                 <executions>
                     <execution>
+                        <id>build-site</id>
                         <phase>generate-resources</phase>
                         <goals>
                             <goal>build</goal>
@@ -116,8 +117,8 @@
                 <version>1.1</version>
                 <executions>
                     <execution>
-                        <id />
-                        <phase>site-deploy</phase>
+                        <id>deploy-site</id>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>publish-scm</goal>
                         </goals>

@@ -51,7 +51,7 @@ mvn site-deploy
 
 ## Links
 
-- [JBake maven plugin documentation] [https://github.com/Blazebit/jbake-maven-plugin]
-- [JBake documentation] [http://jbake.org/docs/2.5.1]
-- [Freemarker documentation] [http://freemarker.org/docs]
-- [Asciidoctor quick reference] [http://asciidoctor.org/docs/asciidoc-syntax-quick-reference]
+- [JBake maven plugin documentation] (https://github.com/Blazebit/jbake-maven-plugin)
+- [JBake documentation] (http://jbake.org/docs/2.5.1)
+- [Freemarker documentation] (http://freemarker.org/docs)
+- [Asciidoctor quick reference] (http://asciidoctor.org/docs/asciidoc-syntax-quick-reference)

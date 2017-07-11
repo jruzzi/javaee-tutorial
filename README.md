@@ -13,6 +13,22 @@ The basic idea is to have templates for the structure of the page, and the body 
 Deploying to Github will require password less authentication.
 This is done by exporting your SSH public key into your Github account.
 
+## Create an empty gh-pages branch
+
+```
+git checkout --orphan gh-pages
+git rm -rf .
+touch empty_file
+git add empty_file
+git commit -m "add empy_file"
+git push origin gh-pages
+```
+
+## Update site.url in pom.xml
+
+The pom.xml file references the Github repo URL.
+Update distributionManagement.site.url to point at your repository.
+
 ## Build the site locally
 
 ```

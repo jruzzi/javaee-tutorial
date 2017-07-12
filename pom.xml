@@ -55,7 +55,7 @@
 
     <distributionManagement>
         <site>
-            <url>scm:git:git@github.com:romain-grecourt/javaee-tutorial.git</url>
+            <url>scm:git:git@github.com:jruzzi/javaee-tutorial.git</url>
         </site>
     </distributionManagement>
 

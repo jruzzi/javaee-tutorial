@@ -8,45 +8,64 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+<table cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+  <td align="left" valign="top">
+  <b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
+  <b>Release 8 Java Platform, Enterprise Edition</b><br />
+  E63026-01
+  </td>
+  </tr>
+</table>
+<hr />
+<table cellspacing="0" cellpadding="0" width="100%">
+  <col width="33%" />
+  <col width="*" />
+  <col width="33%" />
+  <tr>
+    <td valign="bottom">
+      <table cellspacing="0" cellpadding="0" width="100">
+	<col width="*" />
+	<col width="48%" />
+	<col width="48%" />
+	<tr>
+	  <td>&nbsp;</td>
+	  <td align="center">
+	      <a href="jsf-page001.html">
+		<img src="img/leftnav.gif" alt="Previous" />
+		<br />
+		<span class="icon">Previous</span>&nbsp;
+	      </a>
+	  </td>
+	  <td align="center">
+	      <a href="jsf-page003.html">
+		<img src="img/rightnav.gif" alt="Next" />
+		<br />
+		<span class="icon">Next</span>
+	      </a>
+	  </td>
+	</tr>
+      </table>
+    </td>
+    <td align="center">
+    </td>
+    <td valign="bottom" align="right">
+      <table cellspacing="0" cellpadding="0" width="225">
+	<tr>
+	  <td>&nbsp;</td>
+	  <td align="center" valign="top">
+	    <a href="toc.html">
+	      <img src="img/toc.gif" alt="Go To Table Of Contents" />
+	      <br />
+	      <span>Contents</span>
+	    </a>
+	  </td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
-<div id="preamble">
-<div class="sectionbody">
-<table id="top" class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 45%;">
-<col style="width: 5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
-<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
-E63026-01</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
-Contents</a></p></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 5%;">
-<col style="width: 5%;">
-<col style="width: 90%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-page001.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
-Previous</a> </p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-page003.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
-Next</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 <div class="sect1">
 <h2 id="adding-components-to-a-page-using-html-tag-library-tags">10.2 Adding Components to a Page Using HTML Tag Library Tags</h2>
 <div class="sectionbody">
@@ -264,11 +283,6 @@ items</p></td>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The tags correspond to components in the <code>javax.faces.component</code>
 package. The components are discussed in more detail in
@@ -347,11 +361,6 @@ expression.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>All the tag attributes except <code>id</code> can accept expressions, as defined by
 the EL, described in <a href="jsf-el.html#GJDDD">Expression Language</a>.</p>
@@ -478,11 +487,6 @@ use the arithmetic operators and literals that rvalue expressions can
 use but lvalue expressions cannot use. For example, the expression in
 the preceding example uses the <code>&gt;</code> operator.</p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 100%;">
@@ -502,11 +506,6 @@ Web Applications"</a>.</p>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 </div>
 <div class="sect3">
 <h4 id="the-style-and-styleclass-attributes">10.2.1.4 The style and styleClass Attributes</h4>
@@ -743,11 +742,6 @@ of text</p></td>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The input tags support the tag attributes shown in <a href="#GKCNH">Table
 10-4</a> in addition to those described in <a href="#BNARG">Common Component Tag
@@ -834,11 +828,6 @@ Handles a Value-Change Event</a> for an example of using
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p><a href="#GJFWE">Table 10-5</a> lists the tags that represent the output
 components.</p>
@@ -881,11 +870,6 @@ without generating an action event</p></td>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The output tags support the <code>converter</code> tag attribute in addition to
 those listed in <a href="#BNARG">Common Component Tag Attributes</a>.</p>
@@ -1101,7 +1085,7 @@ expression. The message displayed in the page is now as follows:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-command-component-tags-for-performing-actions-and-navigation">10.2.5 Using Command Component Tags for Performing Actions andNavigation</h3>
+<h3 id="using-command-component-tags-for-performing-actions-and-navigation">10.2.5 Using Command Component Tags for Performing Actions and Navigation</h3>
 <div class="paragraph">
 <p>In JavaServer Faces applications, the button and link component tags are
 used to perform actions, such as submitting a form, and for navigating
@@ -1195,11 +1179,6 @@ an example:</p>
      return false;"&gt;My Early Years: Growing Up on Star7, by Duke&lt;/a&gt;</code></pre>
 </div>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 100%;">
@@ -1217,11 +1196,6 @@ technology.</p>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -1312,11 +1286,6 @@ for a set of other components. A panel is rendered as an HTML table.
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The <code>h:panelGrid</code> tag is used to represent an entire table. The
 <code>h:panelGroup</code> tag is used to represent rows in a table. Other tags are
@@ -2004,11 +1973,6 @@ zero, and this causes all the rows of the underlying data to display.</p>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
-<div class="content">
-<pre>+</pre>
-</div>
-</div>
 <div class="paragraph">
 <p>Each of the attributes in <a href="#GKBUK">Table 10-7</a> can specify more than
 one style. If <code>columnClasses</code> or <code>rowClasses</code> specifies more than one
@@ -2375,7 +2339,7 @@ Return.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="resource-relocation-using-houtputscript-and-houtputstylesheet-tags">10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheetTags</h3>
+<h3 id="resource-relocation-using-houtputscript-and-houtputstylesheet-tags">10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheet Tags</h3>
 <div class="paragraph">
 <p>Resource relocation refers to the ability of a JavaServer Faces
 application to specify the location where a resource can be rendered.
@@ -2510,35 +2474,65 @@ component authors can define the resources for the component, such as a
 style sheet and script. This allows the page authors freedom from
 defining resource locations.</p>
 </div>
-<hr>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 5%;">
-<col style="width: 5%;">
-<col style="width: 10%;">
-<col style="width: 65%;">
-<col style="width: 10%;">
-<col style="width: 5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-page001.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
-Previous</a> </p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-page003.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
-Next</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
-<a href="cpyr.html"><br>
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
-Contents</a></p></td>
-</tr>
-</tbody>
+</div>
+</div>
+</div>
+
+<hr />
+<table cellspacing="0" cellpadding="0" width="100%">
+  <col width="33%" />
+  <col width="*" />
+  <col width="33%" />
+  <tr>
+    <td valign="bottom">
+      <table cellspacing="0" cellpadding="0" width="100">
+	<col width="*" />
+	<col width="48%" />
+	<col width="48%" />
+	<tr>
+	  <td>&nbsp;</td>
+	  <td align="center">
+	      <a href="jsf-page001.html">
+		<img src="img/leftnav.gif" alt="Previous" />
+		<br />
+		<span class="icon">Previous</span>&nbsp;
+	      </a>
+	  </td>
+	  <td align="center">
+	      <a href="jsf-page003.html">
+		<img src="img/rightnav.gif" alt="Next" />
+		<br />
+		<span class="icon">Next</span>
+	      </a>
+	  </td>
+	</tr>
+      </table>
+    </td>
+    <td align="center">
+      <img src="img/oracle.gif" alt="Oracle Logo" />
+      <a href="img/cpyr.adoc">
+	<br />
+	<span>Copyright&nbsp;&copy;&nbsp;2017,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.
+	</span>
+      </a>
+      <br>
+    </td>
+    <td valign="bottom" align="right">
+      <table cellspacing="0" cellpadding="0" width="225">
+	<tr>
+	  <td>&nbsp;</td>
+	  <td align="center" valign="top">
+	    <a href="toc.html">
+	      <img src="img/toc.gif" alt="Go To Table Of Contents" />
+	      <br />
+	      <span>Contents</span>
+	    </a>
+	  </td>
+	</tr>
+      </table>
+    </td>
+  </tr>
 </table>
-</div>
-</div>
-</div>
 
   </body>
 </html>

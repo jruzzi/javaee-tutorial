@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Required Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="required-software">2.1 Required Software</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following software is required to run the examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GEXAE">Java Platform, Standard Edition</a></p>
+</li>
+<li>
+<p><a href="#GEXAB">Java EE 7 Software Development Kit</a></p>
+</li>
+<li>
+<p><a href="#GEXBA">Java EE 7 Tutorial Component</a></p>
+</li>
+<li>
+<p><a href="#GEXAZ">NetBeans IDE</a></p>
+</li>
+<li>
+<p><a href="#GEXAA">Apache Maven</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="java-platform-standard-edition">2.1.1 Java Platform, Standard Edition</h3>
+<div class="paragraph">
+<p>To build, deploy, and run the examples, you need a copy of the Java
+Platform, Standard Edition Development Kit (JDK). You must use JDK 7
+Update 65 or above or JDK 8 Update 20 or above. You can download JDK
+software from
+<code>http://www.oracle.com/technetwork/java/javase/downloads/index.html</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="java-ee-7-software-development-kit">2.1.2 Java EE 7 Software Development Kit</h3>
+<div class="paragraph">
+<p>GlassFish Server Open Source Edition 4.1 is targeted as the build and
+runtime environment for the tutorial examples. To build, deploy, and run
+the examples, you need a copy of GlassFish Server and, optionally,
+NetBeans IDE. To obtain GlassFish Server, you must install the Java EE 7
+Software Development Kit (SDK) Update 1, which you can download from
+<code>http://www.oracle.com/technetwork/java/javaee/downloads/index.html</code>.
+Make sure that you download the Java EE 7 SDK Update 1, not the Java EE
+7 Web Profile SDK Update 1.</p>
+</div>
+<div class="sect3">
+<h4 id="sdk-installation-tips">2.1.2.1 SDK Installation Tips</h4>
+<div class="paragraph">
+<p>The Java EE 7 SDK Update 1 is installed from a ZIP file. It sets the
+default administration user name as <code>admin</code> with no required password.
+The Admin Port is set to 4848, and the HTTP Port is set to 8080.</p>
+</div>
+<div class="paragraph">
+<p>This tutorial refers to as-install-parent, the directory where you
+install GlassFish Server. For example, the default installation
+directory on Microsoft Windows is <code>C:\glassfish4</code>, so as-install-parent
+is <code>C:\glassfish4</code>. GlassFish Server itself is installed in as-install,
+the <code>glassfish</code> directory under as-install-parent. So on Microsoft
+Windows, as-install is <code>C:\glassfish4\glassfish</code>.</p>
+</div>
+<div class="paragraph">
+<p>After you install GlassFish Server, add the following directories to
+your <code>PATH</code> to avoid having to specify the full path when you use
+commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">as-install-parent/bin
+as-install/bin</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="java-ee-7-tutorial-component">2.1.3 Java EE 7 Tutorial Component</h3>
+<div class="paragraph">
+<p>The tutorial component, including the documentation and example source,
+is contained in the Java EE 7 SDK Update 1.</p>
+</div>
+<div class="paragraph">
+<p>Updates to the Java EE 7 Tutorial are published periodically. For
+details on obtaining these updates, see
+<a href="usingexamples008.html#GIQWR">Getting the Latest Updates to the
+Tutorial</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="netbeans-ide">2.1.4 NetBeans IDE</h3>
+<div class="paragraph">
+<p>The NetBeans integrated development environment (IDE) is a free,
+open-source IDE for developing Java applications, including enterprise
+applications. NetBeans IDE supports the Java EE platform. You can build,
+package, deploy, and run the tutorial examples from within NetBeans IDE.</p>
+</div>
+<div class="paragraph">
+<p>To run the tutorial examples, you need the latest version of NetBeans
+IDE. You can download NetBeans IDE from
+<code>https://netbeans.org/downloads/index.html</code>. Make sure that you download
+the Java EE bundle.</p>
+</div>
+<div class="sect3">
+<h4 id="to-install-netbeans-ide-without-glassfish-server">2.1.4.1 To Install NetBeans IDE without GlassFish Server</h4>
+<div class="paragraph">
+<p>When you install NetBeans IDE, do not install the version of GlassFish
+Server that comes with NetBeans IDE. To skip the installation of
+GlassFish Server, follow these steps.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the first page of the NetBeans IDE Installer wizard, deselect the
+check box for GlassFish Server and click OK.</p>
+</li>
+<li>
+<p>Accept both the License Agreement and the Junit License Agreement.</p>
+<div class="paragraph">
+<p>A few of the tutorial examples use the Junit library, so you should
+install it.</p>
+</div>
+</li>
+<li>
+<p>Continue with the installation of NetBeans IDE.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="to-add-glassfish-server-as-a-server-using-netbeans-ide">2.1.4.2 To Add GlassFish Server as a Server Using NetBeans IDE</h4>
+<div class="paragraph">
+<p>To run the tutorial examples in NetBeans IDE, you must add your
+GlassFish Server as a server in NetBeans IDE. Follow these instructions
+to add GlassFish Server to NetBeans IDE.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>From the Tools menu, choose Servers.</p>
+</li>
+<li>
+<p>In the Servers wizard, click Add Server.</p>
+</li>
+<li>
+<p>Under Choose Server, select GlassFish Server and click Next.</p>
+</li>
+<li>
+<p>Under Server Location, browse to the location of the Java EE 7 SDK
+and click Next.</p>
+</li>
+<li>
+<p>Under Domain Location, select Register Local Domain.</p>
+</li>
+<li>
+<p>Click Finish.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="apache-maven">2.1.5 Apache Maven</h3>
+<div class="paragraph">
+<p>Maven is a Java technology–based build tool developed by the Apache
+Software Foundation and is used to build, package, and deploy the
+tutorial examples. To run the tutorial examples from the command line,
+you need Maven 3.0 or higher. If you do not already have Maven, you can
+install it from:</p>
+</div>
+<div class="paragraph">
+<p><code>http://maven.apache.org</code></p>
+</div>
+<div class="paragraph">
+<p>Be sure to add the maven-install`/bin` directory to your path.</p>
+</div>
+<div class="paragraph">
+<p>If you are using NetBeans IDE to build and run the examples, it includes
+a copy of Maven.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Injecting Objects by Using Producer Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-basic011.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-basic013.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="injecting-objects-by-using-producer-methods">23.12 Injecting Objects by Using Producer Methods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Producer methods provide a way to inject objects that are not beans,
+objects whose values may vary at runtime, and objects that require
+custom initialization. For example, if you want to initialize a numeric
+value defined by a qualifier named <code>@MaxNumber</code>, you can define the
+value in a managed bean and then define a producer method,
+<code>getMaxNumber</code>, for it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">private int maxNumber = 100;
+...
+@Produces @MaxNumber int getMaxNumber() {
+    return maxNumber;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you inject the object in another managed bean, the container
+automatically invokes the producer method, initializing the value to
+100:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Inject @MaxNumber private int maxNumber;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the value can vary at runtime, the process is slightly different. For
+example, the following code defines a producer method that generates a
+random number defined by a qualifier called <code>@Random</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">private java.util.Random random =
+    new java.util.Random( System.currentTimeMillis() );
+
+java.util.Random getRandom() {
+        return random;
+}
+
+@Produces @Random int next() {
+    return getRandom().nextInt(maxNumber);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you inject this object in another managed bean, you declare a
+contextual instance of the object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Inject @Random Instance&lt;Integer&gt; randomInt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You then call the <code>get</code> method of the <code>Instance</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">this.number = randomInt.get();</code></pre>
+</div>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-basic011.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-basic013.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

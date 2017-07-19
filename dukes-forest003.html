@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Building and Deploying the Duke&apos;s Forest Case Study Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-forest002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-forest004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="building-and-deploying-the-dukes-forest-case-study-application">59.3 Building and Deploying the Duke&#8217;s Forest Case Study Application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use NetBeans IDE or Maven to build and deploy Duke&#8217;s Forest.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CHDJDIFH">Section 59.3.1, "To Build and Deploy the Duke&#8217;s Forest
+Application Using NetBeans IDE"</a></p>
+</li>
+<li>
+<p><a href="#CHDEJHBJ">Section 59.3.2, "To Build and Deploy the Duke&#8217;s Forest
+Application Using Maven"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide">59.3.1 To Build and Deploy the Duke&#8217;s Forest Application Using NetBeansIDE</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>), as well as the database server (see
+<a href="usingexamples004.html#BNADK">Starting and Stopping the Java DB
+Server</a>).</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/case-studies</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>dukes-forest</code> folder.</p>
+</li>
+<li>
+<p>Select the Open Required Projects check box and click Open Project.</p>
+</li>
+<li>
+<p>Right-click the <code>dukes-forest</code> folder and select Build.</p>
+<div class="paragraph">
+<p>This task configures the server, creates and populates the database,
+builds all the subprojects, assembles them into JAR and WAR files, and
+deploys the <code>dukes-payment</code>, <code>dukes-store,</code> and <code>dukes-shipment</code>
+applications.</p>
+</div>
+<div class="paragraph">
+<p>To configure the server, this task creates a JDBC security realm named
+jdbcRealm, enables default principal-to-role mapping, and enables single
+sign-on (SSO) for the HTTP Service.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="to-build-and-deploy-the-dukes-forest-application-using-maven">59.3.2 To Build and Deploy the Duke&#8217;s Forest Application Using Maven</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>), as well as the database server (see
+<a href="usingexamples004.html#BNADK">Starting and Stopping the Java DB
+Server</a>).</p>
+</li>
+<li>
+<p>In a terminal window, go to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/case-studies/dukes-forest/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the following command to configure the server, create and
+populate the database, build all the subprojects, assemble them into JAR
+and WAR files, and deploy the <code>dukes-payment</code>, <code>dukes-store,</code> and
+<code>dukes-shipment</code> applications:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To configure the server, this task creates a JDBC security realm named
+jdbcRealm, enables default principal-to-role mapping, and enables single
+sign-on (SSO) for the HTTP Service.</p>
+</div>
+</li>
+</ol>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-forest002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-forest004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

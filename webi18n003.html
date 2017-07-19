@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Date and Number Formatting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="date-and-number-formatting">20.3 Date and Number Formatting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Java programs use the <code>DateFormat.getDateInstance(int,</code> <code>locale)</code> method
+to parse and format dates in a locale-sensitive manner. Java programs
+use the <code>NumberFormat.get`XXX`Instance(locale)</code> method, where XXX can be
+<code>Currency</code>, <code>Number</code>, or <code>Percent</code>, to parse and format numerical values
+in a locale-sensitive manner.</p>
+</div>
+<div class="paragraph">
+<p>An application can use date/time and number converters to format dates
+and numbers in a locale-sensitive manner. For example, a shipping date
+could be converted as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">&lt;h:outputText value="#{cashier.shipDate}"&gt;
+    &lt;f:convertDateTime dateStyle="full"/&gt;
+&lt;/h:outputText&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For information on JavaServer Faces converters, see
+<a href="jsf-page-core001.html#BNAST">Using the Standard Converters</a>.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Specifying an Endpoint Configurator Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket009.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket011.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="specifying-an-endpoint-configurator-class">18.10 Specifying an Endpoint Configurator Class</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Java API for WebSocket enables you to configure how the container
+creates server endpoint instances. You can provide custom endpoint
+configuration logic to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Access the details of the initial HTTP request for a WebSocket
+connection</p>
+</li>
+<li>
+<p>Perform custom checks on the <code>Origin</code> HTTP header</p>
+</li>
+<li>
+<p>Modify the WebSocket handshake response</p>
+</li>
+<li>
+<p>Choose a WebSocket subprotocol from those requested by the client</p>
+</li>
+<li>
+<p>Control the instantiation and initialization of endpoint instances</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To provide custom endpoint configuration logic, you extend the
+<code>ServerEndpointConfig.Configurator</code> class and override some of its
+methods. In the endpoint class, you specify the configurator class using
+the <code>configurator</code> parameter of the <code>ServerEndpoint</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>For example, the following configurator class makes the handshake
+request object available to endpoint instances:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public class CustomConfigurator extends ServerEndpointConfig.Configurator {
+
+    @Override
+    public void modifyHandshake(ServerEndpointConfig conf,
+                                HandshakeRequest req,
+                                HandshakeResponse resp) {
+
+        conf.getUserProperties().put("handshakereq", req);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following endpoint class configures endpoint instances with the
+custom configurator, which enables them to access the handshake request
+object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@ServerEndpoint(
+    value = "/myendpoint",
+    configurator = CustomConfigurator.class
+)
+public class MyEndpoint {
+
+    @OnOpen
+    public void open(Session s, EndpointConfig conf) {
+        HandshakeRequest req = (HandshakeRequest) conf.getUserProperties()
+                                                      .get("handshakereq");
+        Map&lt;String,List&lt;String&gt;&gt; headers = req.getHeaders();
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The endpoint class can use the handshake request object to access the
+details of the initial HTTP request, such as its headers or the
+<code>HttpSession</code> object.</p>
+</div>
+<div class="paragraph">
+<p>For more information on endpoint configuration, see the API reference
+for the <code>ServerEndpointConfig.Configurator</code> class.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket009.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket011.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Character Sets and Encodings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partbeanvalidation.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="character-sets-and-encodings">20.4 Character Sets and Encodings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following sections describe character sets and character encodings.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#BNAYC">Section 20.4.1, "Character Sets"</a></p>
+</li>
+<li>
+<p><a href="#BNAYD">Section 20.4.2, "Character Encoding"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="character-sets">20.4.1 Character Sets</h3>
+<div class="paragraph">
+<p>A character set is a set of textual and graphic symbols, each of which
+is mapped to a set of nonnegative integers.</p>
+</div>
+<div class="paragraph">
+<p>The first character set used in computing was US-ASCII. It is limited in
+that it can represent only American English. US-ASCII contains uppercase
+and lowercase Latin alphabets, numerals, punctuation, a set of control
+codes, and a few miscellaneous symbols.</p>
+</div>
+<div class="paragraph">
+<p>Unicode defines a standardized, universal character set that can be
+extended to accommodate additions. When the Java program source file
+encoding doesn&#8217;t support Unicode, you can represent Unicode characters
+as escape sequences by using the notation `\u`XXXX, where XXXX is the
+character&#8217;s 16-bit representation in hexadecimal. For example, the
+Spanish version of a message file could use Unicode for non-ASCII
+characters, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">admin.nav.main=P\u00e1gina principal de administraci\u00f3n</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="character-encoding">20.4.2 Character Encoding</h3>
+<div class="paragraph">
+<p>A character encoding maps a character set to units of a specific width
+and defines byte serialization and ordering rules. Many character sets
+have more than one encoding. For example, Java programs can represent
+Japanese character sets using the <code>EUC-JP</code> or <code>Shift-JIS</code> encodings,
+among others. Each encoding has rules for representing and serializing a
+character set.</p>
+</div>
+<div class="paragraph">
+<p>The ISO 8859 series defines 13 character encodings that can represent
+texts in dozens of languages. Each ISO 8859 character encoding can have
+up to 256 characters. ISO-8859-1 (Latin-1) comprises the ASCII character
+set, characters with diacritics (accents, diaereses, cedillas,
+circumflexes, and so on), and additional symbols.</p>
+</div>
+<div class="paragraph">
+<p>UTF-8 (Unicode Transformation Format, 8-bit form) is a variable-width
+character encoding that encodes 16-bit Unicode characters as one to four
+bytes. A byte in UTF-8 is equivalent to 7-bit ASCII if its high-order
+bit is zero; otherwise, the character comprises a variable number of
+bytes.</p>
+</div>
+<div class="paragraph">
+<p>UTF-8 is compatible with the majority of existing web content and
+provides access to the Unicode character set. Current versions of
+browsers and email clients support UTF-8. In addition, many web
+standards specify UTF-8 as their character encoding. For example, UTF-8
+is one of the two required encodings for XML documents (the other is
+UTF-16).</p>
+</div>
+<div class="paragraph">
+<p>Web components usually use <code>PrintWriter</code> to produce responses;
+<code>PrintWriter</code> automatically encodes using ISO-8859-1. Servlets can also
+output binary data using <code>OutputStream</code> classes, which perform no
+encoding. An application that uses a character set that cannot use the
+default encoding must explicitly set a different encoding.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partbeanvalidation.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

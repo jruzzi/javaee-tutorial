@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Design and Architecture of Duke&apos;s Tutoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-tutoring.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-tutoring002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="design-and-architecture-of-dukes-tutoring">58.1 Design and Architecture of Duke&#8217;s Tutoring</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring is a web application that incorporates several Java EE
+technologies. It exposes both a main interface (for students, guardians,
+and tutoring center staff) and an administration interface (for staff to
+maintain the system). The business logic for both interfaces is provided
+by enterprise beans. The enterprise beans use the Java Persistence API
+to create and store the application&#8217;s data in the database.
+<a href="#CHDDJDCH">Figure 58-1</a> illustrates the architecture of the
+application.</p>
+</div>
+<div id="CHDDJDCH" class="paragraph">
+<p>Figure 58-1 Architecture of the Duke&#8217;s Tutoring Example Application</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/javaeett_dt_061.png" alt="Description of Figure 58-1 follows"></span><br>
+<a href="img_text/javaeett_dt_061.html">Description of "Figure 58-1 Architecture
+of the Duke&#8217;s Tutoring Example Application"</a><br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring application is organized into two main projects: the
+<code>dukes-tutoring-common</code> library and the <code>dukes-tutoring-war</code> web
+application. The <code>dukes-tutoring-common</code> library project contains the
+entity classes and helper classes used by the <code>dukes-tutoring-war</code> web
+application, and <code>dukes-tutoring-common</code> is packaged and deployed with
+<code>dukes-tutoring-war</code>. The library JAR file is useful for allowing the
+entity classes and helper classes to be reused by other applications,
+such as a JavaFX client application.</p>
+</div>
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring uses the following Java EE 7 platform features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java Persistence API entities</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A custom Bean Validation annotation, <code>@Email</code>, for validating email
+addresses</p>
+</li>
+<li>
+<p>A standard <code>jta-data-source</code> definition that will create the JDBC
+resource on deployment</p>
+</li>
+<li>
+<p>A standard property in the <code>persistence.xml</code> deployment descriptor to
+automatically and portably create and delete the tables in the
+<code>jta-data-source</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enterprise beans</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Local, no-interface view session and singleton beans</p>
+</li>
+<li>
+<p>JAX-RS resources in a session bean</p>
+</li>
+<li>
+<p>Java EE security constraints on the administrative interface business
+methods</p>
+</li>
+<li>
+<p>All enterprise beans packaged within the WAR</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>WebSocket</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A WebSocket server endpoint that automatically publishes the status
+of students to client endpoints</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Contexts and Dependency Injection</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A CDI event that is fired when the status of a student changes</p>
+</li>
+<li>
+<p>Handler methods for updating the application once the status event is
+fired</p>
+</li>
+<li>
+<p>CDI managed beans for Facelets pages</p>
+</li>
+<li>
+<p>Bean Validation annotations in the CDI managed beans</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>JavaServer Faces technology, using Facelets for the web front end</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Templating</p>
+</li>
+<li>
+<p>Composite components</p>
+</li>
+<li>
+<p>A custom formatter, <code>PhoneNumberFormatter</code></p>
+</li>
+<li>
+<p>Security constraints on the administrative interface</p>
+</li>
+<li>
+<p>Ajax-enabled Facelets components</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring application has two main user interfaces, both
+packaged within a single WAR file:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The main interface, for students, guardians, and staff</p>
+</li>
+<li>
+<p>The administrative interface used by the staff to manage the students
+and guardians, and to generate attendance reports</p>
+</li>
+</ul>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-tutoring.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dukes-tutoring002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

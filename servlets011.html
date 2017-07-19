@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Uploading Files with Java Servlet Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets010.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets012.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="uploading-files-with-java-servlet-technology">17.11 Uploading Files with Java Servlet Technology</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Supporting file uploads is a very basic and common requirement for many
+web applications. In prior versions of the Servlet specification,
+implementing file upload required the use of external libraries or
+complex input processing. The Java Servlet specification now helps to
+provide a viable solution to the problem in a generic and portable way.
+Java Servlet technology now supports file upload out of the box, so any
+web container that implements the specification can parse multipart
+requests and make mime attachments available through the
+<code>HttpServletRequest</code> object.</p>
+</div>
+<div class="paragraph">
+<p>A new annotation, <code>javax.servlet.annotation.MultipartConfig</code>, is used to
+indicate that the servlet on which it is declared expects requests to be
+made using the <code>multipart/form-data</code> MIME type. Servlets that are
+annotated with <code>@MultipartConfig</code> can retrieve the <code>Part</code> components of
+a given <code>multipart/form-data</code> request by calling the
+<code>request.getPart(String name)</code> or <code>request.getParts()</code> method.</p>
+</div>
+<div class="sect2">
+<h3 id="the-multipartconfig-annotation">17.11.1 The @MultipartConfig Annotation</h3>
+<div class="paragraph">
+<p>The <code>@MultipartConfig</code> annotation supports the following optional
+attributes.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>location</code>: An absolute path to a directory on the file system. The
+<code>location</code> attribute does not support a path relative to the application
+context. This location is used to store files temporarily while the
+parts are processed or when the size of the file exceeds the specified
+<code>fileSizeThreshold</code> setting. The default location is <code>""</code>.</p>
+</li>
+<li>
+<p><code>fileSizeThreshold</code>: The file size in bytes after which the file will
+be temporarily stored on disk. The default size is 0 bytes.</p>
+</li>
+<li>
+<p><code>MaxFileSize</code>: The maximum size allowed for uploaded files, in bytes.
+If the size of any uploaded file is greater than this size, the web
+container will throw an exception (<code>IllegalStateException</code>). The default
+size is unlimited.</p>
+</li>
+<li>
+<p><code>maxRequestSize</code>: The maximum size allowed for a <code>multipart/form-data</code>
+request, in bytes. The web container will throw an exception if the
+overall size of all uploaded files exceeds this threshold. The default
+size is unlimited.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For, example, the <code>@MultipartConfig</code> annotation could be constructed as
+follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@MultipartConfig(location="/tmp", fileSizeThreshold=1024*1024,
+    maxFileSize=1024*1024*5, maxRequestSize=1024*1024*5*5)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead of using the <code>@MultipartConfig</code> annotation to hard-code these
+attributes in your file upload servlet, you could add the following as a
+child element of the servlet configuration element in the <code>web.xml</code>
+file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">&lt;multipart-config&gt;
+    &lt;location&gt;/tmp&lt;/location&gt;
+    &lt;max-file-size&gt;20848820&lt;/max-file-size&gt;
+    &lt;max-request-size&gt;418018841&lt;/max-request-size&gt;
+    &lt;file-size-threshold&gt;1048576&lt;/file-size-threshold&gt;
+&lt;/multipart-config&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="the-getparts-and-getpart-methods">17.11.2 The getParts and getPart Methods</h3>
+<div class="paragraph">
+<p>The Servlet specification supports two additional <code>HttpServletRequest</code>
+methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Collection&lt;Part&gt; getParts()</code></p>
+</li>
+<li>
+<p><code>Part getPart(String name)</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>request.getParts()</code> method returns collections of all <code>Part</code>
+objects. If you have more than one input of type file, multiple <code>Part</code>
+objects are returned. Because <code>Part</code> objects are named, the
+<code>getPart(String name)</code> method can be used to access a particular <code>Part</code>.
+Alternatively, the <code>getParts()</code> method, which returns an
+<code>Iterable&lt;Part&gt;</code>, can be used to get an <code>Iterator</code> over all the <code>Part</code>
+objects.</p>
+</div>
+<div class="paragraph">
+<p>The <code>javax.servlet.http.Part</code> interface is a simple one, providing
+methods that allow introspection of each <code>Part</code>. The methods do the
+following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Retrieve the name, size, and content-type of the <code>Part</code></p>
+</li>
+<li>
+<p>Query the headers submitted with a <code>Part</code></p>
+</li>
+<li>
+<p>Delete a <code>Part</code></p>
+</li>
+<li>
+<p>Write a <code>Part</code> out to disk</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, the <code>Part</code> interface provides the <code>write(String filename)</code>
+method to write the file with the specified name. The file can then be
+saved in the directory that is specified with the <code>location</code> attribute
+of the <code>@MultipartConfig</code> annotation or, in the case of the <code>fileupload</code>
+example, in the location specified by the Destination field in the form.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets010.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets012.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

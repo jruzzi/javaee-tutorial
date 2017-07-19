@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Steps for Creating a Custom Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps-for-creating-a-custom-component">15.4 Steps for Creating a Custom Component</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can apply the following steps while developing your own custom
+component.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a custom component class that does the following:</p>
+</li>
+<li>
+<p>Overrides the <code>getFamily</code> method to return the component family,
+which is used to look up renderers that can render the component</p>
+</li>
+<li>
+<p>Includes the rendering code or delegates it to a renderer (explained
+in Step <a href="#CDECBJAE">2</a>)</p>
+</li>
+<li>
+<p>Enables component attributes to accept expressions</p>
+</li>
+<li>
+<p>Queues an event on the component if the component generates events</p>
+</li>
+<li>
+<p>Saves and restores the component state</p>
+</li>
+<li>
+<p><a id="CDECBJAE"></a></p>
+<div class="paragraph">
+<p>Delegate rendering to a renderer if your component does not handle the
+rendering. To do this:</p>
+</div>
+</li>
+<li>
+<p>Create a custom renderer class by extending
+<code>javax.faces.render.Renderer</code>.</p>
+</li>
+<li>
+<p>Register the renderer to a render kit.</p>
+</li>
+<li>
+<p>Register the component.</p>
+</li>
+<li>
+<p>Create an event handler if your component generates events.</p>
+</li>
+<li>
+<p>Create a tag library descriptor (TLD) that defines the custom tag.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>See <a href="jsf-configure012.html#BNAXI">Registering a Custom Component</a> and
+<a href="jsf-configure011.html#BNAXH">Registering a Custom Renderer with a
+Render Kit</a> for information on registering the custom component and the
+renderer. The section <a href="jsf-custom010.html#BNATT">Using a Custom
+Component</a> discusses how to use the custom component in a JavaServer
+Faces page.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

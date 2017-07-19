@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Overview of the EL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-el.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-el002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview-of-the-el">9.1 Overview of the EL</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The EL allows page authors to use simple expressions to dynamically
+access data from JavaBeans components. For example, the <code>test</code> attribute
+of the following conditional tag is supplied with an EL expression that
+compares 0 with the number of items in the session-scoped bean named
+<code>cart</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">&lt;c:if test="${sessionScope.cart.numberOfItems &gt; 0}"&gt;
+  ...
+&lt;/c:if&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="jsf-develop001.html#BNAQP">Using the EL to Reference Managed
+Beans</a> for more information on how to use the EL in JavaServer Faces
+applications.</p>
+</div>
+<div class="paragraph">
+<p>To summarize, the EL provides a way to use simple expressions to perform
+the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dynamically read application data stored in JavaBeans components,
+various data structures, and implicit objects</p>
+</li>
+<li>
+<p>Dynamically write data, such as user input into forms, to JavaBeans
+components</p>
+</li>
+<li>
+<p>Invoke arbitrary static and public methods</p>
+</li>
+<li>
+<p>Dynamically perform arithmetic, boolean, and string operations</p>
+</li>
+<li>
+<p>Dynamically construct collection objects and perform operations on
+collections</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In a JavaServer Faces page, an EL expression can be used either in
+static text or in the attribute of a custom tag or standard action.</p>
+</div>
+<div class="paragraph">
+<p>Finally, the EL provides a pluggable API for resolving expressions so
+that custom resolvers that can handle expressions not already supported
+by the EL can be implemented.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-el.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-el002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

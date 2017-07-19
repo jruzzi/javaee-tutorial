@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Debugging Java EE Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples008.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partplatform.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="debugging-java-ee-applications">2.9 Debugging Java EE Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section explains how to determine what is causing an error in your
+application deployment or execution.</p>
+</div>
+<div class="sect2">
+<h3 id="using-the-server-log">2.9.1 Using the Server Log</h3>
+<div class="paragraph">
+<p>One way to debug applications is to look at the server log in
+domain-dir`/logs/server.log`. The log contains output from GlassFish
+Server and your applications. You can log messages from any Java class
+in your application with <code>System.out.println</code> and the Java Logging APIs
+(documented at
+<code>http://docs.oracle.com/javase/7/docs/technotes/guides/logging/index.html</code>)
+and from web components with the <code>ServletContext.log</code> method.</p>
+</div>
+<div class="paragraph">
+<p>If you use NetBeans IDE, logging output appears in the Output window as
+well as the server log.</p>
+</div>
+<div class="paragraph">
+<p>If you start GlassFish Server with the <code>--verbose</code> flag, all logging and
+debugging output will appear on the terminal window or command prompt
+and the server log. If you start GlassFish Server in the background,
+debugging information is available only in the log. You can view the
+server log with a text editor or with the Administration Console log
+viewer.</p>
+</div>
+<div class="sect3">
+<h4 id="to-use-the-administration-console-log-viewer">2.9.1.1 To Use the Administration Console Log Viewer</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the GlassFish Server node.</p>
+</li>
+<li>
+<p>Click View Log Files.</p>
+<div class="paragraph">
+<p>The log viewer opens and displays the last 40 entries.</p>
+</div>
+</li>
+<li>
+<p>To display other entries, follow these steps.</p>
+</li>
+<li>
+<p>Click Modify Search.</p>
+</li>
+<li>
+<p>Specify any constraints on the entries you want to see.</p>
+</li>
+<li>
+<p>Click Search at the top of the log viewer.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="using-a-debugger">2.9.2 Using a Debugger</h3>
+<div class="paragraph">
+<p>GlassFish Server supports the Java Platform Debugger Architecture
+(JPDA). With JPDA, you can configure GlassFish Server to communicate
+debugging information using a socket.</p>
+</div>
+<div class="sect3">
+<h4 id="to-debug-an-application-using-a-debugger">2.9.2.1 To Debug an Application Using a Debugger</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Follow these steps to enable debugging in GlassFish Server using the
+Administration Console:</p>
+</li>
+<li>
+<p>Expand the Configurations node, then expand the server-config node.</p>
+</li>
+<li>
+<p>Select the JVM Settings node. The default debug options are set to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9009</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see, the default debugger socket port is 9009. You can change
+it to a port not in use by GlassFish Server or another service.</p>
+</div>
+</li>
+<li>
+<p>Select the Debug Enabled check box.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+<li>
+<p>Stop GlassFish Server and then restart it.</p>
+</li>
+</ol>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples008.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partplatform.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

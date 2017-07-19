@@ -5,35 +5,48 @@
     <meta charset="utf-8"/>
     <title>Preface</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<table cellspacing="0" cellpadding="0" width="100%">
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
 <tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
 <tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="title.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partintro.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
 </tr>
+</tbody>
 </table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="title.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="partintro.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
+</div>
+</div>
 <div class="sect1">
 <h2 id="preface">Preface</h2>
 <div class="sectionbody">
@@ -47,7 +60,7 @@ Open Source Edition.</p>
 open-community platform for building and deploying next-generation
 applications and services. GlassFish Server Open Source Edition,
 developed by the GlassFish project open-source community at
-<code><a href="https://glassfish.java.net/" class="bare">https://glassfish.java.net/</a></code>, is the first compatible implementation of
+<code>https://glassfish.java.net/</code>, is the first compatible implementation of
 the Java EE 7 platform specification. This lightweight, flexible, and
 open-source application server enables organizations not only to
 leverage the new capabilities introduced within the Java EE 7
@@ -94,7 +107,7 @@ deploy them on the Java EE Software Development Kit (SDK).</p>
 <div class="paragraph">
 <p>For information about Oracle&#8217;s commitment to accessibility, visit the
 Oracle Accessibility Program website at
-<code><a href="http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=docacc" class="bare">http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=docacc</a></code>.</p>
+<code>http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=docacc</code>.</p>
 </div>
 <div id="sthref2" class="paragraph">
 <p>Access to Oracle Support</p>
@@ -102,8 +115,8 @@ Oracle Accessibility Program website at
 <div class="paragraph">
 <p>Oracle customers that have purchased support have access to electronic
 support through My Oracle Support. For information, visit
-<code><a href="http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=info" class="bare">http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=info</a></code> or visit
-<code><a href="http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=trs" class="bare">http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=trs</a></code> if you are
+<code>http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=info</code> or visit
+<code>http://www.oracle.com/pls/topic/lookup?ctx=acc&amp;id=trs</code> if you are
 hearing impaired.</p>
 </div>
 </div>
@@ -113,7 +126,7 @@ hearing impaired.</p>
 <p>Before proceeding with this tutorial, you should have a good knowledge
 of the Java programming language. A good way to get to that point is to
 work through the Java Tutorials
-(<code><a href="http://docs.oracle.com/javase/tutorial/index.html" class="bare">http://docs.oracle.com/javase/tutorial/index.html</a></code>).</p>
+(<code>http://docs.oracle.com/javase/tutorial/index.html</code>).</p>
 </div>
 </div>
 <div class="sect2">
@@ -121,34 +134,34 @@ work through the Java Tutorials
 <div class="paragraph">
 <p>The GlassFish Server documentation set describes deployment planning and
 system installation. To obtain documentation for GlassFish Server Open
-Source Edition, go to <code><a href="https://glassfish.java.net/docs/" class="bare">https://glassfish.java.net/docs/</a></code>.</p>
+Source Edition, go to <code>https://glassfish.java.net/docs/</code>.</p>
 </div>
 <div class="paragraph">
 <p>The Java EE 7 API specification can be viewed at
-<code><a href="http://docs.oracle.com/javaee/7/api/" class="bare">http://docs.oracle.com/javaee/7/api/</a></code> and is also provided in the Java
+<code>http://docs.oracle.com/javaee/7/api/</code> and is also provided in the Java
 EE 7 SDK.</p>
 </div>
 <div class="paragraph">
 <p>Additionally, the Java EE Specifications at
-<code><a href="http://www.oracle.com/technetwork/java/javaee/tech/index.html" class="bare">http://www.oracle.com/technetwork/java/javaee/tech/index.html</a></code> might be
+<code>http://www.oracle.com/technetwork/java/javaee/tech/index.html</code> might be
 useful.</p>
 </div>
 <div class="paragraph">
 <p>For information about creating enterprise applications in the NetBeans
 Integrated Development Environment (IDE), see
-<code><a href="https://netbeans.org/kb/" class="bare">https://netbeans.org/kb/</a></code>.</p>
+<code>https://netbeans.org/kb/</code>.</p>
 </div>
 <div class="paragraph">
 <p>For information about the Java DB database for use with GlassFish
 Server, see
-<code><a href="http://www.oracle.com/technetwork/java/javadb/overview/index.html" class="bare">http://www.oracle.com/technetwork/java/javadb/overview/index.html</a></code>.</p>
+<code>http://www.oracle.com/technetwork/java/javadb/overview/index.html</code>.</p>
 </div>
 <div class="paragraph">
 <p>The GlassFish Samples project is a collection of sample applications
 that demonstrate a broad range of Java EE technologies. The GlassFish
 Samples are bundled with the Java EE Software Development Kit (SDK) and
 are also available from the GlassFish Samples project page at
-<code><a href="https://glassfish-samples.java.net/" class="bare">https://glassfish-samples.java.net/</a></code>.</p>
+<code>https://glassfish-samples.java.net/</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -159,9 +172,9 @@ in this book.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 55%;">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 27.7227%;">
+<col style="width: 71.2871%;">
+<col style="width: 0.9902%;">
 </colgroup>
 <thead>
 <tr>
@@ -213,6 +226,11 @@ variables for which you supply particular values.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="default-paths-and-file-names">Default Paths and File Names</h3>
@@ -220,11 +238,11 @@ variables for which you supply particular values.</p></td>
 <p>The following table describes the default paths and file names that are
 used in this book.</p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
+<table class="tableblock frame-all grid-all" style="width: 51%;">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 37.6237%;">
+<col style="width: 61.3861%;">
+<col style="width: 0.9902%;">
 </colgroup>
 <thead>
 <tr>
@@ -285,41 +303,37 @@ is stored.</p></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
 <tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="title.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="partintro.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="title.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="partintro.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
 </tr>
+</tbody>
 </table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
 </div>
 </div>
 </div>

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Web Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webapp.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webapp002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="web-applications">6.1 Web Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A web application is a dynamic extension of a web or application server.
+Web applications are of the following types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Presentation-oriented: A presentation-oriented web application
+generates interactive web pages containing various types of markup
+language (HTML, XHTML, XML, and so on) and dynamic content in response
+to requests. Development of presentation-oriented web applications is
+covered in <a href="jsf-intro.html#BNAPH">Chapter 7, "JavaServer Faces
+Technology,"</a> through <a href="servlets.html#BNAFD">Chapter 17, "Java Servlet
+Technology."</a></p>
+</li>
+<li>
+<p>Service-oriented: A service-oriented web application implements the
+endpoint of a web service. Presentation-oriented applications are often
+clients of service-oriented web applications. Development of
+service-oriented web applications is covered in
+<a href="jaxws.html#BNAYL">Chapter 28, "Building Web Services with JAX-WS,"</a>
+and <a href="jaxrs.html#GIEPU">Chapter 29, "Building RESTful Web Services with
+JAX-RS,"</a> in <a href="partwebsvcs.html#BNAYK">Part III, "Web Services."</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the Java EE platform, web components provide the dynamic extension
+capabilities for a web server. Web components can be Java servlets, web
+pages implemented with JavaServer Faces technology, web service
+endpoints, or JSP pages. <a href="#BNADS">Figure 6-1</a> illustrates the
+interaction between a web client and a web application that uses a
+servlet. The client sends an HTTP request to the web server. A web
+server that implements Java Servlet and JavaServer Pages technology
+converts the request into an <code>HTTPServletRequest</code> object. This object is
+delivered to a web component, which can interact with JavaBeans
+components or a database to generate dynamic content. The web component
+can then generate an <code>HTTPServletResponse</code> or can pass the request to
+another web component. A web component eventually generates a
+<code>HTTPServletResponse</code> object. The web server converts this object to an
+HTTP response and returns it to the client.</p>
+</div>
+<div id="BNADS" class="paragraph">
+<p>Figure 6-1 Java Web Application Request Handling</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/javaeett_dt_013.png" alt="Description of Figure 6-1 follows"></span><br>
+<a href="img_text/javaeett_dt_013.html">Description of "Figure 6-1 Java Web
+Application Request Handling"</a><br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>Servlets are Java programming language classes that dynamically process
+requests and construct responses. Java technologies, such as JavaServer
+Faces and Facelets, are used for building interactive web applications.
+(Frameworks can also be used for this purpose.) Although servlets and
+JavaServer Faces and Facelets pages can be used to accomplish similar
+things, each has its own strengths. Servlets are best suited for
+service-oriented applications (web service endpoints can be implemented
+as servlets) and the control functions of a presentation-oriented
+application, such as dispatching requests and handling nontextual data.
+JavaServer Faces and Facelets pages are more appropriate for generating
+text-based markup, such as XHTML, and are generally used for
+presentation-oriented applications.</p>
+</div>
+<div class="paragraph">
+<p>Web components are supported by the services of a runtime platform
+called a web container. A web container provides such services as
+request dispatching, security, concurrency, and lifecycle management. A
+web container also gives web components access to such APIs as naming,
+transactions, and email.</p>
+</div>
+<div class="paragraph">
+<p>Certain aspects of web application behavior can be configured when the
+application is installed, or deployed, to the web container. The
+configuration information can be specified using Java EE annotations or
+can be maintained in a text file in XML format called a web application
+deployment descriptor (DD). A web application DD must conform to the
+schema described in the Java Servlet specification.</p>
+</div>
+<div class="paragraph">
+<p>This chapter gives a brief overview of the activities involved in
+developing web applications. First, it summarizes the web application
+lifecycle and explains how to package and deploy very simple web
+applications on GlassFish Server. The chapter then moves on to
+configuring web applications and discusses how to specify the most
+commonly used configuration parameters.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webapp.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webapp002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

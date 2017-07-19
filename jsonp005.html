@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JSON in Java EE RESTful Web Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp004.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp006.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="json-in-java-ee-restful-web-services">19.5 JSON in Java EE RESTful Web Services</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section explains how the Java API for JSON Processing is related to
+other Java EE packages that provide JSON support for RESTful web
+services. See <a href="jaxrs.html#GIEPU">Chapter 29, "Building RESTful Web
+Services with JAX-RS,"</a> for more information on RESTful web services.</p>
+</div>
+<div class="paragraph">
+<p>Jersey, the reference implementation for JAX-RS (JSR 311) included in
+GlassFish Server, provides support for binding JSON data from RESTful
+resource methods to Java objects using JAXB, as described in
+<a href="jaxrs-advanced007.html#GKKNJ">Using JAX-RS with JAXB</a> in
+<a href="jaxrs-advanced.html#GJJXE">Chapter 31, "JAX-RS: Advanced Topics and
+an Example"</a>. However, JSON support is not part of JAX-RS (JSR 311) or
+JAXB (JSR 222), so that procedure may not work for Java EE
+implementations other than GlassFish Server.</p>
+</div>
+<div class="paragraph">
+<p>The Java API for JSON Processing (JSR 353) does not explicitly support
+JSON binding in Java. A future JSR (JSON Binding) that is similar to
+JAXB for XML is under consideration for a future release of Java EE.</p>
+</div>
+<div class="paragraph">
+<p>You can still use the Java API for JSON Processing with JAX-RS resource
+methods. For more information, see the sample code for JSON Processing
+included with the Java EE 7 SDK.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp004.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp006.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

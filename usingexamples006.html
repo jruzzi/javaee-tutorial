@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tutorial Example Directory Structure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tutorial-example-directory-structure">2.6 Tutorial Example Directory Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To facilitate iterative development and keep application source files
+separate from compiled files, the tutorial examples use the Maven
+application directory structure.</p>
+</div>
+<div class="paragraph">
+<p>Each application module has the following structure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pom.xml</code>: Maven build file</p>
+</li>
+<li>
+<p><code>src/main/java</code>: Java source files for the module</p>
+</li>
+<li>
+<p><code>src/main/resources</code>: configuration files for the module, with the
+exception of web applications</p>
+</li>
+<li>
+<p><code>src/main/webapp</code>: web pages, style sheets, tag files, and images (web
+applications only)</p>
+</li>
+<li>
+<p><code>src/main/webapp/WEB-INF</code>: configuration files for web applications
+(web applications only)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When an example has multiple application modules packaged into an EAR
+file, its submodule directories use the following naming conventions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>example-name`-app-client`: application clients</p>
+</li>
+<li>
+<p>example-name`-ejb`: enterprise bean JAR files</p>
+</li>
+<li>
+<p>example-name`-war`: web applications</p>
+</li>
+<li>
+<p>example-name`-ear`: enterprise applications</p>
+</li>
+<li>
+<p>example-name`-common`: library JAR containing components, classes, and
+files used by other modules</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Maven build files (<code>pom.xml</code>) distributed with the examples contain
+goals to compile and assemble the application into the <code>target</code>
+directory and deploy the archive to GlassFish Server.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="usingexamples007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

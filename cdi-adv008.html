@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Using Stereotypes in CDI Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv-examples.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="using-stereotypes-in-cdi-applications">25.8 Using Stereotypes in CDI Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A stereotype is a kind of annotation, applied to a bean, that
+incorporates other annotations. Stereotypes can be particularly useful
+in large applications in which you have a number of beans that perform
+similar functions. A stereotype is a kind of annotation that specifies
+the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A default scope</p>
+</li>
+<li>
+<p>Zero or more interceptor bindings</p>
+</li>
+<li>
+<p>Optionally, a <code>@Named</code> annotation, guaranteeing default EL naming</p>
+</li>
+<li>
+<p>Optionally, an <code>@Alternative</code> annotation, specifying that all beans
+with this stereotype are alternatives</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A bean annotated with a particular stereotype will always use the
+specified annotations, so you do not have to apply the same annotations
+to many beans.</p>
+</div>
+<div class="paragraph">
+<p>For example, you might create a stereotype named <code>Action</code>, using the
+<code>javax.enterprise.inject.Stereotype</code> annotation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@RequestScoped
+@Secure
+@Transactional
+@Named
+@Stereotype
+@Target(TYPE)
+@Retention(RUNTIME)
+public @interface Action {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All beans annotated <code>@Action</code> will have request scope, use default EL
+naming, and have the interceptor bindings <code>@Transactional</code> and
+<code>@Secure</code>.</p>
+</div>
+<div class="paragraph">
+<p>You could also create a stereotype named <code>Mock</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Alternative
+@Stereotype
+@Target(TYPE)
+@Retention(RUNTIME)
+public @interface Mock {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All beans with this annotation are alternatives.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to apply multiple stereotypes to the same bean, so you
+can annotate a bean as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Action
+@Mock
+public class MockLoginAction extends LoginAction { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It is also possible to override the scope specified by a stereotype,
+simply by specifying a different scope for the bean. The following
+declaration gives the <code>MockLoginAction</code> bean session scope instead of
+request scope:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@SessionScoped
+@Action
+@Mock
+public class MockLoginAction extends LoginAction { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>CDI makes available a built-in stereotype called <code>Model</code>, which is
+intended for use with beans that define the model layer of a
+model-view-controller application architecture. This stereotype
+specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Named
+@RequestScoped
+@Stereotype
+@Target({TYPE, METHOD, FIELD})
+@Retention(RUNTIME)
+public @interface Model {}</code></pre>
+</div>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv-examples.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

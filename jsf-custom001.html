@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Introduction to Creating Custom Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction-to-creating-custom-components">15.1 Introduction to Creating Custom Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>JavaServer Faces technology offers a basic set of standard, reusable UI
+components that enable quick and easy construction of user interfaces
+for web applications. These components mostly map one-to-one to the
+elements in HTML 4. But often an application requires a component that
+has additional functionality or requires a completely new component.
+JavaServer Faces technology allows extension of standard components to
+enhance their functionality or to create custom components. A rich
+ecosystem of third-party component libraries is built on this extension
+capability, but it is beyond the scope of this tutorial to examine them.
+A web search for "JSF Component Libraries" is a good starting point to
+learn more about this important aspect of using JavaServer Faces
+technology.</p>
+</div>
+<div class="paragraph">
+<p>In addition to extending the functionality of standard components, a
+component writer might want to give a page author the ability to change
+the appearance of the component on the page or to alter listener
+behavior. Alternatively, the component writer might want to render a
+component to a different kind of client device type, such as a
+smartphone or a tablet instead of a desktop computer. Enabled by the
+flexible JavaServer Faces architecture, a component writer can separate
+the definition of the component behavior from its appearance by
+delegating the rendering of the component to a separate renderer. In
+this way, a component writer can define the behavior of a custom
+component once but create multiple renderers, each of which defines a
+different way to render the component to a particular kind of client
+device.</p>
+</div>
+<div class="paragraph">
+<p>A <code>javax.faces.component.UIComponent</code> is a Java class that is
+responsible for representing a self-contained piece of the user
+interface during the request-processing lifecycle. It is intended to
+represent the meaning of the component; the visual representation of the
+component is the responsibility of the <code>javax.faces.render.Renderer</code>.
+There can be multiple instances of the same <code>UIComponent</code> class in any
+given JavaServer Faces view, just as there can be multiple instances of
+any Java class in any given Java program.</p>
+</div>
+<div class="paragraph">
+<p>JavaServer Faces technology provides the ability to create custom
+components by extending the <code>UIComponent</code> class, the base class for all
+standard UI components. A custom component can be used anywhere an
+ordinary component can be used, such as within a composite component. A
+<code>UIComponent</code> is identified by two names: <code>component-family</code> specifies
+the general purpose of the component (input or output, for instance),
+and <code>component-type</code> indicates the specific purpose of a component, such
+as a text input field or a command button.</p>
+</div>
+<div class="paragraph">
+<p>A <code>Renderer</code> is a helper to the <code>UIComponent</code> that deals with how that
+specific <code>UIComponent</code> class should appear in a specific kind of client
+device. Renderers are identified by two names: <code>render-kit-id</code> and
+<code>renderer-type</code>. A render kit is just a bucket into which a particular
+group of renderers is placed, and the <code>render-kit-id</code> identifies the
+group. Most JavaServer Faces component libraries provide their own
+render kits.</p>
+</div>
+<div class="paragraph">
+<p>A <code>javax.faces.view.facelets.Tag</code> object is a helper to the
+<code>UIComponent</code> and <code>Renderer</code> that allows the page author to include an
+instance of a <code>UIComponent</code> in a JavaServer Faces view. A tag represents
+a specific combination of <code>component-type</code> and <code>renderer-type</code>.</p>
+</div>
+<div class="paragraph">
+<p>See <a href="jsf-custom002.html#BNAVK">Component, Renderer, and Tag
+Combinations</a> for information on how components, renderers, and tags
+interact.</p>
+</div>
+<div class="paragraph">
+<p>This chapter uses the image map component from the Duke&#8217;s Bookstore case
+study example to explain how you can create simple custom components,
+custom renderers, and associated custom tags, and take care of all the
+other details associated with using the components and renderers in an
+application. See <a href="dukes-bookstore.html#GLNVI">Chapter 57, "Duke&#8217;s
+Bookstore Case Study Example"</a> for more information about this example.</p>
+</div>
+<div class="paragraph">
+<p>The chapter also describes how to create other custom objects: custom
+converters, custom listeners, and custom validators. It also describes
+how to bind component values and instances to data objects and how to
+bind custom objects to managed bean properties.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-custom002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

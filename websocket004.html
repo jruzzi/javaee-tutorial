@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Annotated Endpoints</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="annotated-endpoints">18.4 Annotated Endpoints</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following example shows how to create the same endpoint from
+<a href="websocket003.html#BABGJEIG">Programmatic Endpoints</a> using annotations
+instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@ServerEndpoint("/echo")
+public class EchoEndpoint {
+   @OnMessage
+   public void onMessage(Session session, String msg) {
+      try {
+         session.getBasicRemote().sendText(msg);
+      } catch (IOException e) { ... }
+   }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The annotated endpoint is simpler than the equivalent programmatic
+endpoint, and it is deployed automatically with the application to the
+relative path defined in the <code>ServerEndpoint</code> annotation. Instead of
+having to create an additional class for the message handler, this
+example uses the <code>OnMessage</code> annotation to designate the method invoked
+to handle messages.</p>
+</div>
+<div class="paragraph">
+<p><a href="#BABDGEJH">Table 18-1</a> lists the annotations available in the
+<code>javax.websocket</code> package to designate the methods that handle lifecycle
+events. The examples in the table show the most common parameters for
+these methods. See the API reference for details on what combinations of
+parameters are allowed in each case.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref114"></a><a id="BABDGEJH"></a></p>
+</div>
+<div class="paragraph">
+<p>Table 18-1 WebSocket Endpoint Lifecycle Annotations</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 46%;">
+<colgroup>
+<col style="width: 41.5841%;">
+<col style="width: 57.4257%;">
+<col style="width: 0.9902%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Annotation</th>
+<th class="tableblock halign-left valign-top">Event</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OnOpen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection opened</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@OnOpen
+public void open(Session session,
+                 EndpointConfig conf) { }</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OnMessage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message received</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@OnMessage
+public void message(Session session,
+                    String msg) { }</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OnError</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection error</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@OnError
+public void error(Session session,
+                  Throwable error) { }</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OnClose</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection closed</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@OnClose
+public void close(Session session,
+                  CloseReason reason) { }</code></pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="websocket005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

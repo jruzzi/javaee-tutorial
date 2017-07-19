@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Resource Injection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="injection.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="injection002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="resource-injection">4.1 Resource Injection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Resource injection enables you to inject any resource available in the
+JNDI namespace into any container-managed object, such as a servlet, an
+enterprise bean, or a managed bean. For example, you can use resource
+injection to inject data sources, connectors, or custom resources
+available in the JNDI namespace.</p>
+</div>
+<div class="paragraph">
+<p>The type you use for the reference to the injected instance is usually
+an interface, which decouples your code from the implementation of the
+resource.</p>
+</div>
+<div class="paragraph">
+<p>For example, the following code injects a data source object that
+provides connections to the default Java DB database shipped with
+GlassFish Server:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public class MyServlet extends HttpServlet {
+    @Resource(name="java:comp/DefaultDataSource")
+    private javax.sql.DataSource dsc;
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to field-based injection as in the preceding example, you
+can inject resources using method-based injection:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public class MyServlet extends HttpServlet {
+    private javax.sql.DataSource dsc;
+    ...
+    @Resource(name="java:comp/DefaultDataSource")
+    public void setDsc(java.sql.DataSource ds) {
+        dsc = ds;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To use method-based injection, the setter method must follow the
+JavaBeans conventions for property names: The method name must begin
+with <code>set</code>, have a <code>void</code> return type, and have only one parameter.</p>
+</div>
+<div class="paragraph">
+<p>The <code>@Resource</code> annotation is in the <code>javax.annotation</code> package and is
+defined in JSR 250 (Common Annotations for the Java Platform). Resource
+injection resolves by name, so it is not typesafe: the type of the
+resource object is not known at compile time, so you can get runtime
+errors if the types of the object and its reference do not match.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="injection.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="injection002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

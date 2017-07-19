@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Creating and Initializing a Servlet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="creating-and-initializing-a-servlet">17.4 Creating and Initializing a Servlet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use the <code>@WebServlet</code> annotation to define a servlet component in a web
+application. This annotation is specified on a class and contains
+metadata about the servlet being declared. The annotated servlet must
+specify at least one URL pattern. This is done by using the
+<code>urlPatterns</code> or <code>value</code> attribute on the annotation. All other
+attributes are optional, with default settings. Use the <code>value</code>
+attribute when the only attribute on the annotation is the URL pattern;
+otherwise, use the <code>urlPatterns</code> attribute when other attributes are
+also used.</p>
+</div>
+<div class="paragraph">
+<p>Classes annotated with <code>@WebServlet</code> must extend the
+<code>javax.servlet.http.HttpServlet</code> class. For example, the following code
+snippet defines a servlet with the URL pattern <code>/report</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/report")
+public class MoodServlet extends HttpServlet {
+    ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The web container initializes a servlet after loading and instantiating
+the servlet class and before delivering requests from clients. To
+customize this process to allow the servlet to read persistent
+configuration data, initialize resources, and perform any other one-time
+activities, you can either override the <code>init</code> method of the <code>Servlet</code>
+interface or specify the <code>initParams</code> attribute of the <code>@WebServlet</code>
+annotation. The <code>initParams</code> attribute contains a <code>@WebInitParam</code>
+annotation. If it cannot complete its initialization process, a servlet
+throws an <code>UnavailableException</code>.</p>
+</div>
+<div class="paragraph">
+<p>Use an initialization parameter to provide data needed by a particular
+servlet. By contrast, a context parameter provides data that is
+available to all components of a web application.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets003.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="servlets005.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

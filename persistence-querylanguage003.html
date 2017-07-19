@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Creating Queries Using the Java Persistence Query Language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="persistence-querylanguage002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="persistence-querylanguage004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="creating-queries-using-the-java-persistence-query-language">39.3 Creating Queries Using the Java Persistence Query Language</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>EntityManager.createQuery</code> and <code>EntityManager.createNamedQuery</code>
+methods are used to query the datastore by using Java Persistence query
+language queries.</p>
+</div>
+<div class="paragraph">
+<p>The <code>createQuery</code> method is used to create dynamic queries, which are
+queries defined directly within an application&#8217;s business logic:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public List findWithName(String name) {
+return em.createQuery(
+    "SELECT c FROM Customer c WHERE c.name LIKE :custName")
+    .setParameter("custName", name)
+    .setMaxResults(10)
+    .getResultList();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>createNamedQuery</code> method is used to create static queries, or
+queries that are defined in metadata by using the
+<code>javax.persistence.NamedQuery</code> annotation. The <code>name</code> element of
+<code>@NamedQuery</code> specifies the name of the query that will be used with the
+<code>createNamedQuery</code> method. The <code>query</code> element of <code>@NamedQuery</code> is the
+query:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@NamedQuery(
+    name="findAllCustomersWithName",
+    query="SELECT c FROM Customer c WHERE c.name LIKE :custName"
+)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s an example of <code>createNamedQuery</code>, which uses the <code>@NamedQuery</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@PersistenceContext
+public EntityManager em;
+...
+customers = em.createNamedQuery("findAllCustomersWithName")
+    .setParameter("custName", "Smith")
+    .getResultList();</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="named-parameters-in-queries">39.3.1 Named Parameters in Queries</h3>
+<div class="paragraph">
+<p>Named parameters are query parameters that are prefixed with a colon
+(<code>:</code>). Named parameters in a query are bound to an argument by the
+following method:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">javax.persistence.Query.setParameter(String name, Object value)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example, the <code>name</code> argument to the <code>findWithName</code>
+business method is bound to the <code>:custName</code> named parameter in the query
+by calling <code>Query.setParameter</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public List findWithName(String name) {
+    return em.createQuery(
+        "SELECT c FROM Customer c WHERE c.name LIKE :custName")
+        .setParameter("custName", name)
+        .getResultList();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Named parameters are case-sensitive and may be used by both dynamic and
+static queries.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="positional-parameters-in-queries">39.3.2 Positional Parameters in Queries</h3>
+<div class="paragraph">
+<p>You may use positional parameters instead of named parameters in
+queries. Positional parameters are prefixed with a question mark (<code>?</code>)
+followed by the numeric position of the parameter in the query. The
+method <code>Query.setParameter(integer position, Object value)</code> is used to
+set the parameter values.</p>
+</div>
+<div class="paragraph">
+<p>In the following example, the <code>findWithName</code> business method is
+rewritten to use input parameters:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public List findWithName(String name) {
+    return em.createQuery(
+        "SELECT c FROM Customer c WHERE c.name LIKE ?1")
+        .setParameter(1, name)
+        .getResultList();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input parameters are numbered starting from 1. Input parameters are
+case-sensitive, and may be used by both dynamic and static queries.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="persistence-querylanguage002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="persistence-querylanguage004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

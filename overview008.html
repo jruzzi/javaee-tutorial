@@ -3,37 +3,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Overview008</title>
+    <title>Java EE 7 APIs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<table cellspacing="0" cellpadding="0" width="100%">
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
 <tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
 <tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="overview007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="overview009.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
 </tr>
+</tbody>
 </table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="overview007.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview009.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
+</div>
+</div>
 <div class="sect1">
 <h2 id="java-ee-7-apis">1.8 Java EE 7 APIs</h2>
 <div class="sectionbody">
@@ -45,8 +58,8 @@ containers.</p>
 <p>Figure 1-6 Java EE Containers</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_006.png" alt="Description of Figure 1-6 follows"></span><br>
-<a href="img_text/jeett_dt_006.html">Description of "Figure 1-6 Java EE
+<p><span class="image"><img src="img/javaeett_dt_006.png" alt="Description of Figure 1-6 follows"></span><br>
+<a href="img_text/javaeett_dt_006.html">Description of "Figure 1-6 Java EE
 Containers"</a><br>
 <br></p>
 </div>
@@ -58,8 +71,8 @@ the web container.</p>
 <p>Figure 1-7 Java EE APIs in the Web Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_007.png" alt="Description of Figure 1-7 follows"></span><br>
-<a href="img_text/jeett_dt_007.html">Description of "Figure 1-7 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_007.png" alt="Description of Figure 1-7 follows"></span><br>
+<a href="img_text/javaeett_dt_007.html">Description of "Figure 1-7 Java EE APIs
 in the Web Container"</a><br>
 <br></p>
 </div>
@@ -71,8 +84,8 @@ the EJB container.</p>
 <p>Figure 1-8 Java EE APIs in the EJB Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_008.png" alt="Description of Figure 1-8 follows"></span><br>
-<a href="img_text/jeett_dt_008.html">Description of "Figure 1-8 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_008.png" alt="Description of Figure 1-8 follows"></span><br>
+<a href="img_text/javaeett_dt_008.html">Description of "Figure 1-8 Java EE APIs
 in the EJB Container"</a><br>
 <br></p>
 </div>
@@ -84,8 +97,8 @@ the application client container.</p>
 <p>Figure 1-9 Java EE APIs in the Application Client Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_009.png" alt="Description of Figure 1-9 follows"></span><br>
-<a href="img_text/jeett_dt_009.html">Description of "Figure 1-9 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_009.png" alt="Description of Figure 1-9 follows"></span><br>
+<a href="img_text/javaeett_dt_009.html">Description of "Figure 1-9 Java EE APIs
 in the Application Client Container"</a><br>
 <br></p>
 </div>
@@ -148,21 +161,21 @@ servlets can respond to any type of request, they are commonly used to
 extend the applications hosted by web servers.</p>
 </div>
 <div class="paragraph">
-<p>In the Java EE 7 platform, new Java Servlet technology features include
+<p>In the Java EE 8 platform, new Java Servlet technology features include
 the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Nonblocking I/O</p>
+<p>HTTP/2 server push</p>
 </li>
 <li>
-<p>HTTP protocol upgrade</p>
+<p>Servlet Mapping API</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Java EE 7 platform requires Servlet 3.1.</p>
+<p>The Java EE 8 platform requires Servlet 4.0</p>
 </div>
 </div>
 <div class="sect2">
@@ -218,25 +231,32 @@ stored in a model object to types that can be represented in a view.</p>
 XML-based configuration files.</p>
 </div>
 <div class="paragraph">
-<p>In the Java EE 7 platform, new features of JavaServer Faces technology
+<p>In the Java EE 8 platform, new features of JavaServer Faces technology
 include the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>HTML5-friendly markup</p>
+<p>Direct support for WebSockets via the new <code>&lt;f:websocket&gt;</code> tag</p>
 </li>
 <li>
-<p>Faces Flows</p>
+<p>Class-level bean validation via the new <code>&lt;f:validateWholeBean&gt;</code> tag</p>
 </li>
 <li>
-<p>Resource library contracts</p>
+<p>A CDI compatible <code>@ManagedProperty</code> annotation</p>
+</li>
+<li>
+<p>Enhanced component search expression framework</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Java EE 7 platform requires JavaServer Faces 2.2 and Expression
+<p>The Java EE 8 platform requires JavaServer Faces 2.3 and Expression
 Language 3.0.</p>
+</div>
+<div class="paragraph">
+<p>For an excellent summary of what&#8217;s new in JSF 2.3, see Arjan Tijms'
+weblog at <code>https://javaserverfaces.github.io/users.html</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -259,7 +279,7 @@ HTML or XML</p>
 </div>
 <div class="paragraph">
 <p>For information about JSP technology, see the The Java EE 5 Tutorial at
-<code><a href="http://docs.oracle.com/javaee/5/tutorial/doc/" class="bare">http://docs.oracle.com/javaee/5/tutorial/doc/</a></code>.</p>
+<code>http://docs.oracle.com/javaee/5/tutorial/doc/</code>.</p>
 </div>
 <div class="paragraph">
 <p>The Java EE 7 platform requires JavaServer Pages 2.3 for compatibility
@@ -580,41 +600,32 @@ batch runtime, and a Java API to implement batch artifacts.</p>
 platform. The Java EE 7 platform requires Batch Applications for the
 Java Platform 1.0.</p>
 </div>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
 <tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="overview007.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview009.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="overview007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="overview009.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
 </tr>
+</tbody>
 </table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
 </div>
 </div>
 </div>

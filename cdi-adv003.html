@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications">25.3 Using Producer Methods, Producer Fields, and Disposer Methods inCDI Applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A producer method generates an object that can then be injected.
+Typically, you use producer methods in the following situations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When you want to inject an object that is not itself a bean</p>
+</li>
+<li>
+<p>When the concrete type of the object to be injected may vary at
+runtime</p>
+</li>
+<li>
+<p>When the object requires some custom initialization that the bean
+constructor does not perform</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information on producer methods, see
+<a href="cdi-basic012.html#GJDID">Injecting Objects by Using Producer
+Methods</a>.</p>
+</div>
+<div class="paragraph">
+<p>A producer field is a simpler alternative to a producer method; it is a
+field of a bean that generates an object. It can be used instead of a
+simple getter method. Producer fields are particularly useful for
+declaring Java EE resources such as data sources, JMS resources, and web
+service references.</p>
+</div>
+<div class="paragraph">
+<p>A producer method or field is annotated with the
+<code>javax.enterprise.inject.Produces</code> annotation.</p>
+</div>
+<div class="sect2">
+<h3 id="using-producer-methods">25.3.1 Using Producer Methods</h3>
+<div class="paragraph">
+<p>A producer method can allow you to select a bean implementation at
+runtime instead of at development time or deployment time. For example,
+in the example described in <a href="cdi-adv-examples003.html#GKHPY">The
+producermethods Example: Using a Producer Method to Choose a Bean
+Implementation</a>, the managed bean defines the following producer method:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Produces
+@Chosen
+@RequestScoped
+public Coder getCoder() {
+
+    switch (coderType) {
+        case TEST:
+            return new TestCoderImpl();
+        case SHIFT:
+            return new CoderImpl();
+        default:
+            return null;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here, <code>getCoder</code> becomes in effect a getter method, and when the <code>coder</code>
+property is injected with the same qualifier and other annotations as
+the method, the selected version of the interface is used.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Inject
+@Chosen
+@RequestScoped
+Coder coder;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Specifying the qualifier is essential: It tells CDI which <code>Coder</code> to
+inject. Without it, the CDI implementation would not be able to choose
+between <code>CoderImpl</code>, <code>TestCoderImpl</code>, and the one returned by <code>getCoder</code>
+and would cancel deployment, informing the user of the ambiguous
+dependency.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="using-producer-fields-to-generate-resources">25.3.2 Using Producer Fields to Generate Resources</h3>
+<div class="paragraph">
+<p>A common use of a producer field is to generate an object such as a JDBC
+<code>DataSource</code> or a Java Persistence API <code>EntityManager</code> (see
+<a href="persistence-intro.html#BNBPZ">Chapter 37, "Introduction to the Java
+Persistence API,"</a> for more information). The object can then be managed
+by the container. For example, you could create a <code>@UserDatabase</code>
+qualifier and then declare a producer field for an entity manager as
+follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Produces
+@UserDatabase
+@PersistenceContext
+private EntityManager em;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>@UserDatabase</code> qualifier can be used when you inject the object
+into another bean, <code>RequestBean</code>, elsewhere in the application:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">    @Inject
+    @UserDatabase
+    EntityManager em;
+    ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="cdi-adv-examples004.html#GKHRG">The producerfields Example: Using
+Producer Fields to Generate Resources</a> shows how to use producer fields
+to generate an entity manager. You can use a similar mechanism to inject
+<code>@Resource</code>, <code>@EJB</code>, or <code>@WebServiceRef</code> objects.</p>
+</div>
+<div class="paragraph">
+<p>To minimize the reliance on resource injection, specify the producer
+field for the resource in one place in the application, and then inject
+the object wherever in the application you need it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="using-a-disposer-method">25.3.3 Using a Disposer Method</h3>
+<div class="paragraph">
+<p>You can use a producer method or a producer field to generate an object
+that needs to be removed when its work is completed. If you do, you need
+a corresponding disposer method, annotated with a <code>@Disposes</code>
+annotation. For example, you can close the entity manager as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">public void close(@Disposes @UserDatabase EntityManager em) {
+    em.close();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The disposer method is called automatically when the context ends (in
+this case, at the end of the conversation, because <code>RequestBean</code> has
+conversation scope), and the parameter in the <code>close</code> method receives
+the object produced by the producer field.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="cdi-adv004.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

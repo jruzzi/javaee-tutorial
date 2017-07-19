@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Modifying the Java EE Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ejb-gettingstarted002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ejb-basicexamples.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modifying-the-java-ee-application">33.3 Modifying the Java EE Application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GlassFish Server supports iterative development. Whenever you make a
+change to a Java EE application, you must redeploy the application.</p>
+</div>
+<div class="sect2">
+<h3 id="to-modify-a-class-file">33.3.1 To Modify a Class File</h3>
+<div class="paragraph">
+<p>To modify a class file in an enterprise bean, you change the source
+code, recompile it, and redeploy the application. For example, to update
+the exchange rate in the <code>dollarToYen</code> business method of the
+<code>ConverterBean</code> class, you would follow these steps.</p>
+</div>
+<div class="paragraph">
+<p>To modify <code>ConverterServlet</code>, the procedure is the same.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Edit <code>ConverterBean.java</code> and save the file.</p>
+</li>
+<li>
+<p>Recompile the source file.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>To recompile <code>ConverterBean.java</code> in NetBeans IDE, right-click the
+<code>converter</code> project and select Run.</p>
+<div class="paragraph">
+<p>This recompiles the <code>ConverterBean.java</code> file, replaces the old class
+file in the build directory, and redeploys the application to GlassFish
+Server.</p>
+</div>
+</li>
+<li>
+<p>Recompile <code>ConverterBean.java</code> using Maven.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>In a terminal window, go to the
+tut-install`/examples/ejb/converter/` directory.</p>
+</li>
+<li>
+<p>Enter the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command repackages and deploys the application.</p>
+</div>
+</li>
+</ol>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ejb-gettingstarted002.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ejb-basicexamples.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

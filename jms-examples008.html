@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sending Messages from a Session Bean to an MDB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jms-examples007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jms-examples009.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sending-messages-from-a-session-bean-to-an-mdb">46.8 Sending Messages from a Session Bean to an MDB</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section explains how to write, compile, package, deploy, and run an
+application that uses the JMS API in conjunction with a session bean.
+The application contains the following components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An application client that invokes a session bean</p>
+</li>
+<li>
+<p>A session bean that publishes several messages to a topic</p>
+</li>
+<li>
+<p>A message-driven bean that receives and processes the messages using a
+durable topic subscription and a message selector</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You will find the source files for this section in the
+tut-install`/examples/jms/clientsessionmdb/` directory. Path names in
+this section are relative to this directory.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#BNCGX">Section 46.8.1, "Writing the Application Components for
+the clientsessionmdb Example"</a></p>
+</li>
+<li>
+<p><a href="#CHDDFAHA">Section 46.8.2, "Running the clientsessionmdb Example"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="writing-the-application-components-for-the-clientsessionmdb-example">46.8.1 Writing the Application Components for the clientsessionmdbExample</h3>
+<div class="paragraph">
+<p>This application demonstrates how to send messages from an enterprise
+bean (in this case, a session bean) rather than from an application
+client, as in the example in <a href="jms-examples007.html#BNBPK">Receiving
+Messages Asynchronously Using a Message-Driven Bean</a>. <a href="#BNCGY">Figure
+46-4</a> illustrates the structure of this application. Sending messages
+from an enterprise bean is very similar to sending messages from a
+managed bean, which was shown in
+<a href="jms-examples006.html#BABBABFC">Sending and Receiving Messages Using a
+Simple Web Application</a>.</p>
+</div>
+<div id="BNCGY" class="paragraph">
+<p>Figure 46-4 An Enterprise Bean Application: Client to Session Bean to
+Message-Driven Bean</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/javaeett_dt_037.png" alt="Description of Figure 46-4 follows"></span><br>
+<a href="img_text/javaeett_dt_037.html">Description of "Figure 46-4 An Enterprise
+Bean Application: Client to Session Bean to Message-Driven Bean"</a><br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>The Publisher enterprise bean in this example is the
+enterprise-application equivalent of a wire-service news feed that
+categorizes news events into six news categories. The message-driven
+bean could represent a newsroom, where the sports desk, for example,
+would set up a subscription for all news events pertaining to sports.</p>
+</div>
+<div class="paragraph">
+<p>The application client in the example injects the Publisher enterprise
+bean&#8217;s remote home interface and then calls the bean&#8217;s business method.
+The enterprise bean creates 18 text messages. For each message, it sets
+a <code>String</code> property randomly to one of six values representing the news
+categories and then publishes the message to a topic. The message-driven
+bean uses a message selector for the property to limit which of the
+published messages will be delivered to it.</p>
+</div>
+<div class="sect3">
+<h4 id="coding-the-application-client-myappclient.java">46.8.1.1 Coding the Application Client: MyAppClient.java</h4>
+<div class="paragraph">
+<p>The application client, <code>MyAppClient.java</code>, found under
+<code>clientsessionmdb-app-client</code>, performs no JMS API operations and so is
+simpler than the client in <a href="jms-examples007.html#BNBPK">Receiving
+Messages Asynchronously Using a Message-Driven Bean</a>. The client uses
+dependency injection to obtain the Publisher enterprise bean&#8217;s business
+interface:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@EJB(name="PublisherRemote")
+private static PublisherRemote publisher;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The client then calls the bean&#8217;s business method twice.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coding-the-publisher-session-bean">46.8.1.2 Coding the Publisher Session Bean</h4>
+<div class="paragraph">
+<p>The Publisher bean is a stateless session bean that has one business
+method. The Publisher bean uses a remote interface rather than a local
+interface because it is accessed from the application client.</p>
+</div>
+<div class="paragraph">
+<p>The remote interface, <code>PublisherRemote.java</code>, found under
+<code>clientsessionmdb-ejb</code>, declares a single business method,
+<code>publishNews</code>.</p>
+</div>
+<div class="paragraph">
+<p>The bean class, <code>PublisherBean.java</code>, also found under
+<code>clientsessionmdb-ejb</code>, implements the <code>publishNews</code> method and its
+helper method <code>chooseType</code>. The bean class injects <code>SessionContext</code> and
+<code>Topic</code> resources (the topic is defined in the message-driven bean). It
+then injects a <code>JMSContext</code>, which uses the preconfigured default
+connection factory unless you specify otherwise. The bean class begins
+as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@Stateless
+@Remote({
+    PublisherRemote.class
+})
+public class PublisherBean implements PublisherRemote {
+
+    @Resource
+    private SessionContext sc;
+    @Resource(lookup = "java:module/jms/newsTopic")
+    private Topic topic;
+    @Inject
+    private JMSContext context;
+    ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The business method <code>publishNews</code> creates a <code>JMSProducer</code> and publishes
+the messages.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coding-the-message-driven-bean-messagebean.java">46.8.1.3 Coding the Message-Driven Bean: MessageBean.java</h4>
+<div class="paragraph">
+<p>The message-driven bean class, <code>MessageBean.java</code>, found under
+<code>clientsessionmdb-ejb</code>, is almost identical to the one in
+<a href="jms-examples007.html#BNBPK">Receiving Messages Asynchronously Using a
+Message-Driven Bean</a>. However, the <code>@MessageDriven</code> annotation is
+different, because instead of a queue, the bean is using a topic, a
+durable subscription, and a message selector. The bean defines a topic
+for the use of the application; the definition uses the <code>java:module</code>
+scope because both the session bean and the message-driven bean are in
+the same module. Because the destination is defined in the
+message-driven bean, the <code>@MessageDriven</code> annotation uses the
+<code>destinationLookup</code> activation config property. (See
+<a href="jms-concepts005.html#BABHFBDH">Creating Resources for Java EE
+Applications</a> for more information.) The annotation also sets the
+activation config properties <code>messageSelector</code>,
+<code>subscriptionDurability</code>, <code>clientId</code>, and <code>subscriptionName</code>, as
+follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">@JMSDestinationDefinition(
+        name = "java:module/jms/newsTopic",
+        interfaceName = "javax.jms.Topic",
+        destinationName = "PhysicalNewsTopic")
+@MessageDriven(activationConfig = {
+    @ActivationConfigProperty(propertyName = "destinationLookup",
+            propertyValue = "java:module/jms/newsTopic"),
+    @ActivationConfigProperty(propertyName = "destinationType",
+            propertyValue = "javax.jms.Topic"),
+    @ActivationConfigProperty(propertyName = "messageSelector",
+            propertyValue = "NewsType = 'Sports' OR NewsType = 'Opinion'"),
+    @ActivationConfigProperty(propertyName = "subscriptionDurability",
+            propertyValue = "Durable"),
+    @ActivationConfigProperty(propertyName = "clientId",
+            propertyValue = "MyID"),
+    @ActivationConfigProperty(propertyName = "subscriptionName",
+            propertyValue = "MySub")
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The topic is the one defined in the <code>PublisherBean</code>. The message
+selector in this case represents both the sports and opinion desks, just
+to demonstrate the syntax of message selectors.</p>
+</div>
+<div class="paragraph">
+<p>The JMS resource adapter uses these properties to create a connection
+factory for the message-driven bean that allows the bean to use a
+durable subscription.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="running-the-clientsessionmdb-example">46.8.2 Running the clientsessionmdb Example</h3>
+<div class="paragraph">
+<p>You can use either NetBeans IDE or Maven to build, deploy, and run the
+<code>simplemessage</code> example.</p>
+</div>
+<div class="paragraph">
+<p>This example uses an annotation-defined topic and the preconfigured
+default connection factory <code>java:comp/DefaultJMSConnectionFactory</code>, so
+you do not have to create resources for it.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CHDGGAIB">Section 46.8.2.1, "To Run clientsessionmdb Using
+NetBeans IDE"</a></p>
+</li>
+<li>
+<p><a href="#CHDDDHBE">Section 46.8.2.2, "To Run clientsessionmdb Using
+Maven"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="to-run-clientsessionmdb-using-netbeans-ide">46.8.2.1 To Run clientsessionmdb Using NetBeans IDE</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/jms/clientsessionmdb</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>clientsessionmdb</code> folder.</p>
+</li>
+<li>
+<p>Make sure that the Open Required Projects check box is selected,
+then click Open Project.</p>
+</li>
+<li>
+<p>In the Projects tab, right-click the <code>clientsessionmdb</code> project and
+select Build. (If NetBeans IDE suggests that you run a priming build,
+click the box to do so.)</p>
+<div class="paragraph">
+<p>This command creates the following:
+* An application client JAR file that contains the client class file and
+the session bean&#8217;s remote interface, along with a manifest file that
+specifies the main class and places the EJB JAR file in its classpath
+* An EJB JAR file that contains both the session bean and the
+message-driven bean
+* An application EAR file that contains the two JAR files</p>
+</div>
+<div class="paragraph">
+<p>+
+The <code>clientsessionmdb.ear</code> file is created in the
+<code>clientsessionmdb-ear/target/</code> directory.</p>
+</div>
+<div class="paragraph">
+<p>+
+The command then deploys the EAR file, retrieves the client stubs, and
+runs the client.</p>
+</div>
+<div class="paragraph">
+<p>+
+The client displays these lines:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">To view the bean output,
+ check &lt;install_dir&gt;/domains/domain1/logs/server.log.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+The output from the enterprise beans appears in the server log file. The
+Publisher session bean sends two sets of 18 messages numbered 0 through</p>
+</div>
+</li>
+<li>
+<p>Because of the message selector, the message-driven bean receives
+only the messages whose <code>NewsType</code> property is <code>Sports</code> or <code>Opinion</code>.</p>
+</li>
+<li>
+<p>Use the Services tab to undeploy the application after you have
+finished running it.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="to-run-clientsessionmdb-using-maven">46.8.2.2 To Run clientsessionmdb Using Maven</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>Go to the following directory:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/jms/clientsessionmdb/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>To compile the source files and package, deploy, and run the
+application, enter the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command creates the following:
+* An application client JAR file that contains the client class file and
+the session bean&#8217;s remote interface, along with a manifest file that
+specifies the main class and places the EJB JAR file in its classpath
+* An EJB JAR file that contains both the session bean and the
+message-driven bean
+* An application EAR file that contains the two JAR files</p>
+</div>
+<div class="paragraph">
+<p>+
+The <code>clientsessionmdb.ear</code> file is created in the
+<code>clientsessionmdb-ear/target/</code> directory.</p>
+</div>
+<div class="paragraph">
+<p>+
+The command then deploys the EAR file, retrieves the client stubs, and
+runs the client.</p>
+</div>
+<div class="paragraph">
+<p>+
+The client displays these lines:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">To view the bean output,
+ check &lt;install_dir&gt;/domains/domain1/logs/server.log.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+The output from the enterprise beans appears in the server log file. The
+Publisher session bean sends two sets of 18 messages numbered 0 through</p>
+</div>
+</li>
+<li>
+<p>Because of the message selector, the message-driven bean receives
+only the messages whose <code>NewsType</code> property is <code>Sports</code> or <code>Opinion</code>.</p>
+</li>
+<li>
+<p>Undeploy the application after you have finished running it:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">mvn cargo:undeploy</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jms-examples007.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jms-examples009.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

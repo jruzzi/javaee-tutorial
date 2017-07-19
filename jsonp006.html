@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The jsonpmodel Example Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="the-jsonpmodel-example-application">19.6 The jsonpmodel Example Application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section describes how to build and run the <code>jsonpmodel</code> example
+application. This example is a web application that demonstrates how to
+create an object model from form data, how to parse JSON data, and how
+write JSON data using the object model API.</p>
+</div>
+<div class="paragraph">
+<p>The <code>jsonpmodel</code> example application is in the
+tut-install`/examples/web/jsonp/jsonpmodel` directory.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CEGHHCCC">Section 19.6.1, "Components of the jsonpmodel Example
+Application"</a></p>
+</li>
+<li>
+<p><a href="#CEGEFHFH">Section 19.6.2, "Running the jsonpmodel Example
+Application"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="components-of-the-jsonpmodel-example-application">19.6.1 Components of the jsonpmodel Example Application</h3>
+<div class="paragraph">
+<p>The <code>jsonpmodel</code> example application contains the following files.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Three JavaServer Faces pages.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>index.xhtml</code> page contains a form to collect information.</p>
+</li>
+<li>
+<p>The <code>modelcreated.xhtml</code> page contains a text area that displays JSON
+data.</p>
+</li>
+<li>
+<p>The <code>parsejson.xhtml</code> page contains a table that shows the elements
+of the object model.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The <code>ObjectModelBean.java</code> managed bean, which is a session-scoped
+managed bean that stores the data from the form and directs the
+navigation between the Facelets pages. This file also contains code that
+uses the JSON object model API.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The code used in <code>ObjectModelBean.java</code> to create an object model from
+the data in the form is similar to the example in
+<a href="jsonp003.html#BABIGIAF">Creating an Object Model from Application
+Code</a>. The code to write JSON output from the model is similar to the
+example in <a href="jsonp003.html#BABHEJFF">Writing an Object Model to a
+Stream</a>. The code to navigate the object model tree is similar to the
+example in <a href="jsonp003.html#BABJHEHG">Navigating an Object Model</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="running-the-jsonpmodel-example-application">19.6.2 Running the jsonpmodel Example Application</h3>
+<div class="paragraph">
+<p>This section describes how to run the <code>jsonpmodel</code> example application
+using NetBeans IDE and from the command line.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CEGFECCB">Section 19.6.2.1, "To Run the jsonpmodel Example
+Application Using NetBeans IDE"</a></p>
+</li>
+<li>
+<p><a href="#CEGGJBFA">Section 19.6.2.2, "To Run the jsonpmodel Example
+Application Using Maven"</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="to-run-the-jsonpmodel-example-application-using-netbeans-ide">19.6.2.1 To Run the jsonpmodel Example Application Using NetBeans IDE</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/web/jsonp</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>jsonpmodel</code> folder.</p>
+</li>
+<li>
+<p>Click Open Project.</p>
+</li>
+<li>
+<p>In the Projects tab, right-click the <code>jsonpmodel</code> project and select
+Run.</p>
+<div class="paragraph">
+<p>This command builds and packages the application into a WAR file
+(<code>jsonpmodel.war</code>) located in the <code>target</code> directory, deploys it to the
+server, and opens a web browser window with the following URL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">http://localhost:8080/jsonpmodel/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Edit the data on the page and click Create a JSON Object to submit
+the form. The following page shows a JSON object that contains the data
+from the form.</p>
+</li>
+<li>
+<p>Click Parse JSON. The following page contains a table that lists the
+nodes of the object model tree.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="to-run-the-jsonpmodel-example-application-using-maven">19.6.2.2 To Run the jsonpmodel Example Application Using Maven</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="usingexamples002.html#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>In a terminal window, go to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">tut-install/examples/web/jsonp/jsonpmodel</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the following command to deploy the application:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">mvn install</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Open a web browser window and enter the following address:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">http://localhost:8080/jsonpmodel/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Edit the data on the page and click Create a JSON Object to submit
+the form. The following page shows a JSON object that contains the data
+from the form.</p>
+</li>
+<li>
+<p>Click Parse JSON. The following page contains a table that lists the
+nodes of the object model tree.</p>
+</li>
+</ol>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsonp007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

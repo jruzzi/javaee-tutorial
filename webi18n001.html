@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Java Platform Localization Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="java-platform-localization-classes">20.1 Java Platform Localization Classes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the Java platform, java.util.Locale
+(<code>http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html</code>)
+represents a specific geographical, political, or cultural region. The
+string representation of a locale consists of the international standard
+two-character abbreviation for language and country and an optional
+variant, all separated by underscore (<code>_</code>) characters. Examples of
+locale strings include <code>fr</code> (French), <code>de_CH</code> (Swiss German), and
+<code>en_US_POSIX</code> (English on a POSIX-compliant platform).</p>
+</div>
+<div class="paragraph">
+<p>Locale-sensitive data is stored in a java.util.ResourceBundle
+(<code>http://docs.oracle.com/javase/7/docs/api/java/util/ResourceBundle.html</code>).
+A resource bundle contains key-value pairs, where the keys uniquely
+identify a locale-specific object in the bundle. A resource bundle can
+be backed by a text file (properties resource bundle) or a class (list
+resource bundle) containing the pairs. You construct a resource bundle
+instance by appending a locale string representation to a base name.</p>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Bookstore application (see
+<a href="dukes-bookstore.html#GLNVI">Chapter 57, "Duke&#8217;s Bookstore Case Study
+Example"</a>) contains resource bundles with the base name
+<code>messages.properties</code> for the locales <code>de</code> (German), <code>es</code> (Spanish), and
+<code>fr</code> (French). The default locale, <code>en</code> (English), which is specified in
+the <code>faces-config.xml</code> file, uses the resource bundle with the base
+name, <code>messages.properties</code>.</p>
+</div>
+<div class="paragraph">
+<p>For more details on internationalization and localization in the Java
+platform, see <code>http://docs.oracle.com/javase/tutorial/i18n/index.html</code>.</p>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="webi18n002.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

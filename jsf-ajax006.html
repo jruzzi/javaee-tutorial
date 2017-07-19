@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Handling Errors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="preamble">
+<div class="sectionbody">
+<table id="top" class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 45%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-ajax005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-ajax007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="handling-errors">13.6 Handling Errors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>JavaServer Faces handles Ajax errors through use of the <code>onerror</code>
+attribute of the <code>f:ajax</code> tag. The value of this attribute is the name
+of a JavaScript function.</p>
+</div>
+<div class="paragraph">
+<p>When there is an error in processing a Ajax request, JavaServer Faces
+calls the defined <code>onerror</code> JavaScript function and passes a data object
+to it. The data object contains all the properties available for the
+<code>onevent</code> attribute and, in addition, the following properties:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>description</code></p>
+</li>
+<li>
+<p><code>errorName</code></p>
+</li>
+<li>
+<p><code>errorMessage</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>type</code> is <code>error</code>. The <code>status</code> property of the data object contains
+one of the valid error values listed in <a href="#GKGOU">Table 13-4</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref71"></a><a id="GKGOU"></a></p>
+</div>
+<div class="paragraph">
+<p>Table 13-4 Valid Error Values for the Data Object status Property</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 20%;">
+<colgroup>
+<col style="width: 99.0099%;">
+<col style="width: 0.9901%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Values</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>emptyResponse</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No Ajax response from server.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>httpError</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One of the valid HTTP errors: <code>request.status==null</code> or
+<code>request.status==undefined</code> or <code>request.status&lt;200</code> or
+<code>request.status&gt;=300</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>malformedXML</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Ajax response is not well formed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>serverError</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Ajax response contains an <code>error</code> element.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example, any errors that occurred in processing the
+Ajax request are handled by the <code>handlemyajaxerror</code> JavaScript function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-oac_no_warn" data-lang="oac_no_warn">&lt;f:ajax event="click" render="errormessage" onerror="handlemyajaxerror"/&gt;</code></pre>
+</div>
+</div>
+<hr>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 65%;">
+<col style="width: 10%;">
+<col style="width: 5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-ajax005.html"><span class="image"><img src="img/leftnav.gif" alt="Previous"></span><br>
+Previous</a> </p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="jsf-ajax007.html"><span class="image"><img src="img/rightnav.gif" alt="Next"></span><br>
+Next</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
+Contents</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+  </body>
+</html>

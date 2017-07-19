@@ -1,0 +1,72 @@
+type=page
+status=published
+title=Java EE Supporting Technologies
+~~~~~~
+Java EE Supporting Technologies
+===============================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:security-advanced008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIJUE]][[JEETT00134]]
+
+[[part-xi]]
+Part XI +
+---------
+
+[[java-ee-supporting-technologies]]
+Java EE Supporting Technologies
+-------------------------------
+
+Part XI explores several technologies that support the Java EE platform.
+This part contains the following chapters:
+
+* link:transactions.html#BNCIH[Chapter 51, "Transactions"]
+* link:resources.html#BNCJH[Chapter 52, "Resource Adapters and
+Contracts"]
+* link:connectorexample.html#GLODB[Chapter 53, "The Resource Adapter
+Examples"]
+* link:interceptors.html#GKEED[Chapter 54, "Using Java EE Interceptors"]
+* link:batch-processing.html#GKJIQ6[Chapter 55, "Batch Processing"]
+* link:concurrency-utilities.html#GKJIQ8[Chapter 56, "Concurrency
+Utilities for Java EE"]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:security-advanced008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,16 @@
+type=page
+status=published
+title=Description of the illustration javaeett_dt_058
+~~~~~~
+Description of the illustration javaeett_dt_058
+===============================================
+
+This figure shows a batch job that contains two chunk steps: step A and
+step B. Step A has the three parts of a chunk-oriented step: input
+retrieval A, business processing A, and output writing A. Step B also
+has the three parts of a chunk-oriented step: input retrieval B,
+business processing B, and output writing B.
+
+image:../img/oracle.gif[Oracle,width=144,height=18] +
+link:../cpyr.html[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

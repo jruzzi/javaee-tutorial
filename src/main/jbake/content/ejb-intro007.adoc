@@ -1,0 +1,200 @@
+type=page
+status=published
+title=The Lifecycles of Enterprise Beans
+~~~~~~
+The Lifecycles of Enterprise Beans
+==================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:ejb-intro006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro008.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIPLJ]]
+
+[[the-lifecycles-of-enterprise-beans]]
+32.7 The Lifecycles of Enterprise Beans
+---------------------------------------
+
+An enterprise bean goes through various stages during its lifetime, or
+lifecycle. Each type of enterprise bean (stateful session, stateless
+session, singleton session, or message-driven) has a different
+lifecycle.
+
+The descriptions that follow refer to methods that are explained along
+with the code examples in the next two chapters. If you are new to
+enterprise beans, you should skip this section and run the code examples
+first.
+
+The following topics are addressed here:
+
+* link:#GIPLN[Section 32.7.1, "The Lifecycle of a Stateful Session
+Bean"]
+* link:#GIPLM[Section 32.7.2, "The Lifecycle of a Stateless Session
+Bean"]
+* link:#GIPRX[Section 32.7.3, "The Lifecycle of a Singleton Session
+Bean"]
+* link:#GIPKW[Section 32.7.4, "The Lifecycle of a Message-Driven Bean"]
+
+[[GIPLN]]
+
+[[the-lifecycle-of-a-stateful-session-bean]]
+32.7.1 The Lifecycle of a Stateful Session Bean
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+link:#GIPMI[Figure 32-2] illustrates the stages that a stateful session
+bean passes through during its lifetime. The client initiates the
+lifecycle by obtaining a reference to a stateful session bean. The
+container performs any dependency injection and then invokes the method
+annotated with `@PostConstruct`, if any. The bean is now ready to have
+its business methods invoked by the client.
+
+[[GIPMI]]
+
+Figure 32-2 Lifecycle of a Stateful Session Bean
+
+image:img/javaeett_dt_021.png[Description of Figure 32-2 follows] +
+link:img_text/javaeett_dt_021.html[Description of "Figure 32-2 Lifecycle of
+a Stateful Session Bean"] +
+ +
+
+While in the ready stage, the EJB container may decide to deactivate, or
+passivate, the bean by moving it from memory to secondary storage.
+(Typically, the EJB container uses a least-recently-used algorithm to
+select a bean for passivation.) The EJB container invokes the method
+annotated `@PrePassivate`, if any, immediately before passivating it. If
+a client invokes a business method on the bean while it is in the
+passive stage, the EJB container activates the bean, calls the method
+annotated `@PostActivate`, if any, and then moves it to the ready stage.
+
+At the end of the lifecycle, the client invokes a method annotated
+`@Remove`, and the EJB container calls the method annotated
+`@PreDestroy`, if any. The bean's instance is then ready for garbage
+collection.
+
+Your code controls the invocation of only one lifecycle method: the
+method annotated `@Remove`. All other methods in link:#GIPMI[Figure
+32-2] are invoked by the EJB container. See
+link:resources.html#BNCJH[Chapter 52, "Resource Adapters and Contracts"]
+for more information.
+
+[[GIPLM]]
+
+[[the-lifecycle-of-a-stateless-session-bean]]
+32.7.2 The Lifecycle of a Stateless Session Bean
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Because a stateless session bean is never passivated, its lifecycle has
+only two stages: nonexistent and ready for the invocation of business
+methods. link:#GIPNI[Figure 32-3] illustrates the stages of a stateless
+session bean.
+
+[[GIPNI]]
+
+Figure 32-3 Lifecycle of a Stateless or Singleton Session Bean
+
+image:img/javaeett_dt_022.png[Description of Figure 32-3 follows] +
+link:img_text/javaeett_dt_022.html[Description of "Figure 32-3 Lifecycle of
+a Stateless or Singleton Session Bean"] +
+ +
+
+The EJB container typically creates and maintains a pool of stateless
+session beans, beginning the stateless session bean's lifecycle. The
+container performs any dependency injection and then invokes the method
+annotated `@PostConstruct`, if it exists. The bean is now ready to have
+its business methods invoked by a client.
+
+At the end of the lifecycle, the EJB container calls the method
+annotated `@PreDestroy`, if it exists. The bean's instance is then ready
+for garbage collection.
+
+[[GIPRX]]
+
+[[the-lifecycle-of-a-singleton-session-bean]]
+32.7.3 The Lifecycle of a Singleton Session Bean
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Like a stateless session bean, a singleton session bean is never
+passivated and has only two stages, nonexistent and ready for the
+invocation of business methods, as shown in link:#GIPNI[Figure 32-3].
+
+The EJB container initiates the singleton session bean lifecycle by
+creating the singleton instance. This occurs upon application deployment
+if the singleton is annotated with the `@Startup` annotation. The
+container performs any dependency injection and then invokes the method
+annotated `@PostConstruct`, if it exists. The singleton session bean is
+now ready to have its business methods invoked by the client.
+
+At the end of the lifecycle, the EJB container calls the method
+annotated `@PreDestroy`, if it exists. The singleton session bean is now
+ready for garbage collection.
+
+[[GIPKW]]
+
+[[the-lifecycle-of-a-message-driven-bean]]
+32.7.4 The Lifecycle of a Message-Driven Bean
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+link:#GIPLR[Figure 32-4] illustrates the stages in the lifecycle of a
+message-driven bean.
+
+[[GIPLR]]
+
+Figure 32-4 Lifecycle of a Message-Driven Bean
+
+image:img/javaeett_dt_023.png[Description of Figure 32-4 follows] +
+link:img_text/javaeett_dt_023.html[Description of "Figure 32-4 Lifecycle of
+a Message-Driven Bean"] +
+ +
+
+The EJB container usually creates a pool of message-driven bean
+instances. For each instance, the EJB container performs these tasks.
+
+1.  If the message-driven bean uses dependency injection, the container
+injects these references before instantiating the instance.
+2.  The container calls the method annotated `@PostConstruct`, if any.
+
+Like a stateless session bean, a message-driven bean is never passivated
+and has only two states: nonexistent and ready to receive messages.
+
+At the end of the lifecycle, the container calls the method annotated
+`@PreDestroy`, if any. The bean's instance is then ready for garbage
+collection.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:ejb-intro006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro008.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,74 @@
+type=page
+status=published
+title=Concurrency Utilities for Java EE
+~~~~~~
+Concurrency Utilities for Java EE
+=================================
+2017-07-17T15:27:55Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:batch-processing010.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:concurrency-utilities001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKJIQ8]]
+
+[[concurrency-utilities-for-java-ee]]
+56 Concurrency Utilities for Java EE
+------------------------------------
+
+
+This chapter describes Concurrency Utilities for Java EE, which are
+specified by JSR 236.
+
+This chapter covers the following topics:
+
+* link:concurrency-utilities001.html#CIHDFGGG[Concurrency Basics]
+* link:concurrency-utilities002.html#CIHFBCFH[Main Components of the
+Concurrency Utilities]
+* link:concurrency-utilities003.html#CIHIDBDG[Concurrency and
+Transactions]
+* link:concurrency-utilities004.html#CIHCACAA[Concurrency and Security]
+* link:concurrency-utilities005.html#CIHCGGEG[The jobs Concurrency
+Example]
+* link:concurrency-utilities006.html#CIHBFEAE[The taskcreator Concurrency
+Example]
+* link:concurrency-utilities007.html#CHDBIHAA[Further Information about
+the Concurrency Utilities]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:batch-processing010.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:concurrency-utilities001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,69 @@
+type=page
+status=published
+title=Basic Security Tasks for Enterprise Applications
+~~~~~~
+Basic Security Tasks for Enterprise Applications
+================================================
+2017-07-17T15:27:53Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:security-javaee.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-javaee002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CACGIFHJ]]
+
+[[basic-security-tasks-for-enterprise-applications]]
+49.1 Basic Security Tasks for Enterprise Applications
+-----------------------------------------------------
+
+System administrators, application developers, bean providers, and
+deployers are responsible for administering security for enterprise
+applications. The basic security tasks are as follows:
+
+* Setting up a database of users and assigning them to the proper group
+* Setting up identity propagation
+* Setting GlassFish Server properties that enable the applications to
+run properly, such as setting default principal-to-role mapping
+* Annotating the classes and methods of an enterprise application to
+provide information about which methods need to have restricted access
+
+The sections on the security examples in this chapter and the previous
+chapter explain how to perform these tasks.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:security-javaee.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-javaee002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

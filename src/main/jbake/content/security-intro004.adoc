@@ -1,0 +1,81 @@
+type=page
+status=published
+title=Securing GlassFish Server
+~~~~~~
+Securing GlassFish Server
+=========================
+2017-07-17T15:27:53Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:security-intro003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-intro005.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNBXI]]
+
+[[securing-glassfish-server]]
+47.4 Securing GlassFish Server
+------------------------------
+
+This tutorial describes deployment to GlassFish Server, which provides
+highly secure, interoperable, and distributed component computing based
+on the Java EE security model. GlassFish Server supports the Java EE 7
+security model. You can configure GlassFish Server for the following
+purposes.
+
+* Adding, deleting, or modifying authorized users. For more information
+on this topic, see link:security-intro005.html#BNBXJ[Working with Realms,
+Users, Groups, and Roles].
+* Configuring secure HTTP and Internet Inter-Orb Protocol (IIOP)
+listeners.
+* Configuring secure Java Management Extensions (JMX) connectors.
+* Adding, deleting, or modifying existing or custom realms.
+* Defining an interface for pluggable authorization providers using Java
+Authorization Contract for Containers (JACC). JACC defines security
+contracts between GlassFish Server and authorization policy modules.
+These contracts specify how the authorization providers are installed,
+configured, and used in access decisions.
+* Using pluggable audit modules.
+* Customizing authentication mechanisms. All implementations of Java EE
+7 compatible web containers are required to support the Servlet Profile
+of JSR 196, which offers an avenue for customizing the authentication
+mechanism applied by the web container on behalf of one or more
+applications.
+* Setting and changing policy permissions for an application.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:security-intro003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-intro005.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

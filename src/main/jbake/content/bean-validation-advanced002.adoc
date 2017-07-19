@@ -1,0 +1,86 @@
+type=page
+status=published
+title=Customizing Validator Messages
+~~~~~~
+Customizing Validator Messages
+==============================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:bean-validation-advanced001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:bean-validation-advanced003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKAHI]]
+
+[[customizing-validator-messages]]
+22.2 Customizing Validator Messages
+-----------------------------------
+
+Bean Validation includes a resource bundle of default messages for the
+built-in constraints. These messages can be customized and can be
+localized for non-English-speaking locales.
+
+The following topics are addressed here:
+
+* link:#GKAGY[Section 22.2.1, "The ValidationMessages Resource Bundle"]
+
+[[GKAGY]]
+
+[[the-validationmessages-resource-bundle]]
+22.2.1 The ValidationMessages Resource Bundle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `ValidationMessages` resource bundle and the locale variants of this
+resource bundle contain strings that override the default validation
+messages. The `ValidationMessages` resource bundle is typically a
+properties file, `ValidationMessages.properties`, in the default package
+of an application.
+
+[[GKAIQ]]
+
+[[localizing-validation-messages]]
+22.2.1.1 Localizing Validation Messages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Locale variants of `ValidationMessages.properties` are added by
+appending an underscore and the locale prefix to the base name of the
+file. For example, the Spanish locale variant resource bundle would be
+`ValidationMessages_es.properties`.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:bean-validation-advanced001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:bean-validation-advanced003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

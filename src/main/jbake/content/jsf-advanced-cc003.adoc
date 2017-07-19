@@ -1,0 +1,84 @@
+type=page
+status=published
+title=Validating Composite Component Values
+~~~~~~
+Validating Composite Component Values
+=====================================
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-advanced-cc002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-advanced-cc004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKHWO]]
+
+[[validating-composite-component-values]]
+14.3 Validating Composite Component Values
+------------------------------------------
+
+JavaServer Faces provides the following tags for validating values of
+input components. These tags can be used with the
+`composite:valueHolder` or the `composite:editableValueHolder` tag.
+
+link:#GKHVG[Table 14-2] lists commonly used validator tags. See
+link:jsf-page-core003.html#BNATC[Using the Standard Validators] for
+details and a complete list.
+
+[[sthref74]][[GKHVG]]
+
+Table 14-2 Validator Tags
+
+[width="27%",cols="100%,",options="header",]
+|=======================================================================
+|Tag Name |Description
+|`f:validateBean` |Delegates the validation of the local value to the
+Bean Validation API.
+
+|`f:validateRegex` |Uses the `pattern` attribute to validate the
+wrapping component. The entire pattern is matched against the `String`
+value of the component. If it matches, it is valid.
+
+|`f:validateRequired` |Enforces the presence of a value. Has the same
+effect as setting the `required` element of a composite component's
+attribute to `true`.
+|=======================================================================
+
+ +
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-advanced-cc002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-advanced-cc004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

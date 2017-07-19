@@ -1,0 +1,91 @@
+type=page
+status=published
+title=Overview of the EL
+~~~~~~
+Overview of the EL
+==================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-el.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-el002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAHQ]]
+
+[[overview-of-the-el]]
+9.1 Overview of the EL
+----------------------
+
+The EL allows page authors to use simple expressions to dynamically
+access data from JavaBeans components. For example, the `test` attribute
+of the following conditional tag is supplied with an EL expression that
+compares 0 with the number of items in the session-scoped bean named
+`cart`.
+
+[source,oac_no_warn]
+----
+<c:if test="${sessionScope.cart.numberOfItems > 0}">
+  ...
+</c:if>
+----
+
+See link:jsf-develop001.html#BNAQP[Using the EL to Reference Managed
+Beans] for more information on how to use the EL in JavaServer Faces
+applications.
+
+To summarize, the EL provides a way to use simple expressions to perform
+the following tasks:
+
+* Dynamically read application data stored in JavaBeans components,
+various data structures, and implicit objects
+* Dynamically write data, such as user input into forms, to JavaBeans
+components
+* Invoke arbitrary static and public methods
+* Dynamically perform arithmetic, boolean, and string operations
+* Dynamically construct collection objects and perform operations on
+collections
+
+In a JavaServer Faces page, an EL expression can be used either in
+static text or in the attribute of a custom tag or standard action.
+
+Finally, the EL provides a pluggable API for resolving expressions so
+that custom resolvers that can handle expressions not already supported
+by the EL can be implemented.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-el.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-el002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

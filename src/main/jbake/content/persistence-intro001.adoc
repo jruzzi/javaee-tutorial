@@ -1,0 +1,64 @@
+type=page
+status=published
+title=Overview of the Java Persistence API
+~~~~~~
+Overview of the Java Persistence API
+====================================
+2017-07-17T15:27:51Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:persistence-intro.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-intro002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[A1019685]]
+
+[[overview-of-the-java-persistence-api]]
+37.1 Overview of the Java Persistence API
+-----------------------------------------
+
+The Java Persistence API provides Java developers with an
+object/relational mapping facility for managing relational data in Java
+applications. Java Persistence consists of four areas:
+
+* The Java Persistence API
+* The query language
+* The Java Persistence Criteria API
+* Object/relational mapping metadata
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:persistence-intro.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-intro002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

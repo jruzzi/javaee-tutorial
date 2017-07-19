@@ -1,0 +1,71 @@
+type=page
+status=published
+title=Transactions
+~~~~~~
+Transactions
+============
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:partsupporttechs.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNCIH]]
+
+[[transactions]]
+51 Transactions
+---------------
+
+
+This chapter describes types of transactions and how they are managed in
+different applications.
+
+The following topics are addressed here:
+
+* link:transactions001.html#A1024277[Overview of Transactions]
+* link:transactions002.html#GIJRG[Transactions in Java EE Applications]
+* link:transactions003.html#BNCII[What Is a Transaction?]
+* link:transactions004.html#BNCIJ[Container-Managed Transactions]
+* link:transactions005.html#BNCIY[Bean-Managed Transactions]
+* link:transactions006.html#BNCJC[Transaction Timeouts]
+* link:transactions007.html#BNCJD[Updating Multiple Databases]
+* link:transactions008.html#BNCJG[Transactions in Web Components]
+* link:transactions009.html#GKCMI[Further Information about Transactions]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:partsupporttechs.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

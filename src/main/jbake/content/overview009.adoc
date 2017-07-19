@@ -1,39 +1,37 @@
 type=page
 status=published
-title=Overview009
+title=Java EE 7 APIs in the Java Platform, Standard Edition 7
 ~~~~~~
-++++
-<table cellspacing="0" cellpadding="0" width="100%">
-<tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="overview008.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview010.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
-++++
+Java EE 7 APIs in the Java Platform, Standard Edition 7
+=======================================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:overview008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:overview010.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
 
 [[GIRDR]]
 
-[[JEETT00315]]
 [[java-ee-7-apis-in-the-java-platform-standard-edition-7]]
 1.9 Java EE 7 APIs in the Java Platform, Standard Edition 7
 -----------------------------------------------------------
@@ -44,7 +42,6 @@ to Java EE applications.
 
 [[BNADA]]
 
-[[JEETT00876]]
 [[java-database-connectivity-api]]
 1.9.1 Java Database Connectivity API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,7 +63,6 @@ The Java SE 7 platform requires JDBC 4.1.
 
 [[BNADC]]
 
-[[JEETT00877]]
 [[java-naming-and-directory-interface-api]]
 1.9.2 Java Naming and Directory Interface API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,7 +103,6 @@ naming context or in any of its direct or indirect subcontexts.
 
 [[BNACT]]
 
-[[JEETT00878]]
 [[javabeans-activation-framework]]
 1.9.3 JavaBeans Activation Framework
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -120,7 +115,6 @@ perform those operations.
 
 [[BNACU]]
 
-[[JEETT00879]]
 [[java-api-for-xml-processing]]
 1.9.4 Java API for XML Processing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -141,7 +135,6 @@ You can find information on the W3C schema at
 
 [[BNACW]]
 
-[[JEETT00880]]
 [[java-architecture-for-xml-binding]]
 1.9.5 Java Architecture for XML Binding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,7 +150,6 @@ The Java EE 7 platform requires JAXB 2.2.
 
 [[BNACV]]
 
-[[JEETT00882]]
 [[java-api-for-xml-web-services]]
 1.9.6 Java API for XML Web Services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -185,7 +177,6 @@ The Java EE 7 platform requires JAX-WS 2.2.
 
 [[BNACX]]
 
-[[JEETT00881]]
 [[soap-with-attachments-api-for-java]]
 1.9.7 SOAP with Attachments API for Java
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -198,7 +189,6 @@ instead using the higher-level JAX-WS API.
 
 [[BNADD]]
 
-[[JEETT00883]]
 [[java-authentication-and-authorization-service]]
 1.9.8 Java Authentication and Authorization Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -211,7 +201,6 @@ JAAS is a Java programming language version of the standard Pluggable
 Authentication Module (PAM) framework, which extends the Java platform
 security architecture to support user-based authorization.
 
-[[JEETT1345]]
 [[sthref12]]
 
 [[common-annotations-for-the-java-platform]]
@@ -224,40 +213,20 @@ platform.
 The Java EE 7 platform requires Common Annotations for the Java Platform
 1.2.
 
-++++
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
-<tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="overview008.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview010.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-</tr>
-</table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
-++++
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:overview008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:overview010.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

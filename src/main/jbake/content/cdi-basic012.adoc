@@ -1,0 +1,113 @@
+type=page
+status=published
+title=Injecting Objects by Using Producer Methods
+~~~~~~
+Injecting Objects by Using Producer Methods
+===========================================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-basic011.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic013.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GJDID]]
+
+[[injecting-objects-by-using-producer-methods]]
+23.12 Injecting Objects by Using Producer Methods
+-------------------------------------------------
+
+Producer methods provide a way to inject objects that are not beans,
+objects whose values may vary at runtime, and objects that require
+custom initialization. For example, if you want to initialize a numeric
+value defined by a qualifier named `@MaxNumber`, you can define the
+value in a managed bean and then define a producer method,
+`getMaxNumber`, for it:
+
+[source,oac_no_warn]
+----
+private int maxNumber = 100;
+...
+@Produces @MaxNumber int getMaxNumber() {
+    return maxNumber;
+}
+----
+
+When you inject the object in another managed bean, the container
+automatically invokes the producer method, initializing the value to
+100:
+
+[source,oac_no_warn]
+----
+@Inject @MaxNumber private int maxNumber;
+----
+
+If the value can vary at runtime, the process is slightly different. For
+example, the following code defines a producer method that generates a
+random number defined by a qualifier called `@Random`:
+
+[source,oac_no_warn]
+----
+private java.util.Random random = 
+    new java.util.Random( System.currentTimeMillis() );
+
+java.util.Random getRandom() {
+        return random;
+}
+
+@Produces @Random int next() {
+    return getRandom().nextInt(maxNumber);
+}
+----
+
+When you inject this object in another managed bean, you declare a
+contextual instance of the object:
+
+[source,oac_no_warn]
+----
+@Inject @Random Instance<Integer> randomInt;
+----
+
+You then call the `get` method of the `Instance`:
+
+[source,oac_no_warn]
+----
+this.number = randomInt.get();
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-basic011.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic013.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

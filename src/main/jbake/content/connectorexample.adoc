@@ -1,0 +1,67 @@
+type=page
+status=published
+title=The Resource Adapter Examples
+~~~~~~
+The Resource Adapter Examples
+=============================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:resources005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:connectorexample001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GLODB]]
+
+[[the-resource-adapter-examples]]
+53 The Resource Adapter Examples
+--------------------------------
+
+
+This chapter describes two examples that demonstrate how to use resource
+adapters in Java EE applications and how to implement simple resource
+adapters.
+
+The following topics are addressed here:
+
+* link:connectorexample001.html#A1253757[Overview of the Resource Adapter
+Examples]
+* link:connectorexample002.html#CHDFHAID[The trading Example]
+* link:connectorexample003.html#CHDJEADB[The traffic Example]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:resources005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:connectorexample001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,69 @@
+type=page
+status=published
+title=Overview of the Java Persistence Query Language
+~~~~~~
+Overview of the Java Persistence Query Language
+===============================================
+2017-07-17T15:27:51Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:persistence-querylanguage.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-querylanguage002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[A1073303]]
+
+[[overview-of-the-java-persistence-query-language]]
+39.1 Overview of the Java Persistence Query Language
+----------------------------------------------------
+
+The query language uses the abstract persistence schemas of entities,
+including their relationships, for its data model and defines operators
+and expressions based on this data model. The scope of a query spans the
+abstract schemas of related entities that are packaged in the same
+persistence unit. The query language uses an SQL-like syntax to select
+objects or values based on entity abstract schema types and
+relationships among them.
+
+This chapter relies on the material presented in earlier chapters. For
+conceptual information, see link:persistence-intro.html#BNBPZ[Chapter 37,
+"Introduction to the Java Persistence API"]. For code examples, see
+link:persistence-basicexamples.html#GIJST[Chapter 38, "Running the
+Persistence Examples."]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:persistence-querylanguage.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-querylanguage002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,79 @@
+type=page
+status=published
+title=Overview of String-Based Criteria API Queries
+~~~~~~
+Overview of String-Based Criteria API Queries
+=============================================
+2017-07-17T15:27:51Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:persistence-string-queries.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-string-queries002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKJIV]]
+
+[[overview-of-string-based-criteria-api-queries]]
+41.1 Overview of String-Based Criteria API Queries
+--------------------------------------------------
+
+String-based Criteria API queries ("string-based queries") are Java
+programming language queries that use strings rather than strongly typed
+metamodel objects to specify entity attributes when traversing a data
+hierarchy. String-based queries are constructed similarly to metamodel
+queries, can be static or dynamic, and can express the same kind of
+queries and operations as strongly typed metamodel queries.
+
+Strongly typed metamodel queries are the preferred method of
+constructing Criteria API queries.
+
+The main advantage of string-based queries over metamodel queries is the
+ability to construct Criteria queries at development time without the
+need to generate static metamodel classes or otherwise access
+dynamically generated metamodel classes.
+
+The main disadvantage to string-based queries is their lack of type
+safety; this problem may lead to runtime errors due to type mismatches
+that would be caught at development time if you used strongly typed
+metamodel queries.
+
+For information on constructing criteria queries, see
+link:persistence-criteria.html#GJITV[Chapter 40, "Using the Criteria API
+to Create Queries"].
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:persistence-string-queries.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-string-queries002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,62 @@
+type=page
+status=published
+title=Concurrency and Security
+~~~~~~
+Concurrency and Security
+========================
+2017-07-17T15:27:55Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:concurrency-utilities003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:concurrency-utilities005.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CIHCACAA]]
+
+[[concurrency-and-security]]
+56.4 Concurrency and Security
+-----------------------------
+
+Concurrency Utilities for Java EE defers most security decisions to the
+application server implementation. If, however, the container supports a
+security context, that context can be propagated to the thread of
+execution. The `ContextService` can support several runtime behaviors,
+and the `security` attribute, if enabled, will propagate the container
+security principal.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:concurrency-utilities003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:concurrency-utilities005.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

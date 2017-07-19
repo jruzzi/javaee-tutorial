@@ -1,0 +1,103 @@
+type=page
+status=published
+title=Resource Injection
+~~~~~~
+Resource Injection
+==================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:injection.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:injection002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BABHDCAI]]
+
+[[resource-injection]]
+4.1 Resource Injection
+----------------------
+
+Resource injection enables you to inject any resource available in the
+JNDI namespace into any container-managed object, such as a servlet, an
+enterprise bean, or a managed bean. For example, you can use resource
+injection to inject data sources, connectors, or custom resources
+available in the JNDI namespace.
+
+The type you use for the reference to the injected instance is usually
+an interface, which decouples your code from the implementation of the
+resource.
+
+For example, the following code injects a data source object that
+provides connections to the default Java DB database shipped with
+GlassFish Server:
+
+[source,oac_no_warn]
+----
+public class MyServlet extends HttpServlet {
+    @Resource(name="java:comp/DefaultDataSource")
+    private javax.sql.DataSource dsc;
+    ...
+}
+----
+
+In addition to field-based injection as in the preceding example, you
+can inject resources using method-based injection:
+
+[source,oac_no_warn]
+----
+public class MyServlet extends HttpServlet {
+    private javax.sql.DataSource dsc;
+    ...
+    @Resource(name="java:comp/DefaultDataSource")
+    public void setDsc(java.sql.DataSource ds) {
+        dsc = ds;
+    }
+}
+----
+
+To use method-based injection, the setter method must follow the
+JavaBeans conventions for property names: The method name must begin
+with `set`, have a `void` return type, and have only one parameter.
+
+The `@Resource` annotation is in the `javax.annotation` package and is
+defined in JSR 250 (Common Annotations for the Java Platform). Resource
+injection resolves by name, so it is not typesafe: the type of the
+resource object is not known at compile time, so you can get runtime
+errors if the types of the object and its reference do not match.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:injection.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:injection002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

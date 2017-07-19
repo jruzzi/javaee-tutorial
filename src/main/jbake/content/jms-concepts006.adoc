@@ -1,0 +1,64 @@
+type=page
+status=published
+title=Further Information about JMS
+~~~~~~
+Further Information about JMS
+=============================
+2017-07-17T15:27:52Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jms-concepts005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-examples.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNCGU]]
+
+[[further-information-about-jms]]
+45.6 Further Information about JMS
+----------------------------------
+
+For more information about JMS, see
+
+* Java Message Service website:
++
+`http://www.oracle.com/technetwork/java/index-jsp-142945.html`
+* Java Message Service specification, version 2.0, available from:
++
+`http://jcp.org/en/jsr/detail?id=343`
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jms-concepts005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-examples.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

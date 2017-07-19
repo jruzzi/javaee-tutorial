@@ -1,0 +1,67 @@
+type=page
+status=published
+title=Further Information about the Concurrency Utilities
+~~~~~~
+Further Information about the Concurrency Utilities
+===================================================
+2017-07-17T15:27:55Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:concurrency-utilities006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partcasestudies.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CHDBIHAA]]
+
+[[further-information-about-the-concurrency-utilities]]
+56.7 Further Information about the Concurrency Utilities
+--------------------------------------------------------
+
+For more information about concurrency, see
+
+* Concurrency Utilities for Java EE specification:
++
+`http://jcp.org/en/jsr/detail?id=236`
+* Concurrency Utilities specification:
++
+`http://jcp.org/en/jsr/detail?id=166`
+* Concurrency Lesson in The Java Tutorials:
++
+`http://docs.oracle.com/javase/tutorial/essential/concurrency/`
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:concurrency-utilities006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partcasestudies.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

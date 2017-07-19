@@ -1,0 +1,85 @@
+type=page
+status=published
+title=Ajax Request Lifecycle
+~~~~~~
+Ajax Request Lifecycle
+======================
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-ajax007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax009.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKUAR]]
+
+[[ajax-request-lifecycle]]
+13.8 Ajax Request Lifecycle
+---------------------------
+
+An Ajax request varies from other typical JavaServer Faces requests, and
+its processing is also handled differently by the JavaServer Faces
+lifecycle.
+
+As described in link:jsf-intro008.html#GKNOJ[Partial Processing and
+Partial Rendering], when an Ajax request is received, the state
+associated with that request is captured by the
+`javax.faces.context.PartialViewContext`. This object provides access to
+information such as which components are targeted for
+processing/rendering. The `processPartial` method of
+`PartialViewContext` uses this information to perform partial component
+tree processing and rendering.
+
+The `execute` attribute of the `f:ajax` tag identifies which segments of
+the server-side component tree should be processed. Because components
+can be uniquely identified in the JavaServer Faces component tree, it is
+easy to identify and process a single component, a few components, or a
+whole tree. This is made possible by the `visitTree` method of the
+`UIComponent` class. The identified components then run through the
+JavaServer Faces request lifecycle phases.
+
+Similar to the `execute` attribute, the `render` attribute identifies
+which segments of the JavaServer Faces component tree need to be
+rendered during the render response phase.
+
+During the render response phase, the `render` attribute is examined.
+The identified components are found and asked to render themselves and
+their children. The components are then packaged up and sent back to the
+client as a response.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-ajax007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax009.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

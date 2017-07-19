@@ -1,0 +1,82 @@
+type=page
+status=published
+title=Creating Custom UI Components and Other Custom Objects
+~~~~~~
+Creating Custom UI Components and Other Custom Objects
+======================================================
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-advanced-cc004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-custom001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAVG]]
+
+[[creating-custom-ui-components-and-other-custom-objects]]
+15 Creating Custom UI Components and Other Custom Objects
+---------------------------------------------------------
+
+
+This chapter describes creating custom components for applications that
+have additional functionality not provided by standard JavaServer Faces
+components.
+
+The following topics are addressed here:
+
+* link:jsf-custom001.html#A1350198[Introduction to Creating Custom
+Components]
+* link:jsf-custom002.html#BNAVH[Determining Whether You Need a Custom
+Component or Renderer]
+* link:jsf-custom003.html#GLPCB[Understanding the Image Map Example]
+* link:jsf-custom004.html#BNAVT[Steps for Creating a Custom Component]
+* link:jsf-custom005.html#BNAVU[Creating Custom Component Classes]
+* link:jsf-custom006.html#BNAWA[Delegating Rendering to a Renderer]
+* link:jsf-custom007.html#BNAUT[Implementing an Event Listener]
+* link:jsf-custom008.html#BNAWD[Handling Events for Custom Components]
+* link:jsf-custom009.html#BNAWN[Defining the Custom Component Tag in a
+Tag Library Descriptor]
+* link:jsf-custom010.html#BNATT[Using a Custom Component]
+* link:jsf-custom011.html#BNAUS[Creating and Using a Custom Converter]
+* link:jsf-custom012.html#BNAUW[Creating and Using a Custom Validator]
+* link:jsf-custom013.html#BNATG[Binding Component Values and Instances to
+Managed Bean Properties]
+* link:jsf-custom014.html#BNATM[Binding Converters, Listeners, and
+Validators to Managed Bean Properties]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-advanced-cc004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-custom001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

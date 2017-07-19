@@ -1,0 +1,92 @@
+type=page
+status=published
+title=Beans as Injectable Objects
+~~~~~~
+Beans as Injectable Objects
+===========================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-basic004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic006.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIZKS]]
+
+[[beans-as-injectable-objects]]
+23.5 Beans as Injectable Objects
+--------------------------------
+
+The concept of injection has been part of Java technology for some time.
+Since the Java EE 5 platform was introduced, annotations have made it
+possible to inject resources and some other kinds of objects into
+container-managed objects. CDI makes it possible to inject more kinds of
+objects and to inject them into objects that are not container-managed.
+
+The following kinds of objects can be injected:
+
+* (Almost) any Java class
+* Session beans
+* Java EE resources: data sources, Java Message Service topics, queues,
+connection factories, and the like
+* Persistence contexts (Java Persistence API `EntityManager` objects)
+* Producer fields
+* Objects returned by producer methods
+* Web service references
+* Remote enterprise bean references
+
+For example, suppose that you create a simple Java class with a method
+that returns a string:
+
+[source,oac_no_warn]
+----
+package greetings;
+
+public class Greeting {
+    public String greet(String name) {
+        return "Hello, " + name + ".";
+    }
+}
+----
+
+This class becomes a bean that you can then inject into another class.
+This bean is not exposed to the EL in this form.
+link:cdi-basic009.html#GJBAK[Giving Beans EL Names] explains how you can
+make a bean accessible to the EL.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-basic004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic006.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

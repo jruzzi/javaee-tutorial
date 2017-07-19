@@ -1,0 +1,12 @@
+type=page
+status=published
+title=Description of the illustration javaeett_dt_025
+~~~~~~
+Description of the illustration javaeett_dt_025
+===============================================
+
+Diagram showing the database schema for the roster application
+
+image:../img/oracle.gif[Oracle,width=144,height=18] +
+link:../cpyr.html[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

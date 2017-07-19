@@ -1,0 +1,124 @@
+type=page
+status=published
+title=Starting and Stopping GlassFish Server
+~~~~~~
+Starting and Stopping GlassFish Server
+======================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:usingexamples001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNADI]]
+
+[[starting-and-stopping-glassfish-server]]
+2.2 Starting and Stopping GlassFish Server
+------------------------------------------
+
+You can start and stop GlassFish Server using either NetBeans IDE or the
+command line.
+
+[[CHDCACDI]]
+
+[[to-start-glassfish-server-using-netbeans-ide]]
+2.2.1 To Start GlassFish Server Using NetBeans IDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  Click the Services tab.
+2.  Expand Servers.
+3.  Right-click the GlassFish Server instance and select Start.
+
+[[sthref14]]
+
+[[to-stop-glassfish-server-using-netbeans-ide]]
+2.2.2 To Stop GlassFish Server Using NetBeans IDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To stop GlassFish Server using NetBeans IDE, right-click the GlassFish
+Server instance and select Stop.
+
+[[CHDBDDAF]]
+
+[[to-start-glassfish-server-using-the-command-line]]
+2.2.3 To Start GlassFish Server Using the Command Line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To start GlassFish Server from the command line, open a terminal window
+or command prompt and execute the following:
+
+[source,oac_no_warn]
+----
+asadmin start-domain --verbose
+----
+
+A domain is a set of one or more GlassFish Server instances managed by
+one administration server. The following elements are associated with a
+domain:
+
+* The GlassFish Server port number: The default is 8080.
+* The administration server's port number: The default is 4848.
+* An administration user name and password: The default user name is
+`admin`, and by default no password is required.
+
+You specify these values when you install GlassFish Server. The examples
+in this tutorial assume that you chose the default ports as well as the
+default user name and lack of password.
+
+With no arguments, the `start-domain` command initiates the default
+domain, which is `domain1`. The `--verbose` flag causes all logging and
+debugging output to appear on the terminal window or command prompt. The
+output also goes into the server log, which is located in
+domain-dir`/logs/server.log`.
+
+[[sthref15]]
+
+[[to-stop-glassfish-server-using-the-command-line]]
+2.2.4 To Stop GlassFish Server Using the Command Line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To stop GlassFish Server, open a terminal window or command prompt and
+execute:
+
+[source,oac_no_warn]
+----
+asadmin stop-domain domain1
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:usingexamples001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

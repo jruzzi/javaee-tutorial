@@ -1,0 +1,13 @@
+type=page
+status=published
+title=Description of the illustration javaeett_dt_031
+~~~~~~
+Description of the illustration javaeett_dt_031
+===============================================
+
+Diagram showing messages being lost when nondurable subscriptions are
+used
+
+image:../img/oracle.gif[Oracle,width=144,height=18] +
+link:../cpyr.html[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

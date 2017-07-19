@@ -1,0 +1,66 @@
+type=page
+status=published
+title=Messaging
+~~~~~~
+Messaging
+=========
+2017-07-17T15:27:52Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:persistence-cache002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-concepts.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GFIRP3]][[JEETT1712]]
+
+[[part-ix]]
+Part IX +
+---------
+
+[[messaging]]
+Messaging
+---------
+
+Part IX introduces messaging. This part contains the following chapters:
+
+* link:jms-concepts.html#BNCDQ[Chapter 45, "Java Message Service
+Concepts"]
+* link:jms-examples.html#BNCGV[Chapter 46, "Java Message Service
+Examples"]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:persistence-cache002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-concepts.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

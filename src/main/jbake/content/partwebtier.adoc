@@ -1,0 +1,87 @@
+type=page
+status=published
+title=The Web Tier
+~~~~~~
+The Web Tier
+============
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:packaging004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webapp.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNADP]][[JEETT00128]]
+
+[[part-iii]]
+Part III +
+----------
+
+[[the-web-tier]]
+The Web Tier
+------------
+
+Part III explores the technologies in the web tier. This part contains
+the following chapters:
+
+* link:webapp.html#BNADR[Chapter 6, "Getting Started with Web
+Applications"]
+* link:jsf-intro.html#BNAPH[Chapter 7, "JavaServer Faces Technology"]
+* link:jsf-facelets.html#GIEPX[Chapter 8, "Introduction to Facelets"]
+* link:jsf-el.html#GJDDD[Chapter 9, "Expression Language"]
+* link:jsf-page.html#BNAQZ[Chapter 10, "Using JavaServer Faces Technology
+in Web Pages"]
+* link:jsf-page-core.html#GJCUT[Chapter 11, "Using Converters, Listeners,
+and Validators"]
+* link:jsf-develop.html#BNATX[Chapter 12, "Developing with JavaServer
+Faces Technology"]
+* link:jsf-ajax.html#GKIOW[Chapter 13, "Using Ajax with JavaServer Faces
+Technology"]
+* link:jsf-advanced-cc.html#GKHXA[Chapter 14, "Composite Components:
+Advanced Topics and an Example"]
+* link:jsf-custom.html#BNAVG[Chapter 15, "Creating Custom UI Components
+and Other Custom Objects"]
+* link:jsf-configure.html#BNAWO[Chapter 16, "Configuring JavaServer Faces
+Applications"]
+* link:servlets.html#BNAFD[Chapter 17, "Java Servlet Technology"]
+* link:websocket.html#GKJIQ5[Chapter 18, "Java API for WebSocket"]
+* link:jsonp.html#GLRBB[Chapter 19, "JSON Processing"]
+* link:webi18n.html#BNAXU[Chapter 20, "Internationalizing and Localizing
+Web Applications"]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:packaging004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webapp.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

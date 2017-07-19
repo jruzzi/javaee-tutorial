@@ -1,0 +1,68 @@
+type=page
+status=published
+title=Using the Embedded Enterprise Bean Container
+~~~~~~
+Using the Embedded Enterprise Bean Container
+============================================
+2017-07-17T15:27:51Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:ejb-basicexamples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-embedded001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKCQZ]]
+
+[[using-the-embedded-enterprise-bean-container]]
+35 Using the Embedded Enterprise Bean Container
+-----------------------------------------------
+
+
+This chapter demonstrates how to use the embedded enterprise bean
+container to run enterprise bean applications in the Java SE
+environment, outside of a Java EE server.
+
+The following topics are addressed here:
+
+* link:ejb-embedded001.html#GKFAE[Overview of the Embedded Enterprise
+Bean Container]
+* link:ejb-embedded002.html#GKCRR[Developing Embeddable Enterprise Bean
+Applications]
+* link:ejb-embedded003.html#GKCPV[The standalone Example Application]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:ejb-basicexamples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-embedded001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

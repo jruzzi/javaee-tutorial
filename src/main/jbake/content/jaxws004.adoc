@@ -1,0 +1,65 @@
+type=page
+status=published
+title=Web Services Interoperability and JAX-WS
+~~~~~~
+Web Services Interoperability and JAX-WS
+========================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jaxws003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws005.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAZD]]
+
+[[web-services-interoperability-and-jax-ws]]
+28.4 Web Services Interoperability and JAX-WS
+---------------------------------------------
+
+JAX-WS supports the Web Services Interoperability (WS-I) Basic Profile
+Version 1.1. The WS-I Basic Profile is a document that clarifies the
+SOAP 1.1 and WSDL 1.1 specifications to promote SOAP interoperability.
+For links related to WS-I, see link:jaxws005.html#BNAZE[Further
+Information about JAX-WS].
+
+To support WS-I Basic Profile Version 1.1, the JAX-WS runtime supports
+doc/literal and rpc/literal encodings for services, static ports,
+dynamic proxies, and the Dynamic Invocation Interface (DII).
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jaxws003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws005.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

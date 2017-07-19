@@ -1,0 +1,66 @@
+type=page
+status=published
+title=What Are Web Services?
+~~~~~~
+What Are Web Services?
+======================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:webservices-intro.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webservices-intro002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIJVH]]
+
+[[what-are-web-services]]
+27.1 What Are Web Services?
+---------------------------
+
+Web services are client and server applications that communicate over
+the World Wide Web's (WWW) HyperText Transfer Protocol (HTTP). As
+described by the World Wide Web Consortium (W3C), web services provide a
+standard means of interoperating between software applications running
+on a variety of platforms and frameworks. Web services are characterized
+by their great interoperability and extensibility as well as their
+machine-processable descriptions, thanks to the use of XML. Web services
+can be combined in a loosely coupled way to achieve complex operations.
+Programs providing simple services can interact with each other to
+deliver sophisticated added-value services.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:webservices-intro.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webservices-intro002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

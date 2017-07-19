@@ -1,0 +1,79 @@
+type=page
+status=published
+title=Transactions in Java EE Applications
+~~~~~~
+Transactions in Java EE Applications
+====================================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:transactions001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIJRG]]
+
+[[transactions-in-java-ee-applications]]
+51.2 Transactions in Java EE Applications
+-----------------------------------------
+
+In a Java EE application, a transaction is a series of actions that must
+all complete successfully, or else all the changes in each action are
+backed out. Transactions end in either a commit or a rollback.
+
+The Java Transaction API (JTA) allows applications to access
+transactions in a manner that is independent of specific
+implementations. JTA specifies standard Java interfaces between a
+transaction manager and the parties involved in a distributed
+transaction system: the transactional application, the Java EE server,
+and the manager that controls access to the shared resources affected by
+the transactions.
+
+The JTA defines the `UserTransaction` interface that applications use to
+start, commit, or roll back transactions. Application components get a
+`UserTransaction` object through a JNDI lookup by using the name
+`java:comp/UserTransaction` or by requesting injection of a
+`UserTransaction` object. An application server uses a number of
+JTA-defined interfaces to communicate with a transaction manager; a
+transaction manager uses JTA-defined interfaces to interact with a
+resource manager.
+
+The JTA 1.2 specification is available at
+`http://jcp.org/en/jsr/detail?id=907`.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:transactions001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

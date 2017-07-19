@@ -1,0 +1,67 @@
+type=page
+status=published
+title=Overview of Transactions
+~~~~~~
+Overview of Transactions
+========================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:transactions.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[A1024277]]
+
+[[overview-of-transactions]]
+51.1 Overview of Transactions
+-----------------------------
+
+A typical enterprise application accesses and stores information in one
+or more databases. Because this information is critical for business
+operations, it must be accurate, current, and reliable. Data integrity
+would be lost if multiple programs were allowed to update the same
+information simultaneously or if a system that failed while processing a
+business transaction were to leave the affected data only partially
+updated. By preventing both of these scenarios, software transactions
+ensure data integrity. Transactions control the concurrent access of
+data by multiple programs. In the event of a system failure,
+transactions make sure that after recovery, the data will be in a
+consistent state.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:transactions.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

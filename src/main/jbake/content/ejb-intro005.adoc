@@ -1,0 +1,72 @@
+type=page
+status=published
+title=The Contents of an Enterprise Bean
+~~~~~~
+The Contents of an Enterprise Bean
+==================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:ejb-intro004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro006.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIPIO]]
+
+[[the-contents-of-an-enterprise-bean]]
+32.5 The Contents of an Enterprise Bean
+---------------------------------------
+
+To develop an enterprise bean, you must provide the following files.
+
+* Enterprise bean class: Implements the business methods of the
+enterprise bean and any lifecycle callback methods.
+* Business interfaces: Define the business methods implemented by the
+enterprise bean class. A business interface is not required if the
+enterprise bean exposes a local, no-interface view.
+* Helper classes: Other classes needed by the enterprise bean class,
+such as exception and utility classes.
+
+Package the programming artifacts in the preceding list either into an
+EJB JAR file (a stand-alone module that stores the enterprise bean) or
+within a web application archive (WAR) module. See
+link:packaging002.html#CHDFCDBG[Packaging Enterprise Beans in EJB JAR
+Modules] and link:packaging002.html#CHDJABEJ[Packaging Enterprise Beans
+in WAR Modules] for more information.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:ejb-intro004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro006.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

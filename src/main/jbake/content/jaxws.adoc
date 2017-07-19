@@ -1,0 +1,70 @@
+type=page
+status=published
+title=Building Web Services with JAX-WS
+~~~~~~
+Building Web Services with JAX-WS
+=================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:webservices-intro003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAYL]]
+
+[[building-web-services-with-jax-ws]]
+28 Building Web Services with JAX-WS
+------------------------------------
+
+
+This chapter describes Java API for XML Web Services (JAX-WS), a
+technology for building web services and clients that communicate using
+XML. JAX-WS allows developers to write message-oriented as well as
+Remote Procedure Call–oriented (RPC-oriented) web services.
+
+The following topics are addressed here:
+
+* link:jaxws001.html#A1250966[Overview of Java API for XML Web Services]
+* link:jaxws002.html#BNAYN[Creating a Simple Web Service and Clients with
+JAX-WS]
+* link:jaxws003.html#BNAZC[Types Supported by JAX-WS]
+* link:jaxws004.html#BNAZD[Web Services Interoperability and JAX-WS]
+* link:jaxws005.html#BNAZE[Further Information about JAX-WS]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:webservices-intro003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

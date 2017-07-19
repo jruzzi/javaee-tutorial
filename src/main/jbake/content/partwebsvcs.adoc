@@ -1,0 +1,72 @@
+type=page
+status=published
+title=Web Services
+~~~~~~
+Web Services
+============
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-adv-examples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webservices-intro.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAYK]][[JEETT00129]]
+
+[[part-vi]]
+Part VI +
+---------
+
+[[web-services]]
+Web Services
+------------
+
+Part VI explores web services. This part contains the following
+chapters:
+
+* link:webservices-intro.html#GIJTI[Chapter 27, "Introduction to Web
+Services"]
+* link:jaxws.html#BNAYL[Chapter 28, "Building Web Services with JAX-WS"]
+* link:jaxrs.html#GIEPU[Chapter 29, "Building RESTful Web Services with
+JAX-RS"]
+* link:jaxrs-client.html#BABEIGIH[Chapter 30, "Accessing REST Resources
+with the JAX-RS Client API"]
+* link:jaxrs-advanced.html#GJJXE[Chapter 31, "JAX-RS: Advanced Topics and
+an Example"]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-adv-examples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:webservices-intro.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

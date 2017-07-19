@@ -1,0 +1,73 @@
+type=page
+status=published
+title=Naming Conventions for Enterprise Beans
+~~~~~~
+Naming Conventions for Enterprise Beans
+=======================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:ejb-intro005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro007.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIPKS]]
+
+[[naming-conventions-for-enterprise-beans]]
+32.6 Naming Conventions for Enterprise Beans
+--------------------------------------------
+
+Because enterprise beans are composed of multiple parts, it's useful to
+follow a naming convention for your applications. link:#GIPLL[Table
+32-2] summarizes the conventions for the example beans in this tutorial.
+
+[[sthref150]][[GIPLL]]
+
+Table 32-2 Naming Conventions for Enterprise Beans
+
+[width="63%",cols="1%,47%,52%",options="header",]
+|================================================
+|Item |Syntax |Example
+|Enterprise bean name |name`Bean` |`AccountBean`
+|Enterprise bean class |name`Bean` |`AccountBean`
+|Business interface |name |`Account`
+|================================================
+
+ +
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:ejb-intro005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-intro007.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

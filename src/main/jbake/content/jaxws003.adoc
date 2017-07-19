@@ -1,0 +1,146 @@
+type=page
+status=published
+title=Types Supported by JAX-WS
+~~~~~~
+Types Supported by JAX-WS
+=========================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jaxws002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAZC]]
+
+[[types-supported-by-jax-ws]]
+28.3 Types Supported by JAX-WS
+------------------------------
+
+JAX-WS delegates the mapping of Java programming language types to and
+from XML definitions to JAXB. Application developers don't need to know
+the details of these mappings but should be aware that not every class
+in the Java language can be used as a method parameter or return type in
+JAX-WS.
+
+The following sections explain the default schema-to-Java and
+Java-to-schema data type bindings:
+
+* link:#BNAZT[Section 28.3.1, "Schema-to-Java Mapping"]
+* link:#BNAZW[Section 28.3.2, "Java-to-Schema Mapping"]
+
+[[BNAZT]]
+
+[[schema-to-java-mapping]]
+28.3.1 Schema-to-Java Mapping
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Java language provides a richer set of data types than XML schema.
+link:#BNAZU[Table 28-1] lists the mapping of XML data types to Java data
+types in JAXB.
+
+[[sthref133]][[BNAZU]]
+
+Table 28-1 Mapping of XML Data Types to Java Data Types in JAXB
+
+[width="27%",cols="100%,",options="header",]
+|=========================================================
+|XML Schema Type |Java Data Type
+|`xsd:string` |`java.lang.String`
+|`xsd:integer` |`java.math.BigInteger`
+|`xsd:int` |`int`
+|`xsd.long` |`long`
+|`xsd:short` |`short`
+|`xsd:decimal` |`java.math.BigDecimal`
+|`xsd:float` |`float`
+|`xsd:double` |`double`
+|`xsd:boolean` |`boolean`
+|`xsd:byte` |`byte`
+|`xsd:QName` |`javax.xml.namespace.QName`
+|`xsd:dateTime` |`javax.xml.datatype.XMLGregorianCalendar`
+|`xsd:base64Binary` |`byte[]`
+|`xsd:hexBinary` |`byte[]`
+|`xsd:unsignedInt` |`long`
+|`xsd:unsignedShort` |`int`
+|`xsd:unsignedByte` |`short`
+|`xsd:time` |`javax.xml.datatype.XMLGregorianCalendar`
+|`xsd:date` |`javax.xml.datatype.XMLGregorianCalendar`
+|`xsd:g` |`javax.xml.datatype.XMLGregorianCalendar`
+|`xsd:anySimpleType` |`java.lang.Object`
+|`xsd:anySimpleType` |`java.lang.String`
+|`xsd:duration` |`javax.xml.datatype.Duration`
+|`xsd:NOTATION` |`javax.xml.namespace.QName`
+|=========================================================
+
+ +
+
+[[BNAZW]]
+
+[[java-to-schema-mapping]]
+28.3.2 Java-to-Schema Mapping
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+link:#BNAZX[Table 28-2] shows the default mapping of Java classes to XML
+data types.
+
+[[sthref134]][[BNAZX]]
+
+Table 28-2 Mapping of Java Classes to XML Data Types in JAXB
+
+[width="49%",cols=",100%",options="header",]
+|=============================================================
+|Java Class |XML Data Type
+|`java.lang.String` |`xs:string`
+|`java.math.BigInteger` |`xs:integer`
+|`java.math.BigDecimal` |`xs:decimal`
+|`java.util.Calendar` |`xs:dateTime`
+|`java.util.Date` |`xs:dateTime`
+|`javax.xml.namespace.QName` |`xs:QName`
+|`java.net.URI` |`xs:string`
+|`javax.xml.datatype.XMLGregorianCalendar` |`xs:anySimpleType`
+|`javax.xml.datatype.Duration` |`xs:duration`
+|`java.lang.Object` |`xs:anyType`
+|`java.awt.Image` |`xs:base64Binary`
+|`javax.activation.DataHandler` |`xs:base64Binary`
+|`javax.xml.transform.Source` |`xs:base64Binary`
+|`java.util.UUID` |`xs:string`
+|=============================================================
+
+ +
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jaxws002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxws004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

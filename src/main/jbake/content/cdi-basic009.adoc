@@ -1,0 +1,89 @@
+type=page
+status=published
+title=Giving Beans EL Names
+~~~~~~
+Giving Beans EL Names
+=====================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-basic008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic010.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GJBAK]]
+
+[[giving-beans-el-names]]
+23.9 Giving Beans EL Names
+--------------------------
+
+To make a bean accessible through the EL:
+
+1.  Use the `@Named` built-in qualifier:
++
+[source,oac_no_warn]
+----
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Named
+@RequestScoped
+public class Printer {
+
+    @Inject @Informal Greeting greeting;
+    ...
+}
+----
++
+The `@Named` qualifier allows you to access the bean by using the bean
+name, with the first letter in lowercase. For example, a Facelets page
+would refer to the bean as `printer`.
++
+You can specify an argument to the `@Named` qualifier to use a
+nondefault name:
++
+[source,oac_no_warn]
+----
+@Named("MyPrinter")
+----
++
+With this annotation, the Facelets page would refer to the bean as
+`MyPrinter`.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-basic008.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic010.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

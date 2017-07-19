@@ -1,0 +1,79 @@
+type=page
+status=published
+title=Transaction Timeouts
+~~~~~~
+Transaction Timeouts
+====================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:transactions005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions007.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNCJC]]
+
+[[transaction-timeouts]]
+51.6 Transaction Timeouts
+-------------------------
+
+For container-managed transactions, you can use the Administration
+Console to configure the transaction timeout interval. See
+link:usingexamples003.html#BNADJ[Starting the Administration Console].
+
+For enterprise beans with bean-managed JTA transactions, you invoke the
+`setTransactionTimeout` method of the `UserTransaction` interface.
+
+[[sthref235]]
+
+[[to-set-a-transaction-timeout]]
+51.6.1 To Set a Transaction Timeout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  In the Administration Console, expand the Configurations node, then
+expand the server-config node and select Transaction Service.
+2.  On the Transaction Service page, set the value of the Transaction
+Timeout field to the value of your choice (for example, 5).
++
+With this setting, if the transaction has not completed within 5
+seconds, the EJB container rolls it back.
++
+The default value is 0, meaning that the transaction will not time out.
+3.  Click Save.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:transactions005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:transactions007.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

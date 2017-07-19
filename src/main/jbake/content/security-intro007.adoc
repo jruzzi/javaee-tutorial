@@ -1,0 +1,76 @@
+type=page
+status=published
+title=Further Information about Security
+~~~~~~
+Further Information about Security
+==================================
+2017-07-17T15:27:53Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:security-intro006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-webtier.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNBYJ]]
+
+[[further-information-about-security]]
+47.7 Further Information about Security
+---------------------------------------
+
+For more information about security in Java EE applications, see
+
+* Java EE 7 specification:
++
+`http://jcp.org/en/jsr/detail?id=342`
+* Enterprise JavaBeans 3.2 specification:
++
+`http://jcp.org/en/jsr/detail?id=345`
+* Implementing Enterprise Web Services 1.3 specification:
++
+`http://jcp.org/en/jsr/detail?id=109`
+* Java SE security information:
++
+`http://docs.oracle.com/javase/7/docs/technotes/guides/security/`
+* Java Servlet 4.0 specification:
++
+`http://jcp.org/en/jsr/detail?id=369`
+* Java Authorization Contract for Containers 1.5 specification:
++
+`http://jcp.org/en/jsr/detail?id=115`
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:security-intro006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:security-webtier.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

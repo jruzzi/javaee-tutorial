@@ -1,0 +1,97 @@
+type=page
+status=published
+title=Monitoring Events on the Client
+~~~~~~
+Monitoring Events on the Client
+===============================
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-ajax004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax006.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKDDF]]
+
+[[monitoring-events-on-the-client]]
+13.5 Monitoring Events on the Client
+------------------------------------
+
+To monitor ongoing Ajax requests, use the `onevent` attribute of the
+`f:ajax` tag. The value of this attribute is the name of a JavaScript
+function. JavaServer Faces calls the `onevent` function at each stage of
+the processing of an Ajax request: begin, complete, and success.
+
+When calling the JavaScript function assigned to the `onevent` property,
+JavaServer Faces passes a data object to it. The data object contains
+the properties listed in link:#GKGOE[Table 13-3].
+
+[[sthref70]][[GKGOE]]
+
+Table 13-3 Properties of the onevent Data Object
+
+[width="20%",cols="100%,",options="header",]
+|=======================================================================
+|Property |Description
+|`responseXML` |The response to the Ajax call in XML format
+
+|`responseText` |The response to the Ajax call in text format
+
+|`responseCode` |The response to the Ajax call in numeric code
+
+|`source` |The source of the current Ajax event: the DOM element
+
+|`status` |The status of the current Ajax call: `begin`, `complete`, or
+`success`
+
+|`type` |The type of the Ajax call: `event`
+|=======================================================================
+
+ +
+
+By using the `status` property of the data object, you can identify the
+current status of the Ajax request and monitor its progress. In the
+following example, `monitormyajaxevent` is a JavaScript function that
+monitors the Ajax request sent by the event:
+
+[source,oac_no_warn]
+----
+<f:ajax event="click" render="statusmessage" onevent="monitormyajaxevent"/>
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-ajax004.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax006.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,103 @@
+type=page
+status=published
+title=Registering a Custom Validator
+~~~~~~
+Registering a Custom Validator
+==============================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-configure007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-configure009.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAXD]]
+
+[[registering-a-custom-validator]]
+16.8 Registering a Custom Validator
+-----------------------------------
+
+If the application developer provides an implementation of the
+`javax.faces.validator.Validator` interface to perform validation, you
+must register this custom validator either by using the
+`@FacesValidator` annotation, as described in
+link:jsf-custom012.html#BNAUX[Implementing the Validator Interface], or
+by using the `validator` XML element in the application configuration
+resource file:
+
+[source,oac_no_warn]
+----
+<validator>
+    ...
+    <validator-id>FormatValidator</validator-id>
+    <validator-class>
+        myapplication.validators.FormatValidator
+    </validator-class>
+    <attribute>
+        ...
+        <attribute-name>formatPatterns</attribute-name>
+        <attribute-class>java.lang.String</attribute-class>
+    </attribute>
+</validator>
+----
+
+Attributes specified in a `validator` tag override any settings in the
+`@FacesValidator` annotation.
+
+The `validator-id` and `validator-class` elements are required
+subelements. The `validator-id` element represents the identifier under
+which the `Validator` class should be registered. This ID is used by the
+tag class corresponding to the custom `validator` tag.
+
+The `validator-class` element represents the fully qualified class name
+of the `Validator` class.
+
+The `attribute` element identifies an attribute associated with the
+`Validator` implementation. It has required `attribute-name` and
+`attribute-class` subelements. The `attribute-name` element refers to
+the name of the attribute as it appears in the `validator` tag. The
+`attribute-class` element identifies the Java type of the value
+associated with the attribute.
+
+link:jsf-custom012.html#BNAUW[Creating and Using a Custom Validator]
+explains how to implement the `Validator` interface.
+
+link:jsf-custom012.html#BNATV[Using a Custom Validator] explains how to
+reference the validator from the page.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-configure007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-configure009.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

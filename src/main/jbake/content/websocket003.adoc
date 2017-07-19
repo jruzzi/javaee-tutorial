@@ -1,0 +1,102 @@
+type=page
+status=published
+title=Programmatic Endpoints
+~~~~~~
+Programmatic Endpoints
+======================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:websocket002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:websocket004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BABGJEIG]]
+
+[[programmatic-endpoints]]
+18.3 Programmatic Endpoints
+---------------------------
+
+The following example shows how to create an endpoint by extending the
+`Endpoint` class:
+
+[source,oac_no_warn]
+----
+public class EchoEndpoint extends Endpoint {
+   @Override
+   public void onOpen(final Session session, EndpointConfig config) {
+      session.addMessageHandler(new MessageHandler.Whole<String>() {
+         @Override
+         public void onMessage(String msg) {
+            try {
+               session.getBasicRemote().sendText(msg);
+            } catch (IOException e) { ... }
+         }
+      });
+   }
+}
+----
+
+This endpoint echoes every message received. The `Endpoint` class
+defines three lifecycle methods: `onOpen`, `onClose`, and `onError`. The
+`EchoEndpoint` class implements the `onOpen` method, which is the only
+abstract method in the `Endpoint` class.
+
+The `Session` parameter represents a conversation between this endpoint
+and the remote endpoint. The `addMessageHandler` method registers
+message handlers, and the `getBasicRemote` method returns an object that
+represents the remote endpoint. The `Session` interface is covered in
+detail in the rest of this chapter.
+
+The message handler is implemented as an anonymous inner class. The
+`onMessage` method of the message handler is invoked when the endpoint
+receives a text message.
+
+To deploy this programmatic endpoint, use the following code in your
+Java EE application:
+
+[source,oac_no_warn]
+----
+ServerEndpointConfig.Builder.create(EchoEndpoint.class, "/echo").build();
+----
+
+When you deploy your application, the endpoint is available at
+`ws://<host>:<port>/<application>/echo`; for example,
+`ws://localhost:8080/echoapp/echo`.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:websocket002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:websocket004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -2,36 +2,34 @@ type=page
 status=published
 title=Preface
 ~~~~~~
-++++
-<table cellspacing="0" cellpadding="0" width="100%">
-<tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="title.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="partintro.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
-++++
+Preface
+=======
+2017-07-17T15:27:46Z
 
-[[JEETT00063]]
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:title.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partintro.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
 [[GEXAF]]
 
 [[preface]]
@@ -63,9 +61,8 @@ The following topics are addressed here:
 * link:#GKVTF[Conventions]
 * link:#GFIRK[Default Paths and File Names]
 
-[[JEETT1336]]
-
 [[CIACGIBD]]
+
 [[audience]]
 Audience
 ~~~~~~~~
@@ -75,7 +72,6 @@ deploying Java EE 7 applications. It covers the technologies comprising
 the Java EE platform and describes how to develop Java EE components and
 deploy them on the Java EE Software Development Kit (SDK).
 
-[[JEETT1337]]
 [[CIAHFICG]]
 
 [[documentation-accessibility]]
@@ -96,7 +92,6 @@ support through My Oracle Support. For information, visit
 `http://www.oracle.com/pls/topic/lookup?ctx=acc&id=trs` if you are
 hearing impaired.
 
-[[JEETT00301]]
 [[BNAAC]]
 
 [[before-you-read-this-book]]
@@ -108,7 +103,6 @@ of the Java programming language. A good way to get to that point is to
 work through the Java Tutorials
 (`http://docs.oracle.com/javase/tutorial/index.html`).
 
-[[JEETT00302]]
 [[GIPRL]]
 
 [[related-documentation]]
@@ -141,7 +135,6 @@ Samples are bundled with the Java EE Software Development Kit (SDK) and
 are also available from the GlassFish Samples project page at
 `https://glassfish-samples.java.net/`.
 
-[[JEETT00303]]
 [[GKVTF]]
 
 [[conventions]]
@@ -151,7 +144,7 @@ Conventions
 The following table describes the typographic conventions that are used
 in this book.
 
-[width="55%", options="header",]
+[width="55%",cols="28%,72%,",options="header",]
 |=======================================================================
 |Convention |Meaning |Example
 |Boldface |Boldface type indicates graphical user interface elements
@@ -179,9 +172,8 @@ The command to remove a file is `rm` filename.
 
 |=======================================================================
 
+ +
 
-
-[[JEETT00304]]
 [[GFIRK]]
 
 [[default-paths-and-file-names]]
@@ -191,7 +183,7 @@ Default Paths and File Names
 The following table describes the default paths and file names that are
 used in this book.
 
-[width="50%",options="header",]
+[width="51%",cols="38%,62%,",options="header",]
 |=======================================================================
 |Placeholder |Description |Default Value
 |as-install |Represents the base installation directory for GlassFish
@@ -224,41 +216,22 @@ Update Tool. |as-install-parent`/docs/javaee-tutorial`
 is stored. |as-install`/domains/domain1`
 |=======================================================================
 
- 
-++++
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
-<tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="title.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="partintro.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-</tr>
-</table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
-++++
+ +
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:title.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partintro.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

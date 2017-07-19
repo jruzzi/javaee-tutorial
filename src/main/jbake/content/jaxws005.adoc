@@ -1,0 +1,71 @@
+type=page
+status=published
+title=Further Information about JAX-WS
+~~~~~~
+Further Information about JAX-WS
+================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jaxws004.html[image:img/leftnav.gif[Previous] +
+Previous]  |link:jaxrs.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAZE]]
+
+[[further-information-about-jax-ws]]
+28.5 Further Information about JAX-WS
+-------------------------------------
+
+For more information about JAX-WS and related technologies, see
+
+* Java API for XML Web Services 2.2 specification:
++
+`http://jcp.org/en/jsr/detail?id=224`
+* JAX-WS home:
++
+`https://jax-ws.java.net/`
+* Simple Object Access Protocol (SOAP) 1.2 W3C Note:
++
+`http://www.w3.org/TR/soap/`
+* Web Services Description Language (WSDL) 1.1 W3C Note:
++
+`http://www.w3.org/TR/wsdl`
+* WS-I Basic Profile 1.2 and 2.0:
++
+`http://www.ws-i.org`
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jaxws004.html[image:img/leftnav.gif[Previous] +
+Previous]  |link:jaxrs.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

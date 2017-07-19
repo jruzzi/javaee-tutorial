@@ -1,0 +1,98 @@
+type=page
+status=published
+title=Common Client Interface
+~~~~~~
+Common Client Interface
+=======================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:resources002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:resources004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GIPJU]]
+
+[[common-client-interface]]
+52.3 Common Client Interface
+----------------------------
+
+This section explains how components use the Connector Architecture
+Common Client Interface (CCI) API and a resource adapter to access data
+from an EIS. The CCI API defines a set of interfaces and classes whose
+methods allow a client to perform typical data access operations. The
+CCI interfaces and classes are as follows.
+
+* `ConnectionFactory`: Provides an application component with a
+`Connection` instance to an EIS.
+* `Connection`: Represents the connection to the underlying EIS.
+* `ConnectionSpec`: Provides a means for an application component to
+pass connection-request-specific properties to the `ConnectionFactory`
+when making a connection request.
+* `Interaction`: Provides a means for an application component to
+execute EIS functions, such as database stored procedures.
+* `InteractionSpec`: Holds properties pertaining to an application
+component's interaction with an EIS.
+* `Record`: The superinterface for the various kinds of record
+instances. Record instances can be `MappedRecord`, `IndexedRecord`, or
+`ResultSet` instances, all of which inherit from the `Record` interface.
+* `RecordFactory`: Provides an application component with a `Record`
+instance.
+* `IndexedRecord`: Represents an ordered collection of `Record`
+instances based on the `java.util.List` interface.
+
+A client or application component that uses the CCI to interact with an
+underlying EIS does so in a prescribed manner. The component must
+establish a connection to the EIS's resource manager, and it does so
+using the `ConnectionFactory`. The `Connection` object represents the
+connection to the EIS and is used for subsequent interactions with the
+EIS.
+
+The component performs its interactions with the EIS, such as accessing
+data from a specific table, using an `Interaction` object. The
+application component defines the Interaction object by using an
+`InteractionSpec` object. When it reads data from the EIS, such as from
+database tables, or writes to those tables, the application component
+does so by using a particular type of `Record` instance: a
+`MappedRecord`, an `IndexedRecord`, or a `ResultSet` instance.
+
+Note, too, that a client application that relies on a CCI resource
+adapter is very much like any other Java EE client that uses enterprise
+bean methods.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:resources002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:resources004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

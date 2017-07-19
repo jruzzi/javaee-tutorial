@@ -1,0 +1,84 @@
+type=page
+status=published
+title=Starting the Administration Console
+~~~~~~
+Starting the Administration Console
+===================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:usingexamples002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNADJ]]
+
+[[starting-the-administration-console]]
+2.3 Starting the Administration Console
+---------------------------------------
+
+To administer GlassFish Server and manage users, resources, and Java EE
+applications, use the Administration Console tool. GlassFish Server must
+be running before you invoke the Administration Console. To start the
+Administration Console, open a browser at `http://localhost:4848/`.
+
+[[GJKST]]
+
+[[to-start-the-administration-console-using-netbeans-ide]]
+2.3.1 To Start the Administration Console Using NetBeans IDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  Click the Services tab.
+2.  Expand Servers.
+3.  Right-click the GlassFish Server instance and select View Domain
+Admin Console.
++
+
+[width="100%",cols="100%",]
+|=======================================================================
+a|
+Note:
+
+NetBeans IDE uses your default web browser to open the Administration
+Console.
+
+|=======================================================================
+
+ +
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:usingexamples002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

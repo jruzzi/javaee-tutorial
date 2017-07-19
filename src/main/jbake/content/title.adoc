@@ -1,35 +1,33 @@
 type=page
 status=published
-title=Java EE Tutorial
+title=Java Platform, Enterprise Edition The Java EE Tutorial, Release 8
 ~~~~~~
-++++
-<table cellspacing="0" cellpadding="0" width="100%">
-<tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="toc.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="preface.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
-++++
+Java Platform, Enterprise Edition The Java EE Tutorial, Release 8
+=================================================================
+2017-07-17T15:27:46Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:toc.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:preface.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
 
 
 [[java-platform-enterprise-edition]]
@@ -38,23 +36,22 @@ Java Platform, Enterprise Edition
 
 The Java EE Tutorial
 
-Release 7
+Release 8
 
-E39031-02
+E63026-01
 
-September 2014
-
-Beta Draft
+August 2017
 
 [[sthref1]]
 
 '''''
 
-Java Platform, Enterprise Edition The Java EE Tutorial, Release 7
+Java Platform, Enterprise Edition The Java EE Tutorial, Release 8
 
-E39031-02
+E63026-01
 
-Copyright © 2014, Oracle and/or its affiliates. All rights reserved.
+Copyright © 2014, 2017 Oracle and/or its affiliates. All rights
+reserved.
 
 Primary Author:  Eric Jendrock, Ricardo Cervera-Navarro, Ian Evans, Kim
 Haase, William Markito
@@ -122,69 +119,20 @@ damages incurred due to your access to or use of third-party content,
 products, or services, except as set forth in an applicable agreement
 between you and Oracle.
 
-This documentation is in preproduction status and is intended for
-demonstration and preliminary use only. It may not be specific to the
-hardware on which you are using the software. Oracle Corporation and its
-affiliates are not responsible for and expressly disclaim all warranties
-of any kind with respect to this documentation and will not be
-responsible for any loss, costs, or damages incurred due to the use of
-this documentation.
+'''''
 
-The information contained in this document is for informational sharing
-purposes only and should be considered in your capacity as a customer
-advisory board member or pursuant to your beta trial agreement only. It
-is not a commitment to deliver any material, code, or functionality, and
-should not be relied upon in making purchasing decisions. The
-development, release, and timing of any features or functionality
-described in this document remains at the sole discretion of Oracle.
-
-This document in any form, software or printed matter, contains
-proprietary information that is the exclusive property of Oracle. Your
-access to and use of this confidential material is subject to the terms
-and conditions of your Oracle Master Agreement, Oracle License and
-Services Agreement, Oracle PartnerNetwork Agreement, Oracle distribution
-agreement, or other license agreement which has been executed by you and
-Oracle and with which you agree to comply. This document and information
-contained herein may not be disclosed, copied, reproduced, or
-distributed to anyone outside Oracle without prior written consent of
-Oracle. This document is not part of your license agreement nor can it
-be incorporated into any contractual agreement with Oracle or its
-subsidiaries or affiliates.
-
-++++
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
-<tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="toc.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="preface.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-</tr>
-</table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
-++++
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:toc.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:preface.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

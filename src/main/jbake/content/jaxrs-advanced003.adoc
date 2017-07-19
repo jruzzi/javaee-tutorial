@@ -1,0 +1,167 @@
+type=page
+status=published
+title=Subresources and Runtime Resource Resolution
+~~~~~~
+Subresources and Runtime Resource Resolution
+============================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jaxrs-advanced002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxrs-advanced004.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKNAV]]
+
+[[subresources-and-runtime-resource-resolution]]
+31.3 Subresources and Runtime Resource Resolution
+-------------------------------------------------
+
+You can use a resource class to process only a part of the URI request.
+A root resource can then implement subresources that can process the
+remainder of the URI path.
+
+A resource class method that is annotated with `@Path` is either a
+subresource method or a subresource locator.
+
+* A subresource method is used to handle requests on a subresource of
+the corresponding resource.
+* A subresource locator is used to locate subresources of the
+corresponding resource.
+
+The following topics are addressed here:
+
+* link:#GKLAG[Section 31.3.1, "Subresource Methods"]
+* link:#GKRHR[Section 31.3.2, "Subresource Locators"]
+
+[[GKLAG]]
+
+[[subresource-methods]]
+31.3.1 Subresource Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A subresource method handles an HTTP request directly. The method must
+be annotated with a request method designator, such as `@GET` or
+`@POST`, in addition to `@Path`. The method is invoked for request URIs
+that match a URI template created by concatenating the URI template of
+the resource class with the URI template of the method.
+
+The following code snippet shows how a subresource method can be used to
+extract the last name of an employee when the employee's email address
+is provided:
+
+[source,oac_no_warn]
+----
+@Path("/employeeinfo")
+public class EmployeeInfo {
+
+    public employeeinfo() {}
+
+    @GET
+    @Path("/employees/{firstname}.{lastname}@{domain}.com")
+    @Produces("text/xml")
+    public String getEmployeeLastName(@PathParam("lastname") String lastName) {
+       ...
+    }
+}
+----
+
+The `getEmployeeLastName` method returns `doe` for the following `GET`
+request:
+
+[source,oac_no_warn]
+----
+GET /employeeinfo/employees/john.doe@example.com
+----
+
+[[GKRHR]]
+
+[[subresource-locators]]
+31.3.2 Subresource Locators
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A subresource locator returns an object that will handle an HTTP
+request. The method must not be annotated with a request method
+designator. You must declare a subresource locator within a subresource
+class, and only subresource locators are used for runtime resource
+resolution.
+
+The following code snippet shows a subresource locator:
+
+[source,oac_no_warn]
+----
+// Root resource class
+@Path("/employeeinfo")
+public class EmployeeInfo {
+
+    // Subresource locator: obtains the subresource Employee
+    // from the path /employeeinfo/employees/{empid}
+    @Path("/employees/{empid}")
+    public Employee getEmployee(@PathParam("empid") String id) {
+        // Find the Employee based on the id path parameter
+        Employee emp = ...;
+        ...
+        return emp;
+    }
+}
+
+// Subresource class
+public class Employee {
+
+    // Subresource method: returns the employee's last name
+    @GET
+    @Path("/lastname")
+    public String getEmployeeLastName() {
+        ...
+        return lastName;
+    }
+}
+----
+
+In this code snippet, the `getEmployee` method is the subresource
+locator that provides the `Employee` object, which services requests for
+`lastname`.
+
+If your HTTP request is `GET /employeeinfo/employees/as209/`, the
+`getEmployee` method returns an `Employee` object whose id is `as209`.
+At runtime, JAX-RS sends a `GET /employeeinfo/employees/as209/lastname`
+request to the `getEmployeeLastName` method. The `getEmployeeLastName`
+method retrieves and returns the last name of the employee whose id is
+`as209`.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jaxrs-advanced002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxrs-advanced004.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

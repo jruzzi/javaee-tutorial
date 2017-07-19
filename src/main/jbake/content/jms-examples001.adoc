@@ -1,0 +1,74 @@
+type=page
+status=published
+title=Building and Running Java Message Service Examples
+~~~~~~
+Building and Running Java Message Service Examples
+==================================================
+2017-07-17T15:27:52Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jms-examples.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-examples002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[A1251921]]
+
+[[building-and-running-java-message-service-examples]]
+46.1 Building and Running Java Message Service Examples
+-------------------------------------------------------
+
+The examples are in the tut-install`/examples/jms/` directory.
+
+To build and run each example:
+
+1.  Use NetBeans IDE or Maven to compile, package, and in some cases
+deploy the example.
+2.  Use NetBeans IDE, Maven, or the `appclient` command to run the
+application client, or use the browser to run the web application
+examples.
+
+Before you deploy or run the examples, you need to create resources for
+them. Some examples have a `glassfish-resources.xml` file that is used
+to create resources for that example and others. You can use the
+`asadmin` command to create the resources.
+
+To use the `asadmin` and `appclient` commands, you need to put the
+GlassFish Server `bin` directories in your command path, as described in
+link:usingexamples001.html#GEXBC[SDK Installation Tips].
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jms-examples.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jms-examples002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

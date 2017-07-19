@@ -1,0 +1,176 @@
+type=page
+status=published
+title=Entity Graph Basics
+~~~~~~
+Entity Graph Basics
+===================
+2017-07-17T15:27:52Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:persistence-entitygraphs001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-entitygraphs003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BABCJBCG]]
+
+[[entity-graph-basics]]
+43.2 Entity Graph Basics
+------------------------
+
+You can create entity graphs statically by using annotations or a
+deployment descriptor, or dynamically by using standard interfaces.
+
+You can use an entity graph with the `EntityManager.find` method or as
+part of a JPQL or Criteria API query by specifying the entity graph as a
+hint to the operation or query.
+
+Entity graphs have attributes that correspond to the fields that will be
+eagerly fetched during a `find` or query operation. The primary key and
+version fields of the entity class are always fetched and do not need to
+be explicitly added to an entity graph.
+
+[[sthref182]]
+
+[[the-default-entity-graph]]
+43.2.1 The Default Entity Graph
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, all fields in an entity are fetched lazily unless the
+`fetch` attribute of the entity metadata is set to
+`javax.persistence.FetchType.EAGER`. The default entity graph consists
+of all the fields of an entity whose fields are set to be eagerly
+fetched.
+
+For example, the following `EmailMessage` entity specifies that some
+fields will be fetched eagerly:
+
+[source,oac_no_warn]
+----
+@Entity
+public class EmailMessage implements Serializable {
+    @Id
+    String messageId;
+    @Basic(fetch=EAGER)
+    String subject;
+    String body;
+    @Basic(fetch=EAGER)
+    String sender;
+    @OneToMany(mappedBy="message", fetch=LAZY)
+    Set<EmailAttachment> attachments;
+    ...
+}
+----
+
+The default entity graph for this entity would contain the `messageId`,
+`subject`, and `sender` fields, but not the `body` or `attachments`
+fields.
+
+[[sthref183]]
+
+[[using-entity-graphs-in-persistence-operations]]
+43.2.2 Using Entity Graphs in Persistence Operations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entity graphs are used by creating an instance of the
+`javax.persistence.EntityGraph` interface by calling either
+`EntityManager.getEntityGraph` for named entity graphs or
+`EntityManager.createEntityGraph` for creating dynamic entity graphs.
+
+A named entity graph is an entity graph specified by the
+`@NamedEntityGraph` annotation applied to entity classes, or the
+`named-entity-graph` element in the application's deployment
+descriptors. Named entity graphs defined within the deployment
+descriptor override any annotation-based entity graphs with the same
+name.
+
+The created entity graph can be either a fetch graph or a load graph.
+
+The following topics are addressed here:
+
+* link:#BABGEFCG[Section 43.2.2.1, "Fetch Graphs"]
+* link:#BABHJBHG[Section 43.2.2.2, "Load Graphs"]
+
+[[BABGEFCG]]
+
+[[fetch-graphs]]
+43.2.2.1 Fetch Graphs
+^^^^^^^^^^^^^^^^^^^^^
+
+To specify a fetch graph, set the `javax.persistence.fetchgraph`
+property when you execute an `EntityManager.find` or query operation. A
+fetch graph consists of only the fields explicitly specified in the
+`EntityGraph` instance, and ignores the default entity graph settings.
+
+In the following example, the default entity graph is ignored, and only
+the `body` field is included in the dynamically created fetch graph:
+
+[source,oac_no_warn]
+----
+EntityGraph<EmailMessage> eg = em.createEntityGraph(EmailMessage.class);
+eg.addAttributeNodes("body");
+...
+Properties props = new Properties();
+props.put("javax.persistence.fetchgraph", eg);
+EmailMessage message = em.find(EmailMessage.class, id, props);
+----
+
+[[BABHJBHG]]
+
+[[load-graphs]]
+43.2.2.2 Load Graphs
+^^^^^^^^^^^^^^^^^^^^
+
+To specify a load graph, set the `javax.persistence.loadgraph` property
+when you execute an `EntityManager.find` or query operation. A load
+graph consists of the fields explicitly specified in the `EntityGraph`
+instance plus any fields in the default entity graph.
+
+In the following example, the dynamically created load graph contains
+all the fields in the default entity graph plus the `body` field:
+
+[source,oac_no_warn]
+----
+EntityGraph<EmailMessage> eg = em.createEntityGraph(EmailMessage.class);
+eg.addAttributeNodes("body");
+...
+Properties props = new Properties();
+props.put("javax.persistence.loadgraph", eg);
+EmailMessage message = em.find(EmailMessage.class, id, props);
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:persistence-entitygraphs001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:persistence-entitygraphs003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

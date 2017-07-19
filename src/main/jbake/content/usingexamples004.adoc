@@ -1,0 +1,96 @@
+type=page
+status=published
+title=Starting and Stopping the Java DB Server
+~~~~~~
+Starting and Stopping the Java DB Server
+========================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:usingexamples003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples005.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNADK]]
+
+[[starting-and-stopping-the-java-db-server]]
+2.4 Starting and Stopping the Java DB Server
+--------------------------------------------
+
+GlassFish Server includes the Java DB database server.
+
+To start the Java DB server from the command line, open a terminal
+window or command prompt and execute:
+
+[source,oac_no_warn]
+----
+asadmin start-database
+----
+
+To stop the Java DB server from the command line, open a terminal window
+or command prompt and execute:
+
+[source,oac_no_warn]
+----
+asadmin stop-database
+----
+
+For information about the Java DB included with GlassFish Server, see
+`http://www.oracle.com/technetwork/java/javadb/overview/index.html`.
+
+[[GJSFS]]
+
+[[to-start-the-database-server-using-netbeans-ide]]
+2.4.1 To Start the Database Server Using NetBeans IDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you start GlassFish Server using NetBeans IDE, the database server
+starts automatically. If you ever need to start the server manually,
+however, follow these steps.
+
+1.  Click the Services tab.
+2.  Expand Databases.
+3.  Right-click Java DB and select Start Server.
+
+
+Next Steps
+
+To stop the database using NetBeans IDE, right-click Java DB and select
+Stop Server.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:usingexamples003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples005.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

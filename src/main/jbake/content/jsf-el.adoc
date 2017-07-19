@@ -1,0 +1,77 @@
+type=page
+status=published
+title=Expression Language
+~~~~~~
+Expression Language
+===================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-facelets009.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-el001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GJDDD]]
+
+[[expression-language]]
+9 Expression Language
+---------------------
+
+
+This chapter introduces the Expression Language (also referred to as the
+EL), which provides an important mechanism for enabling the presentation
+layer (web pages) to communicate with the application logic (managed
+beans). The EL is used by several JavaEE technologies, such as
+JavaServer Faces technology, JavaServer Pages (JSP) technology, and
+Contexts and Dependency Injection for Java EE (CDI). The EL can also be
+used in stand-alone environments. This chapter only covers the use of
+the EL in Java EE containers.
+
+The following topics are addressed here:
+
+* link:jsf-el001.html#BNAHQ[Overview of the EL]
+* link:jsf-el002.html#BNAHR[Immediate and Deferred Evaluation Syntax]
+* link:jsf-el003.html#BNAHU[Value and Method Expressions]
+* link:jsf-el004.html#CIHGABHD[Operations on Collection Objects]
+* link:jsf-el005.html#BNAIK[Operators]
+* link:jsf-el006.html#BNAIL[Reserved Words]
+* link:jsf-el007.html#BNAIM[Examples of EL Expressions]
+* link:jsf-el008.html#CIHGBBHA[Further Information about the Expression
+Language]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-facelets009.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-el001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

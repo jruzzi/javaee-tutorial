@@ -1,0 +1,81 @@
+type=page
+status=published
+title=Batch Processing
+~~~~~~
+Batch Processing
+================
+2017-07-17T15:27:54Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:interceptors003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:batch-processing001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKJIQ6]]
+
+[[batch-processing]]
+55 Batch Processing
+-------------------
+
+
+This chapter describes Batch Applications for the Java Platform (JSR
+352), which provides support for defining, implementing, and running
+batch jobs. Batch jobs are tasks that can be executed without user
+interaction. The batch framework is composed of a job specification
+language based on XML, a Java API, and a batch runtime.
+
+The following topics are addressed here:
+
+* link:batch-processing001.html#BCGJDEEH[Introduction to Batch
+Processing]
+* link:batch-processing002.html#BCGGIBHA[Batch Processing in Java EE]
+* link:batch-processing003.html#BCGHBJIG[Simple Use Case]
+* link:batch-processing004.html#BCGDDBBG[Using the Job Specification
+Language]
+* link:batch-processing005.html#BCGHDHGH[Creating Batch Artifacts]
+* link:batch-processing006.html#BCGCAHCB[Submitting Jobs to the Batch
+Runtime]
+* link:batch-processing007.html#BCGBBGJI[Packaging Batch Applications]
+* link:batch-processing008.html#BCGJHEHJ[The webserverlog Example
+Application]
+* link:batch-processing009.html#BCGFCACD[The phonebilling Example
+Application]
+* link:batch-processing010.html#BCGHCHAJ[Further Information about Batch
+Processing]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:interceptors003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:batch-processing001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

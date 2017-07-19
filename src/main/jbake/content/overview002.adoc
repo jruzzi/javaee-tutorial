@@ -1,39 +1,37 @@
 type=page
 status=published
-title=Overview002
+title=Java EE 7 Platform Highlights
 ~~~~~~
-++++
-<table cellspacing="0" cellpadding="0" width="100%">
-<tr>
-<td align="left" valign="top"><b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-<b>Release 7 Java Platform, Enterprise Edition</b><br />
-E39031-02</td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span class="icon">Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<hr />
-<table cellspacing="0" cellpadding="0" width="100">
-<tr>
-<td align="center"><a href="overview001.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview003.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
-++++
+Java EE 7 Platform Highlights
+=============================
+2017-07-17T15:27:46Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:overview001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:overview003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
 
 [[GIQVH]]
 
-[[JEETT00306]]
 [[java-ee-7-platform-highlights]]
 1.2 Java EE 7 Platform Highlights
 ---------------------------------
@@ -46,10 +44,14 @@ Plain Old Java Objects (POJOs), and simplified packaging. The Java EE 7
 platform includes the following new features:
 
 * New technologies, including the following:
+
 ** link:overview008.html#CJAJHGIH[Batch Applications for the Java
 Platform]
+
 ** link:overview008.html#CJAFGFCJ[Concurrency Utilities for Java EE]
+
 ** link:overview008.html#CJAGIEEI[Java API for JSON Processing] (JSON-P)
+
 ** link:overview008.html#CJAHDJBJ[Java API for WebSocket]
 * New features for EJB components (see
 link:overview008.html#BNACL[Enterprise JavaBeans Technology] for details)
@@ -60,40 +62,20 @@ link:overview008.html#BNACP[JavaServer Faces Technology] for details)
 * New features for the Java Message Service (JMS) (see
 link:overview008.html#BNACQ[Java Message Service API] for details)
 
-++++
-<hr />
-<table cellspacing="0" cellpadding="0" width="100%">
-<col width="33%" />
-<col width="*" />
-<col width="33%" />
-<tr>
-<td valign="bottom">
-<table cellspacing="0" cellpadding="0" width="100">
-<col width="*" />
-<col width="48%" />
-<col width="48%" />
-<tr>
-<td>&nbsp;</td>
-<td align="center"><a href="overview001.html"><img src="img/leftnav.gif" alt="Previous" /><br />
-<span class="icon">Previous</span></a>&nbsp;</td>
-<td align="center"><a href="overview003.html"><img src="img/rightnav.gif" alt="Next" /><br />
-<span class="icon">Next</span></a></td>
-</tr>
-</table>
-</td>
-<td><img src="img/oracle.gif" alt="Oracle Logo" /> <a href="img/cpyr.html"><br />
-<span>Copyright&nbsp;&copy;&nbsp;2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</a><br>
-</span></td>
-<td valign="bottom" align="right">
-<table cellspacing="0" cellpadding="0" width="225">
-<tr>
-<td>&nbsp;</td>
-<td align="center" valign="top"><a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" /><br />
-<span>Contents</span></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<p align="center"></p>
-++++
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:overview001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:overview003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

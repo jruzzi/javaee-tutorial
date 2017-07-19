@@ -1,0 +1,107 @@
+type=page
+status=published
+title=Registering a Custom Component
+~~~~~~
+Registering a Custom Component
+==============================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-configure011.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-configure013.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAXI]]
+
+[[registering-a-custom-component]]
+16.12 Registering a Custom Component
+------------------------------------
+
+In addition to registering custom renderers (as explained in the
+preceding section), you also must register the custom components that
+are usually associated with the custom renderers. You use either a
+`@FacesComponent` annotation, as described in
+link:jsf-custom005.html#BNAVU[Creating Custom Component Classes], or the
+`component` element of the application configuration resource file.
+
+Here is a hypothetical `component` element from the application
+configuration resource file that registers `AreaComponent`:
+
+[source,oac_no_warn]
+----
+<component>
+    <component-type>DemoArea</component-type>
+    <component-class>
+        dukesbookstore.components.AreaComponent
+    </component-class>
+    <property>
+        <property-name>alt</property-name>
+        <property-class>java.lang.String</property-class>
+    </property>
+    <property>
+        <property-name>coords</property-name>
+        <property-class>java.lang.String</property-class>
+    </property>
+    <property>
+        <property-name>shape</property-name>
+        <property-class>java.lang.String</property-class>
+    </property>
+</component>
+----
+
+Attributes specified in a `component` tag override any settings in the
+`@FacesComponent` annotation.
+
+The `component-type` element indicates the name under which the
+component should be registered. Other objects referring to this
+component use this name. For example, the `component-type` element in
+the configuration for `AreaComponent` defines a value of `DemoArea`,
+which matches the value returned by the `AreaTag` class's
+`getComponentType` method.
+
+The `component-class` element indicates the fully qualified class name
+of the component. The `property` elements specify the component
+properties and their types.
+
+If the custom component can include facets, you can configure the facets
+in the component configuration using `facet` elements, which are allowed
+after the `component-class` elements. See
+link:jsf-configure011.html#BNAXH[Registering a Custom Renderer with a
+Render Kit] for further details on configuring facets.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-configure011.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-configure013.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

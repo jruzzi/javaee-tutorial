@@ -1,0 +1,79 @@
+type=page
+status=published
+title=Creating Resources Administratively
+~~~~~~
+Creating Resources Administratively
+===================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:resource-creation002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:injection.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CACFBGBE]]
+
+[[creating-resources-administratively]]
+3.3 Creating Resources Administratively
+---------------------------------------
+
+Before you deploy or run many applications, you may need to create
+resources for them. An application can include a
+`glassfish-resources.xml` file that can be used to define resources for
+that application and others. You can then use the `asadmin` command,
+specifying as the argument a file named `glassfish-resources.xml`, to
+create the resources administratively, as shown.
+
+[source,oac_no_warn]
+----
+asadmin add-resources glassfish-resources.xml
+----
+
+The `glassfish-resources.xml` file can be created in any project using
+NetBeans IDE or by hand. Some of the JMS examples use this approach to
+resource creation. A file for creating the resources needed for the JMS
+simple producer example can be found in the
+`jms/simple/producer/src/main/setup` directory.
+
+You could also use the `asadmin create-jms-resource` command to create
+the resources for this example. When you are done using the resources,
+you would use the `asadmin list-jms-resources` command to display their
+names, and the `asadmin delete-jms-resource` command to remove them,
+regardless of the way you created the resources.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:resource-creation002.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:injection.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

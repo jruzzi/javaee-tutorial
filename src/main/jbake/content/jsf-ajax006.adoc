@@ -1,0 +1,99 @@
+type=page
+status=published
+title=Handling Errors
+~~~~~~
+Handling Errors
+===============
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-ajax005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax007.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKDCB]]
+
+[[handling-errors]]
+13.6 Handling Errors
+--------------------
+
+JavaServer Faces handles Ajax errors through use of the `onerror`
+attribute of the `f:ajax` tag. The value of this attribute is the name
+of a JavaScript function.
+
+When there is an error in processing a Ajax request, JavaServer Faces
+calls the defined `onerror` JavaScript function and passes a data object
+to it. The data object contains all the properties available for the
+`onevent` attribute and, in addition, the following properties:
+
+* `description`
+* `errorName`
+* `errorMessage`
+
+The `type` is `error`. The `status` property of the data object contains
+one of the valid error values listed in link:#GKGOU[Table 13-4].
+
+[[sthref71]][[GKGOU]]
+
+Table 13-4 Valid Error Values for the Data Object status Property
+
+[width="20%",cols="100%,",options="header",]
+|=======================================================================
+|Values |Description
+|`emptyResponse` |No Ajax response from server.
+
+|`httpError` |One of the valid HTTP errors: `request.status==null` or
+`request.status==undefined` or `request.status<200` or
+`request.status>=300`.
+
+|`malformedXML` |The Ajax response is not well formed.
+
+|`serverError` |The Ajax response contains an `error` element.
+|=======================================================================
+
+ +
+
+In the following example, any errors that occurred in processing the
+Ajax request are handled by the `handlemyajaxerror` JavaScript function:
+
+[source,oac_no_warn]
+----
+<f:ajax event="click" render="errormessage" onerror="handlemyajaxerror"/>
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-ajax005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-ajax007.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

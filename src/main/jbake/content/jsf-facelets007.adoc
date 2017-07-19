@@ -1,0 +1,82 @@
+type=page
+status=published
+title=Relocatable Resources
+~~~~~~
+Relocatable Resources
+=====================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-facelets006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-facelets008.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BABHGBJI]]
+
+[[relocatable-resources]]
+8.7 Relocatable Resources
+-------------------------
+
+You can place a resource tag in one part of a page and specify that it
+be rendered in another part of the page. To do this, you use the
+`target` attribute of a tag that specifies a resource. Acceptable values
+for this attribute are as follows.
+
+* `"head"` renders the resource in the `head` element.
+* `"body"` renders the resource in the `body` element.
+* `"form"` renders the resource in the `form` element.
+
+For example, the following `h:outputScript` tag is placed within an
+`h:form` element, but it renders the JavaScript in the `head` element:
+
+[source,oac_no_warn]
+----
+<h:form>
+    <h:outputScript name="myscript.js" library="mylibrary" target="head"/>
+</h:form>
+----
+
+The `h:outputStylesheet` tag also supports resource relocation, in a
+similar way.
+
+Relocatable resources are essential for composite components that use
+stylesheets and can also be useful for composite components that use
+JavaScript. See link:jsf-advanced-cc004.html#GKHVN[The
+compositecomponentexample Example Application] for an example.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-facelets006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-facelets008.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,79 @@
+type=page
+status=published
+title=Using Converters, Listeners, and Validators
+~~~~~~
+Using Converters, Listeners, and Validators
+===========================================
+2017-07-17T15:27:48Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-page003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-page-core001.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GJCUT]]
+
+[[using-converters-listeners-and-validators]]
+11 Using Converters, Listeners, and Validators
+----------------------------------------------
+
+
+The previous chapter described components and explained how to add them
+to a web page. This chapter provides information on adding more
+functionality to the components through converters, listeners, and
+validators.
+
+* Converters are used to convert data that is received from the input
+components. Converters allow an application to bring the strongly typed
+features of the Java programming language into the String-based world of
+HTTP servlet programming.
+* Listeners are used to listen to the events happening in the page and
+perform actions as defined.
+* Validators are used to validate the data that is received from the
+input components. Validators allow an application to express constraints
+on form input data to ensure that the necessary requirements are met
+before the input data is processed.
+
+The following topics are addressed here:
+
+* link:jsf-page-core001.html#BNAST[Using the Standard Converters]
+* link:jsf-page-core002.html#BNASZ[Registering Listeners on Components]
+* link:jsf-page-core003.html#BNATC[Using the Standard Validators]
+* link:jsf-page-core004.html#BNATN[Referencing a Managed Bean Method]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-page003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-page-core001.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

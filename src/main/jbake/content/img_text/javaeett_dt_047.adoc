@@ -1,0 +1,13 @@
+type=page
+status=published
+title=Description of the illustration javaeett_dt_047
+~~~~~~
+Description of the illustration javaeett_dt_047
+===============================================
+
+Diagram of security identity propagation from client to intermediate
+container to target container
+
+image:../img/oracle.gif[Oracle,width=144,height=18] +
+link:../cpyr.html[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

@@ -1,0 +1,106 @@
+type=page
+status=published
+title=What Is a JavaServer Faces Application?
+~~~~~~
+What Is a JavaServer Faces Application?
+=======================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jsf-intro001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-intro003.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNAPK]]
+
+[[what-is-a-javaserver-faces-application]]
+7.2 What Is a JavaServer Faces Application?
+-------------------------------------------
+
+The functionality provided by a JavaServer Faces application is similar
+to that of any other Java web application. A typical JavaServer Faces
+application includes the following parts.
+
+* A set of web pages in which components are laid out.
+* A set of tags to add components to the web page.
+* A set of managed beans, which are lightweight, container-managed
+objects (POJOs). In a JavaServer Faces application, managed beans serve
+as backing beans, which define properties and functions for UI
+components on a page.
+* A web deployment descriptor (`web.xml` file).
+* Optionally, one or more application configuration resource files, such
+as a `faces-config.xml` file, which can be used to define page
+navigation rules and configure beans and other custom objects, such as
+custom components.
+* Optionally, a set of custom objects, which can include custom
+components, validators, converters, or listeners, created by the
+application developer.
+* Optionally, a set of custom tags for representing custom objects on
+the page.
+
+link:#BNAPI[Figure 7-1] shows the interaction between client and server
+in a typical JavaServer Faces application. In response to a client
+request, a web page is rendered by the web container that implements
+JavaServer Faces technology.
+
+[[BNAPI]]
+
+Figure 7-1 Responding to a Client Request for a JavaServer Faces Page
+
+image:img/javaeett_dt_014.png[Description of Figure 7-1 follows] +
+link:img_text/javaeett_dt_014.html[Description of "Figure 7-1 Responding to
+a Client Request for a JavaServer Faces Page"] +
+ +
+
+The web page, `myfacelet.xhtml`, is built using JavaServer Faces
+component tags. Component tags are used to add components to the `view`
+(represented by `myView` in the diagram), which is the server-side
+representation of the page. In addition to components, the web page can
+also reference objects, such as the following:
+
+* Any event listeners, validators, and converters that are registered on
+the components
+* The JavaBeans components that capture the data and process the
+application-specific functionality of the components
+
+On request from the client, the view is rendered as a response.
+Rendering is the process whereby, based on the server-side view, the web
+container generates output, such as HTML or XHTML, that can be read by
+the client, such as a browser.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jsf-intro001.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jsf-intro003.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

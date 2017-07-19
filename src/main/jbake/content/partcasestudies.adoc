@@ -1,0 +1,69 @@
+type=page
+status=published
+title=Case Studies
+~~~~~~
+Case Studies
+============
+2017-07-17T15:27:55Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:concurrency-utilities007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:dukes-bookstore.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GKGJW]][[JEETT00135]]
+
+[[part-xii]]
+Part XII +
+----------
+
+[[case-studies]]
+Case Studies
+------------
+
+Part XII presents case studies that use a variety of Java EE
+technologies. This part contains the following chapters:
+
+* link:dukes-bookstore.html#GLNVI[Chapter 57, "Duke's Bookstore Case
+Study Example"]
+* link:dukes-tutoring.html#GKAEE[Chapter 58, "Duke's Tutoring Case Study
+Example"]
+* link:dukes-forest.html#GLNPW[Chapter 59, "Duke's Forest Case Study
+Example"]
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:concurrency-utilities007.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:dukes-bookstore.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

@@ -1,0 +1,71 @@
+type=page
+status=published
+title=Overview of Bean Validation
+~~~~~~
+Overview of Bean Validation
+===========================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:bean-validation.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:bean-validation002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[A1101988]]
+
+[[overview-of-bean-validation]]
+21.1 Overview of Bean Validation
+--------------------------------
+
+Validating input received from the user to maintain data integrity is an
+important part of application logic. Validation of data can take place
+at different layers in even the simplest of applications, as shown in
+link:jsf-facelets003.html#GIPOB[Developing a Simple Facelets Application:
+The guessnumber-jsf Example Application]. The `guessnumber-jsf` example
+application validates the user input (in the `h:inputText` tag) for
+numerical data at the presentation layer and for a valid range of
+numbers at the business layer.
+
+The Java API for JavaBean Validation ("Bean Validation") provides a
+facility for validating objects, object members, methods, and
+constructors. In Java EE environments, Bean Validation integrates with
+Java EE containers and services to allow developers to easily define and
+enforce validation constraints. Bean Validation is available as part of
+the Java EE 7 platform.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:bean-validation.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:bean-validation002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

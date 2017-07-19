@@ -1,0 +1,16 @@
+type=page
+status=published
+title=Description of the illustration javaeett_dt_060
+~~~~~~
+Description of the illustration javaeett_dt_060
+===============================================
+
+The figure shows the architecture of the taskcreator example. The
+JavaServer Faces page invokes methods on a CDI-managed bean, which
+submits task initiation requests to an enterprise bean. The enterprise
+bean uses a WebSocket endpoint to indicate to clients that an updated
+task execution log is available.
+
+image:../img/oracle.gif[Oracle,width=144,height=18] +
+link:../cpyr.html[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

@@ -1,0 +1,93 @@
+type=page
+status=published
+title=Packaging CDI Applications
+~~~~~~
+Packaging CDI Applications
+==========================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-adv.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-adv002.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CACDCFDE]]
+
+[[packaging-cdi-applications]]
+25.1 Packaging CDI Applications
+-------------------------------
+
+When you deploy a Java EE application, CDI looks for beans inside bean
+archives. A bean archive is any module that contains beans that the CDI
+runtime can manage and inject. There are two kinds of bean archives:
+explicit bean archives and implicit bean archives.
+
+An explicit bean archive is an archive that contains a `beans.xml`
+deployment descriptor, which can be an empty file, contain no version
+number, or contain the version number 1.1 with the `bean-discovery-mode`
+attribute set to `all`. For example:
+
+[source,oac_no_warn]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                           http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+       version="1.1" bean-discovery-mode="all">
+    ...
+</beans>
+----
+
+CDI can manage and inject any bean in an explicit archive, except those
+annotated with `@Vetoed`.
+
+An implicit bean archive is an archive that contains some beans
+annotated with a scope type, contains no `beans.xml` deployment
+descriptor, or contains a `beans.xml` deployment descriptor with the
+`bean-discovery-mode` attribute set to `annotated`.
+
+In an implicit archive, CDI can only manage and inject beans annotated
+with a scope type.
+
+For a web application, the `beans.xml` deployment descriptor, if
+present, must be in the `WEB-INF` directory. For EJB modules or JAR
+files, the `beans.xml` deployment descriptor, if present, must be in the
+`META-INF` directory.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-adv.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-adv002.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

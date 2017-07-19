@@ -1,0 +1,121 @@
+type=page
+status=published
+title=Using Qualifiers
+~~~~~~
+Using Qualifiers
+================
+2017-07-17T15:27:49Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:cdi-basic005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic007.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GJBCK]]
+
+[[using-qualifiers]]
+23.6 Using Qualifiers
+---------------------
+
+You can use qualifiers to provide various implementations of a
+particular bean type. A qualifier is an annotation that you apply to a
+bean. A qualifier type is a Java annotation defined as
+`@Target({METHOD, FIELD, PARAMETER, TYPE})` and `@Retention(RUNTIME)`.
+
+For example, you could declare an `@Informal` qualifier type and apply
+it to another class that extends the `Greeting` class. To declare this
+qualifier type, you would use the following code:
+
+[source,oac_no_warn]
+----
+package greetings;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import java.lang.annotation.Target;
+
+import javax.inject.Qualifier;
+
+@Qualifier
+@Retention(RUNTIME)
+@Target({TYPE, METHOD, FIELD, PARAMETER})
+public @interface Informal {}
+----
+
+You can then define a bean class that extends the `Greeting` class and
+uses this qualifier:
+
+[source,oac_no_warn]
+----
+package greetings;
+
+@Informal
+public class InformalGreeting extends Greeting {
+    public String greet(String name) {
+        return "Hi, " + name + "!";
+    }
+}
+----
+
+Both implementations of the bean can now be used in the application.
+
+If you define a bean with no qualifier, the bean automatically has the
+qualifier `@Default`. The unannotated `Greeting` class could be declared
+as follows:
+
+[source,oac_no_warn]
+----
+package greetings;
+
+import javax.enterprise.inject.Default;
+
+@Default
+public class Greeting {
+    public String greet(String name) {
+        return "Hello, " + name + ".";
+    }
+}
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:cdi-basic005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:cdi-basic007.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

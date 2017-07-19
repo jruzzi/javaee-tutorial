@@ -1,0 +1,72 @@
+type=page
+status=published
+title=Packaging Resource Adapter Archives
+~~~~~~
+Packaging Resource Adapter Archives
+===================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:packaging003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partwebtier.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BCGDHBHJ]]
+
+[[packaging-resource-adapter-archives]]
+5.4 Packaging Resource Adapter Archives
+---------------------------------------
+
+A Resource Adapter Archive (RAR) file stores XML files, Java classes,
+and other objects for Java EE Connector Architecture (JCA) applications.
+A resource adapter can be deployed on any Java EE server, much like a
+Java EE application. A RAR file can be contained in an Enterprise
+Archive (EAR) file, or it can exist as a separate file.
+
+The RAR file contains
+
+* A JAR file with the implementation classes of the resource adapter
+* An optional `META-INF/` directory that can store an `ra.xml` file
+and/or an application server–specific deployment descriptor used for
+configuration purposes
+
+A RAR file can be deployed on the application server as a standalone
+component or as part of a larger application. In both cases, the adapter
+is available to all applications using a lookup procedure.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:packaging003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:partwebtier.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

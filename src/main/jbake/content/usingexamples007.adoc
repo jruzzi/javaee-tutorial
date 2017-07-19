@@ -1,0 +1,107 @@
+type=page
+status=published
+title=Java EE 7 Maven Archetypes in the Tutorial
+~~~~~~
+Java EE 7 Maven Archetypes in the Tutorial
+==========================================
+2017-07-17T15:27:47Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:usingexamples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples008.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[CIHBHEFF]]
+
+[[java-ee-7-maven-archetypes-in-the-tutorial]]
+2.7 Java EE 7 Maven Archetypes in the Tutorial
+----------------------------------------------
+
+Some of the chapters have instructions on how to build an example
+application using Maven archetypes. Archetypes are templates for
+generating a particular Maven project. The Tutorial includes several
+Maven archetypes for generating Java EE 7 projects.
+
+[[CHDJGCCA]]
+
+[[installing-the-tutorial-archetypes]]
+2.7.1 Installing the Tutorial Archetypes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You must install the included Maven archetypes into your local Maven
+repository before you can create new projects based on the archetypes.
+You can install the archetypes using NetBeans IDE or Maven.
+
+[[sthref16]]
+
+[[installing-the-tutorial-archetypes-using-netbeans-ide]]
+2.7.1.1 Installing the Tutorial Archetypes Using NetBeans IDE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  From the File menu, choose Open Project.
+2.  In the Open Project dialog box, navigate to:
++
+[source,oac_no_warn]
+----
+tut-install/examples
+----
+3.  Select the `archetypes` folder.
+4.  Click Open Project.
+5.  In the Projects tab, right-click the `archetypes` project and select
+Build.
+
+[[sthref17]]
+
+[[installing-the-tutorial-archetypes-using-maven]]
+2.7.1.2 Installing the Tutorial Archetypes Using Maven
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  In a terminal window, go to:
++
+[source,oac_no_warn]
+----
+tut-install/examples/archetypes/
+----
+2.  Enter the following command:
++
+[source,oac_no_warn]
+----
+mvn install
+----
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:usingexamples006.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:usingexamples008.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

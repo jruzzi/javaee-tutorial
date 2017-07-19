@@ -1,0 +1,82 @@
+type=page
+status=published
+title=Handling Exceptions
+~~~~~~
+Handling Exceptions
+===================
+2017-07-17T15:27:51Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:ejb-basicexamples005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-embedded.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[BNBPJ]]
+
+[[handling-exceptions]]
+34.6 Handling Exceptions
+------------------------
+
+The exceptions thrown by enterprise beans fall into two categories:
+system and application.
+
+A system exception indicates a problem with the services that support an
+application. For example, a connection to an external resource cannot be
+obtained, or an injected resource cannot be found. If it encounters a
+system-level problem, your enterprise bean should throw a
+`javax.ejb.EJBException`. Because the `EJBException` is a subclass of
+`RuntimeException`, you do not have to specify it in the `throws` clause
+of the method declaration. If a system exception is thrown, the EJB
+container might destroy the bean instance. Therefore, a system exception
+cannot be handled by the bean's client program, but instead requires
+intervention by a system administrator.
+
+An application exception signals an error in the business logic of an
+enterprise bean. Application exceptions are typically exceptions that
+you've coded yourself, such as the `BookException` thrown by the
+business methods of the `CartBean` example. When an enterprise bean
+throws an application exception, the container does not wrap it in
+another exception. The client should be able to handle any application
+exception it receives.
+
+If a system exception occurs within a transaction, the EJB container
+rolls back the transaction. However, if an application exception is
+thrown within a transaction, the container does not roll back the
+transaction.
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:ejb-basicexamples005.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:ejb-embedded.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

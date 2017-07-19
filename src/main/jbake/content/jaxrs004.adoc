@@ -1,0 +1,71 @@
+type=page
+status=published
+title=Further Information about JAX-RS
+~~~~~~
+Further Information about JAX-RS
+================================
+2017-07-17T15:27:50Z
+
+[[top]]
+
+[width="100%",cols="50%,45%,^5%",]
+|=======================================================================
+|*Java Platform, Enterprise Edition The Java EE Tutorial* +
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|=======================================================================
+
+'''''
+
+[cols="^5%,^5%,90%",]
+|=======================================================================
+|link:jaxrs003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxrs-client.html[image:img/rightnav.gif[Next] +
+Next] | 
+|=======================================================================
+
+
+[[GILIZ]]
+
+[[further-information-about-jax-rs]]
+29.4 Further Information about JAX-RS
+-------------------------------------
+
+For more information about RESTful web services and JAX-RS, see
+
+* "Fielding Dissertation: Chapter 5: Representational State Transfer
+(REST)":
++
+`http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.html`
+* RESTful Web Services, by Leonard Richardson and Sam Ruby, available
+from O'Reilly Media at
+`http://shop.oreilly.com/product/9780596529260.do`
+* JSR 339: JAX-RS 2.0: The Java API for RESTful Web Services:
++
+`http://jcp.org/en/jsr/detail?id=339`
+* Jersey project:
++
+`https://jersey.java.net/`
+
+'''''
+
+[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
+|====================================================================
+|link:jaxrs003.html[image:img/leftnav.gif[Previous] +
+Previous] 
+|link:jaxrs-client.html[image:img/rightnav.gif[Next] +
+Next]
+|
+|image:img/oracle.gif[Oracle Logo]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
+|
+|link:toc.html[image:img/toc.gif[Go To Table Of
+Contents] +
+Contents]
+|====================================================================

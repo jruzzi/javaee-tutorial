@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Core Tags
+next=jsf-page-core.html
+prev=jsf-page002.html
 ~~~~~~
 Using Core Tags
 ===============
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-page002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNARC]]
 
@@ -60,7 +37,6 @@ submitted
 component
 |=======================================================================
 
- +
 
 link:#GKVYY[Table 10-9] lists the data-conversion core tags.
 
@@ -80,7 +56,6 @@ component
 component
 |=======================================================================
 
- +
 
 link:#GKVZG[Table 10-10] lists the facet core tags.
 
@@ -97,7 +72,6 @@ its enclosing tag
 |`f:metadata` |Registers a `facet` on a parent component
 |=======================================================================
 
- +
 
 link:#GKVZA[Table 10-11] lists the core tags that represent items in a
 list.
@@ -113,7 +87,6 @@ Table 10-11 Core Tags That Represent Items in a List
 |`f:selectItems` |Represents a set of items
 |======================================================
 
- +
 
 link:#GKVYV[Table 10-12] lists the validator core tags.
 
@@ -140,7 +113,6 @@ Table 10-12 Validator Core Tags
 |`f:validateRequired` |Enforces the presence of a value in a component
 |=======================================================================
 
- +
 
 link:#GKVYU[Table 10-13] lists the core tags that fall into other
 categories.
@@ -168,7 +140,6 @@ group of components based on placement
 a component
 |=======================================================================
 
- +
 
 These tags, which are used in conjunction with component tags, are
 explained in other sections of this tutorial.
@@ -186,12 +157,10 @@ Table 10-14 Where the Core Tags Are Explained
 |Event-handling tags a|
 link:jsf-page-core002.html#BNASZ[Registering Listeners on Components]
 
- +
 
 |Data-conversion tags a|
 link:jsf-page-core001.html#BNAST[Using the Standard Converters]
 
- +
 
 |`f:facet` |link:jsf-page002.html#BNARZ[Using Data-Bound Table
 Components] and link:jsf-page002.html#BNASC[Laying Out Components with
@@ -200,25 +169,21 @@ the h:panelGrid and h:panelGroup Tags]
 |`f:loadBundle` a|
 link:webi18n002.html#BNAXY[Setting the Resource Bundle]
 
- +
 
 |`f:metadata` a|
 link:jsf-page002.html#GIQWQ[Using View Parameters to Configure
 Bookmarkable URLs]
 
- +
 
 |`f:param` a|
 link:jsf-page002.html#BNARU[Displaying a Formatted Message with the
 h:outputFormat Tag]
 
- +
 
 |`f:selectItem` and `f:selectItems` a|
 link:jsf-page002.html#BNASK[Using the f:selectItem and f:selectItems
 Tags]
 
- +
 
 |Validator tags |link:jsf-page-core003.html#BNATC[Using the Standard
 Validators]
@@ -227,26 +192,8 @@ Validators]
 link:jsf-ajax.html#GKIOW[Chapter 13, "Using Ajax with JavaServer Faces
 Technology"]
 
- +
 
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-page002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

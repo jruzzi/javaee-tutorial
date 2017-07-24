@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The billpayment Example: Using Events and Interceptors
+next=cdi-adv-examples006.html
+prev=cdi-adv-examples004.html
 ~~~~~~
 The billpayment Example: Using Events and Interceptors
 ======================================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:cdi-adv-examples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv-examples006.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKHPA]]
 
@@ -493,20 +470,4 @@ INFO: Entering method: debitPayment in class billpayment.listener.PaymentHandler
 INFO: PaymentHandler - Debit Handler: Debit = $1234.56 at Tue Dec 14 14:50:28 EST 2010
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:cdi-adv-examples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv-examples006.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

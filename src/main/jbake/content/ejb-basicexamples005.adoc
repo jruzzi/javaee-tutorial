@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using the Timer Service
+next=ejb-basicexamples006.html
+prev=ejb-basicexamples004.html
 ~~~~~~
 Using the Timer Service
 =======================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:ejb-basicexamples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:ejb-basicexamples006.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBOY]]
 
@@ -82,7 +59,6 @@ example: `minute="15"`.
 |`dayOfWeek` |One or more days within a week a|
 `*`
 
- +
 
  a|
 `0` to `7` (both 0 and 7 refer to Sunday). For example: `dayOfWeek="3"`.
@@ -93,7 +69,6 @@ example: `minute="15"`.
 |`dayOfMonth` |One or more days within a month a|
 `*`
 
- +
 
  a|
 `1` to `31`. For example: `dayOfMonth="15"`.
@@ -109,7 +84,6 @@ of the month). For example: `dayOfMonth="–3"`.
 |`month` |One or more months within a year a|
 `*`
 
- +
 
  a|
 `1` to `12`. For example: `month="7"`.
@@ -120,12 +94,10 @@ of the month). For example: `dayOfMonth="–3"`.
 |`year` |A particular calendar year a|
 `*`
 
- +
 
  |A four-digit calendar year. For example: `year="2011"`.
 |=======================================================================
 
- +
 
 [[GIQMX]]
 
@@ -643,7 +615,6 @@ public class TimerSessionBean {
 }
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -663,7 +634,6 @@ to virtual machine constraints.
 
 |=======================================================================
 
- +
 
 [[BNBPF]]
 
@@ -755,20 +725,4 @@ timeouts.
 To see the messages that are logged when a timeout occurs, open the
 `server.log` file located in domain-dir`/logs/`.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:ejb-basicexamples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:ejb-basicexamples006.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

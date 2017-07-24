@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Writing Simple JMS Applications
+next=jms-examples004.html
+prev=jms-examples002.html
 ~~~~~~
 Writing Simple JMS Applications
 ===============================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-examples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCFA]]
 
@@ -81,7 +58,6 @@ The examples for this section are in the
 tut-install`/examples/jms/simple/` directory, under the following
 subdirectories:
 
- +
 `producer/` +
 `synchconsumer/` +
 `asynchconsumer/` +
@@ -432,7 +408,6 @@ complete.
 
 |=======================================================================
 
- +
 
 [[BNCFB]]
 
@@ -623,7 +598,6 @@ This section describes the receiving clients in an example that uses a
 message listener for asynchronous message delivery. This section then
 explains how to compile and run the clients using GlassFish Server.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -637,7 +611,6 @@ message-driven bean, shown in later examples in this chapter.
 
 |=======================================================================
 
- +
 
 The following topics are addressed here:
 
@@ -1094,7 +1067,6 @@ configured to use the `CLIENT_ACKNOWLEDGE` setting
 `JMSContext` that has been configured to use the default
 `AUTO_ACKNOWLEDGE` setting
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -1106,7 +1078,6 @@ in application clients, as in this example.
 
 |=======================================================================
 
- +
 
 The `clientackconsumer` example demonstrates the first alternative, in
 which a synchronous consumer uses client acknowledgment. The
@@ -1142,7 +1113,6 @@ fail
 `onMessage` method returns
 |=======================================================================
 
- +
 
 The example is under the
 tut-install`/examples/jms/simple/clientackconsumer/` directory.
@@ -1223,20 +1193,4 @@ just as a `JMSContext` configured to use `AUTO_ACKNOWLEDGE` does
 automatically after a `MessageListener` returns successfully from
 processing a message received asynchronously.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-examples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

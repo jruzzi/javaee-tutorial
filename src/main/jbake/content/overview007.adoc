@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Java EE Application Assembly and Deployment
+next=overview008.html
+prev=overview006.html
 ~~~~~~
 Java EE Application Assembly and Deployment
 ===========================================
-2017-07-17T15:27:46Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:overview006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:overview008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNABX]]
 
@@ -49,20 +26,4 @@ specify location-specific information, such as a list of local users who
 can access it and the name of the local database. Once deployed on a
 local platform, the application is ready to run.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:overview006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:overview008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

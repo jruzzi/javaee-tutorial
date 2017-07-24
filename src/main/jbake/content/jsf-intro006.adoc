@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Navigation Model
+next=jsf-intro007.html
+prev=jsf-intro005.html
 ~~~~~~
 Navigation Model
 ================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-intro005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro007.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAQL]]
 
@@ -217,20 +194,4 @@ For more information on how to reference outcomes or action methods from
 component tags, see link:jsf-page-core004.html#BNATP[Referencing a Method
 That Performs Navigation].
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-intro005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro007.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Attributes of a Composite Component
+next=jsf-advanced-cc002.html
+prev=jsf-advanced-cc.html
 ~~~~~~
 Attributes of a Composite Component
 ===================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-advanced-cc.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-advanced-cc002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKHWV]]
 
@@ -83,7 +60,6 @@ mutually exclusive. If you specify both, `method-signature` is ignored.
 The default type of an attribute is `java.lang.Object.`
 |=======================================================================
 
- +
 
 The following code snippet defines a composite component attribute and
 assigns it a default value:
@@ -108,20 +84,4 @@ The following code snippet uses the `type` element:
 <composite:attribute name="dateofjoining" type="java.util.Date"/>
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-advanced-cc.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-advanced-cc002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

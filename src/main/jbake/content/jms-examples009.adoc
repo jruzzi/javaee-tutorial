@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using an Entity to Join Messages from Two MDBs
+next=jms-examples010.html
+prev=jms-examples008.html
 ~~~~~~
 Using an Entity to Join Messages from Two MDBs
 ==============================================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-examples008.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples010.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCHF]]
 
@@ -125,18 +102,15 @@ entity.
 
 [[BNCHH]]
 
-Figure 46-5 An Enterprise Bean Application: Client to Message-Driven
-Beans to Entity
-
-image:img/javaeett_dt_038.png[Description of Figure 46-5 follows] +
-link:img_text/javaeett_dt_038.html[Description of "Figure 46-5 An Enterprise
-Bean Application: Client to Message-Driven Beans to Entity"] +
- +
+.*Figure 46-5 An Enterprise Bean Application: Client to Message-Driven Beans to Entity *
+image:img/javaeett_dt_038.png[
+"Diagram of application showing an application client, two message-driven
+beans, and an entity, as well as the associated topic and queue"]
 
 [[BNCHI]]
 
 [[writing-the-application-components-for-the-clientmdbentity-example]]
-46.9.2 Writing the Application Components for the clientmdbentityExample
+46.9.2 Writing the Application Components for the clientmdbentity Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Writing the components of the application involves coding the
@@ -433,20 +407,4 @@ in spite of these errors, with no special programming.
 To undeploy the application after you have finished running it, use the
 Services tab or issue the `mvn cargo:undeploy` command.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-examples008.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples010.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

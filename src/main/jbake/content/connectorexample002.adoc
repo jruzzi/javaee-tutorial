@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The trading Example
+next=connectorexample003.html
+prev=connectorexample001.html
 ~~~~~~
 The trading Example
 ===================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:connectorexample001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:connectorexample003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[CHDFHAID]]
 
@@ -49,12 +26,10 @@ adapter and the web application
 
 [[CHDHADIG]]
 
-Figure 53-1 The trading Example
-
-image:img/javaeett_dt_054.png[Description of Figure 53-1 follows] +
-link:img_text/javaeett_dt_054.html[Description of "Figure 53-1 The trading
-Example"] +
- +
+.*Figure 53-1 The trading Example *
+image:img/javaeett_dt_054.png[
+"This figure shows the trading example components: a deployed WAR and RAR
+that communicate with the EIS over a TCP socket."]
 
 The `trading-eis` module is an auxiliary project that resembles a legacy
 stock trading execution platform. It contains a Java SE program that
@@ -131,7 +106,6 @@ handles to the EIS
 processing a trade request
 |=======================================================================
 
- +
 
 The `ResourceAccessBean` managed bean in the `trading-war` module
 configures a connection factory for the `trading-rar` resource adapter
@@ -169,7 +143,6 @@ prefix in `#trading-rar` indicates that `trading-rar` is an embedded
 resource adapter that is bundled in the same EAR as this web
 application.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -182,7 +155,6 @@ application server. However, this is a vendor-specific procedure.
 
 |=======================================================================
 
- +
 
 The managed bean obtains a connection factory object using resource
 injection as follows:
@@ -236,12 +208,10 @@ shown in link:#CHDIGAJE[Figure 53-2].
 
 [[CHDIGAJE]]
 
-Figure 53-2 Architecture of the trading Example
-
-image:img/javaeett_dt_055.png[Description of Figure 53-2 follows] +
-link:img_text/javaeett_dt_055.html[Description of "Figure 53-2 Architecture
-of the trading Example"] +
- +
+.*Figure 53-2 Architecture of the trading Example *
+image:img/javaeett_dt_055.png[
+"This figure shows the classes in each of the modules of the trading
+example."]
 
 The `trading-rar` module implements the interfaces listed in
 link:#CHDIBBIC[Table 53-2].
@@ -270,7 +240,6 @@ factory that applications use to obtain connection handles
 applications use to interact with the EIS
 |=======================================================================
 
- +
 
 When the `trading-ear` archive is deployed and a connection pool
 resource is configured as described in link:#CHDFADJD[Using the Outbound
@@ -408,20 +377,4 @@ sequence that provides connection handles from the resource adapter.
 7.  Before undeploying the `trading-ear` application, press Ctrl+C on
 the terminal window to close the `trading-eis` application.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:connectorexample001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:connectorexample003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

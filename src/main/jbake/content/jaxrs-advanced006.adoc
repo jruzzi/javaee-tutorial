@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Runtime Content Negotiation
+next=jaxrs-advanced007.html
+prev=jaxrs-advanced005.html
 ~~~~~~
 Runtime Content Negotiation
 ===========================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jaxrs-advanced005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxrs-advanced007.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKQBQ]]
 
@@ -170,20 +147,4 @@ built. Otherwise, a `Response` object with an OK status and containing a
 representation in the form of an `Object` entity and a `Variant` is
 returned.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jaxrs-advanced005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxrs-advanced007.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Introduction to Batch Processing
+next=batch-processing002.html
+prev=batch-processing.html
 ~~~~~~
 Introduction to Batch Processing
 ================================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:batch-processing.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BCGJDEEH]]
 
@@ -110,17 +87,13 @@ batch job.
 +
 [[BABFJBAH]]
 
-Figure 55-1 Chunk Steps in a Batch Job
-
-image:img/javaeett_dt_058.png[Description of Figure 55-1 follows] +
-link:img_text/javaeett_dt_058.html[Description of "Figure 55-1 Chunk Steps
-in a Batch Job"] +
- +
-* Task-oriented steps (task steps) execute tasks other than processing
-items from a data source. Examples include creating or removing
-directories, moving files, creating or dropping database tables,
-configuring resources, and so on. Task steps are not usually
-long-running compared to chunk steps.
+.*Figure 55-1 Chunk Steps in a Batch Job *
+image:img/javaeett_dt_058.png[
+"This figure shows a batch job that contains two chunk steps: step A and
+step B. Step A has the three parts of a chunk-oriented step: input
+retrieval A, business processing A, and output writing A. Step B also
+has the three parts of a chunk-oriented step: input retrieval B,
+business processing B, and output writing B."]
 
 For example, the phone billing application consists of two chunk steps.
 
@@ -180,12 +153,14 @@ chunk steps, task steps and a decision element.
 
 [[BCGDCDCA]]
 
-Figure 55-2 Steps and Decision Elements in a Job
-
-image:img/javaeett_dt_059.png[Description of Figure 55-2 follows] +
-link:img_text/javaeett_dt_059.html[Description of "Figure 55-2 Steps and
-Decision Elements in a Job"] +
- +
+.*Figure 55-2 Steps and Decision Elements in a Job *
+image:img/javaeett_dt_059.png[
+"This figure shows a batch job that contains two chunk steps, a task step
+and a decision element. The job starts with chunk step A, continues with
+chunk step B, and then decision element D evaluates condition 1. The
+condition is based on the status of step B. If condition 1 is true, the
+job terminates; otherwise the job continues with step C and then the job
+ends."]
 
 [[sthref264]]
 
@@ -209,20 +184,4 @@ Batch frameworks consist of a format to specify jobs and steps, an
 application programming interface (API), and a service available at
 runtime that manages the execution of batch jobs.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:batch-processing.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

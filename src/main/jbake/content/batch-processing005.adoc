@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating Batch Artifacts
+next=batch-processing006.html
+prev=batch-processing004.html
 ~~~~~~
 Creating Batch Artifacts
 ========================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:batch-processing004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing006.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BCGHDHGH]]
 
@@ -104,7 +81,6 @@ steps. It is referenced from the `writer` element inside the `chunk`
 element.
 |=======================================================================
 
- +
 
 [[sthref278]][[BCGEAAEA]]
 
@@ -135,7 +111,6 @@ final results from each partition. It is referenced from the `analyzer`
 element inside the `partition` element.
 |=======================================================================
 
- +
 
 [[sthref279]][[BCGCAEDI]]
 
@@ -197,7 +172,6 @@ skippable exception handling for item writers in chunk steps. It is
 referenced from the `listener` element inside the `step` element.
 |=======================================================================
 
- +
 
 [[BCGIFJBB]]
 
@@ -266,7 +240,6 @@ link:cdi-adv001.html#CACDCFDE[Packaging CDI Applications] in
 link:cdi-adv.html#GJEHI[Chapter 25, "Contexts and Dependency Injection
 for Java EE: Advanced Topics"].
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -278,7 +251,6 @@ context objects from the batch runtime in batch artifacts.
 
 |=======================================================================
 
- +
 
 You may encounter the following errors if you do not follow this
 procedure.
@@ -335,7 +307,6 @@ See link:#BCGIFJBB[Dependency Injection in Batch Artifacts] for
 instructions on how to define your batch artifacts to use dependency
 injection.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -352,22 +323,5 @@ your application submits the job.
 
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:batch-processing004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing006.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

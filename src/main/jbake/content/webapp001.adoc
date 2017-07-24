@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Web Applications
+next=webapp002.html
+prev=webapp.html
 ~~~~~~
 Web Applications
 ================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:webapp.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webapp002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GEYSJ]]
 
@@ -71,12 +48,10 @@ HTTP response and returns it to the client.
 
 [[BNADS]]
 
-Figure 6-1 Java Web Application Request Handling
-
-image:img/javaeett_dt_013.png[Description of Figure 6-1 follows] +
-link:img_text/javaeett_dt_013.html[Description of "Figure 6-1 Java Web
-Application Request Handling"] +
- +
+.*Figure 6-1 Java Web Application Request Handling *
+image:img/javaeett_dt_013.png[
+"Diagram of web application request handling. Clients and servlets
+communicate using HttpServletRequest and HttpServletResponse."]
 
 Servlets are Java programming language classes that dynamically process
 requests and construct responses. Java technologies, such as JavaServer
@@ -111,20 +86,4 @@ applications on GlassFish Server. The chapter then moves on to
 configuring web applications and discusses how to specify the most
 commonly used configuration parameters.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:webapp.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webapp002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Overview of Java EE Security
+next=security-intro002.html
+prev=security-intro.html
 ~~~~~~
 Overview of Java EE Security
 ============================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-intro.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBWK]]
 
@@ -112,12 +89,10 @@ application URL. This action is shown in link:#BNBWN[Figure 47-1].
 
 [[BNBWN]]
 
-Figure 47-1 Initial Request
-
-image:img/javaeett_dt_039.png[Description of Figure 47-1 follows] +
-link:img_text/javaeett_dt_039.html[Description of "Figure 47-1 Initial
-Request"] +
- +
+.*Figure 47-1 Initial Request *
+image:img/javaeett_dt_039.png[
+"Diagram of initial request from web client to web server for access to a
+protected resource"]
 
 Since the client has not yet authenticated itself to the application
 environment, the server responsible for delivering the web portion of
@@ -142,12 +117,10 @@ server sets a credential for the user.
 
 [[BNBWP]]
 
-Figure 47-2 Initial Authentication
-
-image:img/javaeett_dt_040.png[Description of Figure 47-2 follows] +
-link:img_text/javaeett_dt_040.html[Description of "Figure 47-2 Initial
-Authentication"] +
- +
+.*Figure 47-2 Initial Authentication *
+image:img/javaeett_dt_040.png[
+"Diagram of initial authentication: server sends form to client, which
+sends authentication data to server for validation"]
 
 [[BNBWQ]]
 
@@ -166,12 +139,9 @@ link:#BNBWR[Figure 47-3] shows this process.
 
 [[BNBWR]]
 
-Figure 47-3 URL Authorization
-
-image:img/javaeett_dt_041.png[Description of Figure 47-3 follows] +
-link:img_text/javaeett_dt_041.html[Description of "Figure 47-3 URL
-Authorization"] +
- +
+.*Figure 47-3 URL Authorization *
+image:img/javaeett_dt_041.png[
+"Diagram of URL authorization"]
 
 The web server's evaluation stops with an "is authorized" outcome when
 the web server is able to map the user to a role. A "not authorized"
@@ -189,12 +159,10 @@ original URL request, as shown in link:#BNBWT[Figure 47-4].
 
 [[BNBWT]]
 
-Figure 47-4 Fulfilling the Original Request
-
-image:img/javaeett_dt_042.png[Description of Figure 47-4 follows] +
-link:img_text/javaeett_dt_042.html[Description of "Figure 47-4 Fulfilling
-the Original Request"] +
- +
+.*Figure 47-4 Fulfilling the Original Request *
+image:img/javaeett_dt_042.png[
+"Diagram of request fulfillment, showing server returning result to
+client"]
 
 In our example, the response URL of a web page is returned, enabling the
 user to post form data that needs to be handled by the business-logic
@@ -216,12 +184,10 @@ one in the web server and one in the EJB container.
 
 [[BNBWV]]
 
-Figure 47-5 Invoking an Enterprise Bean Business Method
-
-image:img/javaeett_dt_043.png[Description of Figure 47-5 follows] +
-link:img_text/javaeett_dt_043.html[Description of "Figure 47-5 Invoking an
-Enterprise Bean Business Method"] +
- +
+.*Figure 47-5 Invoking an Enterprise Bean Business Method *
+image:img/javaeett_dt_043.png[
+"Diagram of authorization process between web component and enterprise
+bean"]
 
 The EJB container is responsible for enforcing access control on the
 enterprise bean method. The container consults the security policy
@@ -316,20 +282,4 @@ security-related events for the purpose of being able to evaluate the
 effectiveness of security policies and mechanisms. To enable this, the
 system maintains a record of transactions and security information.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-intro.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

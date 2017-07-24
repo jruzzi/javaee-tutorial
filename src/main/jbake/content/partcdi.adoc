@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Contexts and Dependency Injection for Java EE
+next=cdi-basic.html
+prev=bean-validation-advanced004.html
 ~~~~~~
 Contexts and Dependency Injection for Java EE
 =============================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:bean-validation-advanced004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GJBNR]][[JEETT00131]]
 
@@ -52,20 +29,4 @@ for Java EE: Advanced Topics"]
 * link:cdi-adv-examples.html#GKHRE[Chapter 26, "Running the Advanced
 Contexts and Dependency Injection Examples"]
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:bean-validation-advanced004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

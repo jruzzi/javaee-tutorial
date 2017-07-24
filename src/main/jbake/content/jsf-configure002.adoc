@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Annotations to Configure Managed Beans
+next=jsf-configure003.html
+prev=jsf-configure001.html
 ~~~~~~
 Using Annotations to Configure Managed Beans
 ============================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-configure001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIRCH]]
 
@@ -112,20 +89,4 @@ If you are configuring a bean that allows attributes to be associated
 with the view, you can use the view scope. The attributes persist until
 the user has navigated to the next view.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-configure001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

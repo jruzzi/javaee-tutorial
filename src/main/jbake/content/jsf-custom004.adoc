@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Steps for Creating a Custom Component
+next=jsf-custom005.html
+prev=jsf-custom003.html
 ~~~~~~
 Steps for Creating a Custom Component
 =====================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-custom003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAVT]]
 
@@ -65,20 +42,4 @@ renderer. The section link:jsf-custom010.html#BNATT[Using a Custom
 Component] discusses how to use the custom component in a JavaServer
 Faces page.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-custom003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

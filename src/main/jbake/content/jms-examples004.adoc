@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Writing More Advanced JMS Applications
+next=jms-examples005.html
+prev=jms-examples003.html
 ~~~~~~
 Writing More Advanced JMS Applications
 ======================================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-examples003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIWFH]]
 
@@ -382,12 +359,9 @@ link:#BNCGK[Figure 46-1] illustrates these steps.
 
 [[BNCGK]]
 
-Figure 46-1 Transactions: JMS Client Example
-
-image:img/javaeett_dt_034.png[Description of Figure 46-1 follows] +
-link:img_text/javaeett_dt_034.html[Description of "Figure 46-1 Transactions:
-JMS Client Example"] +
- +
+.*Figure 46-1 Transactions: JMS Client Example *
+image:img/javaeett_dt_034.png[
+"Diagram of steps in transaction example"]
 
 All the messages use the `MapMessage` message type. Synchronous receives
 are used for all message reception except when the vendor processes the
@@ -623,20 +597,4 @@ asadmin delete-jms-resource jms/CQueue
 asadmin delete-jms-resource jms/OTopic
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-examples003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

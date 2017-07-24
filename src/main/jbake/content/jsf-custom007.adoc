@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Implementing an Event Listener
+next=jsf-custom008.html
+prev=jsf-custom006.html
 ~~~~~~
 Implementing an Event Listener
 ==============================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-custom006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAUT]]
 
@@ -62,7 +39,6 @@ event listener and an event handler and manually queue the event on the
 component. See link:jsf-custom008.html#BNAWD[Handling Events for Custom
 Components] for more information.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -77,7 +53,6 @@ information on how to manage page navigation.
 
 |=======================================================================
 
- +
 
 [[BNAUU]]
 
@@ -164,20 +139,4 @@ for details on `MapBookChangeListener`.
 link:jsf-page-core002.html#BNATB[Registering an Action Listener on a
 Component] explains how to register this listener onto a component.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-custom006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

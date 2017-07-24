@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Design and Architecture of Duke's Tutoring
+next=dukes-tutoring002.html
+prev=dukes-tutoring.html
 ~~~~~~
 Design and Architecture of Duke's Tutoring
 ==========================================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:dukes-tutoring.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-tutoring002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKAEI]]
 
@@ -47,12 +24,13 @@ application.
 
 [[CHDDJDCH]]
 
-Figure 58-1 Architecture of the Duke's Tutoring Example Application
-
-image:img/javaeett_dt_061.png[Description of Figure 58-1 follows] +
-link:img_text/javaeett_dt_061.html[Description of "Figure 58-1 Architecture
-of the Duke's Tutoring Example Application"] +
- +
+.*Figure 58-1 Architecture of the Duke's Tutoring Example Application *
+image:img/javaeett_dt_061.png[
+"Architecture diagram of the Duke's Tutoring example application. Two
+clients access the main interface and the admin interface deployed in
+the web container. These interfaces communicate with enterprise beans
+deployed in the EJB container. The enterprise beans communicate with the
+database."]
 
 The Duke's Tutoring application is organized into two main projects: the
 `dukes-tutoring-common` library and the `dukes-tutoring-war` web
@@ -119,20 +97,4 @@ packaged within a single WAR file:
 * The administrative interface used by the staff to manage the students
 and guardians, and to generate attendance reports
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:dukes-tutoring.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-tutoring002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

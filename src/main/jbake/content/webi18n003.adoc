@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Date and Number Formatting
+next=webi18n004.html
+prev=webi18n002.html
 ~~~~~~
 Date and Number Formatting
 ==========================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:webi18n002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webi18n004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAYA]]
 
@@ -56,20 +33,4 @@ could be converted as follows:
 For information on JavaServer Faces converters, see
 link:jsf-page-core001.html#BNAST[Using the Standard Converters].
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:webi18n002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webi18n004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

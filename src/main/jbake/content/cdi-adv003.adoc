@@ -1,39 +1,16 @@
 type=page
 status=published
 title=Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
+next=cdi-adv004.html
+prev=cdi-adv002.html
 ~~~~~~
 Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
 =================================================================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:cdi-adv002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKGKV]]
 
 [[using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications]]
-25.3 Using Producer Methods, Producer Fields, and Disposer Methods inCDI Applications
+25.3 Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
 --------------------------------------------------------------------------------------
 
 A producer method generates an object that can then be injected.
@@ -171,20 +148,4 @@ this case, at the end of the conversation, because `RequestBean` has
 conversation scope), and the parameter in the `close` method receives
 the object produced by the producer field.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:cdi-adv002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

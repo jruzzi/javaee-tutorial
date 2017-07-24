@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Running the Duke's Bookstore Case Study Application
+next=dukes-tutoring.html
+prev=dukes-bookstore002.html
 ~~~~~~
 Running the Duke's Bookstore Case Study Application
 ===================================================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:dukes-bookstore002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-tutoring.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GLPPQ]]
 
@@ -115,20 +92,4 @@ http://localhost:8080/dukes-bookstore/
 click one of the links at the bottom of the page.
 3.  Use the pages in the application to view and purchase books.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:dukes-bookstore002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-tutoring.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

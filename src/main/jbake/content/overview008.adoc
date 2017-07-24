@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Java EE 7 APIs
+next=overview009.html
+prev=overview007.html
 ~~~~~~
 Java EE 7 APIs
 ==============
-2017-07-17T15:27:46Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:overview007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:overview009.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNACJ]]
 
@@ -41,48 +18,36 @@ containers.
 
 [[BNACK]]
 
-Figure 1-6 Java EE Containers
-
-image:img/javaeett_dt_006.png[Description of Figure 1-6 follows] +
-link:img_text/javaeett_dt_006.html[Description of "Figure 1-6 Java EE
-Containers"] +
- +
+.*Figure 1-6 Java EE Containers *
+image:img/javaeett_dt_006.png[
+"Diagram of Java EE containers and their relationships"]
 
 link:#GJQMG[Figure 1-7] shows the availability of the Java EE 7 APIs in
 the web container.
 
 [[GJQMG]]
 
-Figure 1-7 Java EE APIs in the Web Container
-
-image:img/javaeett_dt_007.png[Description of Figure 1-7 follows] +
-link:img_text/javaeett_dt_007.html[Description of "Figure 1-7 Java EE APIs
-in the Web Container"] +
- +
+.*Figure 1-7 Java EE APIs in the Web Container *
+image:img/javaeett_dt_007.png[
+"Diagram of Java EE APIs in the web container"]
 
 link:#GJQMN[Figure 1-8] shows the availability of the Java EE 7 APIs in
 the EJB container.
 
 [[GJQMN]]
 
-Figure 1-8 Java EE APIs in the EJB Container
-
-image:img/javaeett_dt_008.png[Description of Figure 1-8 follows] +
-link:img_text/javaeett_dt_008.html[Description of "Figure 1-8 Java EE APIs
-in the EJB Container"] +
- +
+.*Figure 1-8 Java EE APIs in the EJB Container *
+image:img/javaeett_dt_008.png[
+"Diagram of Java EE APIs in the EJB container"]
 
 link:#GJQNH[Figure 1-9] shows the availability of the Java EE 7 APIs in
 the application client container.
 
 [[GJQNH]]
 
-Figure 1-9 Java EE APIs in the Application Client Container
-
-image:img/javaeett_dt_009.png[Description of Figure 1-9 follows] +
-link:img_text/javaeett_dt_009.html[Description of "Figure 1-9 Java EE APIs
-in the Application Client Container"] +
- +
+.*Figure 1-9 Java EE APIs in the Application Client Container *
+image:img/javaeett_dt_009.png[
+"Diagram of Java EE APIs in the application client container"]
 
 The following sections give a brief summary of the technologies required
 by the Java EE platform and the APIs used in Java EE applications.
@@ -503,20 +468,4 @@ Batch Applications for the Java Platform is new to the Java EE 7
 platform. The Java EE 7 platform requires Batch Applications for the
 Java Platform 1.0.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:overview007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:overview009.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

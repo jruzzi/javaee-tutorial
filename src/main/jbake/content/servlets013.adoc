@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Nonblocking I/O
+next=servlets014.html
+prev=servlets012.html
 ~~~~~~
 Nonblocking I/O
 ===============
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:servlets012.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets014.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BEIHICDH]]
 
@@ -91,7 +68,6 @@ object.
 |`boolean isFinished()` |Returns true when all the data has been read.
 |=======================================================================
 
- +
 
 [[sthref106]][[BEIFIIIH]]
 
@@ -110,7 +86,6 @@ the write listener object.
 blocking.
 |=======================================================================
 
- +
 
 [[sthref107]][[BEIFGJCG]]
 
@@ -140,7 +115,6 @@ when it is possible to write data without blocking or when there is an
 error.
 |=======================================================================
 
- +
 
 [[sthref108]]
 
@@ -202,20 +176,4 @@ as an inner class. The listener reads parts of the request as they
 become available and then writes some response to the client when it
 finishes reading the request.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:servlets012.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets014.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

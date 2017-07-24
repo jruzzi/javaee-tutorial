@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Overview of the JMS Examples
+next=jms-examples003.html
+prev=jms-examples001.html
 ~~~~~~
 Overview of the JMS Examples
 ============================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-examples001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABEFBHJ]]
 
@@ -84,7 +61,6 @@ shared durable topic subscriptions; see
 link:jms-examples005.html#BABEJBHA[Using Shared Durable Subscriptions]
 |=======================================================================
 
- +
 
 [[sthref200]][[sthref201]]
 
@@ -114,22 +90,5 @@ link:jms-examples009.html#BNCHF[Using an Entity to Join Messages from Two
 MDBs]
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-examples001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The JMS API Programming Model
+next=jms-concepts004.html
+prev=jms-concepts002.html
 ~~~~~~
 The JMS API Programming Model
 =============================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-concepts002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCEH]]
 
@@ -52,12 +29,11 @@ JMS client application.
 
 [[BNCEI]]
 
-Figure 45-5 The JMS API Programming Model
-
-image:img/javaeett_dt_030.png[Description of Figure 45-5 follows] +
-link:img_text/javaeett_dt_030.html[Description of "Figure 45-5 The JMS API
-Programming Model"] +
- +
+.*Figure 45-5 The JMS API Programming Model *
+image:img/javaeett_dt_030.png[
+"Diagram of the JMS API programming model: connection factory,
+JMSContext, connection, session, message producer, message consumer,
+messages, and destinations"]
 
 JMS also provides queue browsers, objects that allow an application to
 browse messages on a queue.
@@ -202,7 +178,6 @@ example, a connection could represent an open TCP/IP socket between a
 client and a provider service daemon. You use a connection to create one
 or more sessions.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -216,7 +191,6 @@ session.
 
 |=======================================================================
 
- +
 
 You normally create a connection by creating a `JMSContext` object. See
 link:#BABGDFEA[JMSContext Objects] for details.
@@ -642,12 +616,10 @@ M6, but they do not receive messages M3 and M4.
 
 [[BNCGE]]
 
-Figure 45-6 Nondurable Subscriptions and Consumers
-
-image:img/javaeett_dt_031.png[Description of Figure 45-6 follows] +
-link:img_text/javaeett_dt_031.html[Description of "Figure 45-6 Nondurable
-Subscriptions and Consumers"] +
- +
+.*Figure 45-6 Nondurable Subscriptions and Consumers *
+image:img/javaeett_dt_031.png[
+"Diagram showing messages being lost when nondurable subscriptions are
+used"]
 
 With a durable subscription, the consumer can be closed and re-created,
 but the subscription continues to exist and to hold messages until the
@@ -661,12 +633,10 @@ M4, and M5 arrive while there is no consumer, they are not lost.
 
 [[BNCGF]]
 
-Figure 45-7 Consumers on a Durable Subscription
-
-image:img/javaeett_dt_032.png[Description of Figure 45-7 follows] +
-link:img_text/javaeett_dt_032.html[Description of "Figure 45-7 Consumers on
-a Durable Subscription"] +
- +
+.*Figure 45-7 Consumers on a Durable Subscription *
+image:img/javaeett_dt_032.png[
+"Diagram showing messages being preserved when durable subscriptions are
+used"]
 
 A shared durable subscription allows you to use multiple consumers to
 receive messages from a durable subscription. If you use a shared
@@ -825,7 +795,6 @@ application
 provider prior to delivery
 |=======================================================================
 
- +
 
 [[BNCEV]]
 
@@ -886,7 +855,6 @@ language.
 message type is useful when a message body is not required.
 |=======================================================================
 
- +
 
 The JMS API provides methods for creating messages of each type and for
 filling in their contents. For example, to create and send a
@@ -1029,20 +997,4 @@ following subclasses, described in the API documentation:
 All the examples in the tutorial catch and handle `JMSException` or
 `JMSRuntimeException` when it is appropriate to do so.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-concepts002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

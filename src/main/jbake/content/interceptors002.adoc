@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Interceptors
+next=interceptors003.html
+prev=interceptors001.html
 ~~~~~~
 Using Interceptors
 ==================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:interceptors001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:interceptors003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKEDM]]
 
@@ -280,7 +257,6 @@ methods are invoked.
 after calling `Invocation.proceed` by calling the
 `InvocationContext.getTarget` method.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -293,7 +269,6 @@ target instance.
 
 |=======================================================================
 
- +
 
 `@AroundConstruct` methods must call `Invocation.proceed` in order to
 create the target instance. If an `@AroundConstruct` method does not
@@ -514,7 +489,6 @@ superclass.
 The `@Priority` annotation requires an `int` value as an element. The
 lower the number, the higher the priority of the associated interceptor.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -526,7 +500,6 @@ implementation-specific.
 
 |=======================================================================
 
- +
 
 The `javax.interceptor.Interceptor.Priority` class defines the priority
 constants listed in link:#BABFBAEF[Table 54-2].
@@ -558,9 +531,7 @@ libraries should use the range between `LIBRARY_AFTER` and
 EE Platform should have values higher than `PLATFORM_AFTER`.
 |=======================================================================
 
- +
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -572,7 +543,6 @@ for future use, and should not be used.
 
 |=======================================================================
 
- +
 
 The following code snippet shows how to use the priority constants in an
 application-defined interceptor:
@@ -584,20 +554,4 @@ application-defined interceptor:
 public class MyInterceptor { ... }
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:interceptors001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:interceptors003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

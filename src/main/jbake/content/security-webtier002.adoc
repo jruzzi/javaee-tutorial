@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Securing Web Applications
+next=security-webtier003.html
+prev=security-webtier001.html
 ~~~~~~
 Securing Web Applications
 =========================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-webtier001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-webtier003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKBAA]]
 
@@ -211,7 +188,6 @@ transit.
 * Specify `NONE` to indicate that the container must accept the
 constrained requests on any connection, including an unprotected one.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -223,7 +199,6 @@ transport guarantee values identically.
 
 |=======================================================================
 
- +
 
 The user data constraint is handy to use in conjunction with basic and
 form-based user authentication. When the login authentication method is
@@ -239,7 +214,6 @@ To guarantee that data is transported over a secure connection, ensure
 that SSL support is configured for your server. SSL support is already
 configured for GlassFish Server.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -260,7 +234,6 @@ easily implemented by using a filter.
 
 |=======================================================================
 
- +
 
 [[BNCBL]]
 
@@ -391,12 +364,10 @@ authentication.
 
 [[BNCBP]]
 
-Figure 48-1 HTTP Basic Authentication
-
-image:img/javaeett_dt_045.png[Description of Figure 48-1 follows] +
-link:img_text/javaeett_dt_045.html[Description of "Figure 48-1 HTTP Basic
-Authentication"] +
- +
+.*Figure 48-1 HTTP Basic Authentication *
+image:img/javaeett_dt_045.png[
+"Diagram of four steps in HTTP basic authentication between client and
+server"]
 
 [[BNCBQ]]
 
@@ -426,12 +397,10 @@ authentication.
 
 [[GEXFA]]
 
-Figure 48-2 Form-Based Authentication
-
-image:img/javaeett_dt_046.png[Description of Figure 48-2 follows] +
-link:img_text/javaeett_dt_046.html[Description of "Figure 48-2 Form-Based
-Authentication"] +
- +
+.*Figure 48-2 Form-Based Authentication *
+image:img/javaeett_dt_046.png[
+"Diagram of four steps in form-based authentication between client and
+server"]
 
 The section link:security-webtier004.html#BNCBY[The hello1-formauth
 Example: Form-Based Authentication with a JavaServer Faces Application]
@@ -473,7 +442,7 @@ validate received authenticators by calculating the expected digest.
 [[BNCBN]]
 
 [[specifying-an-authentication-mechanism-in-the-deployment-descriptor]]
-48.2.4 Specifying an Authentication Mechanism in the DeploymentDescriptor
+48.2.4 Specifying an Authentication Mechanism in the Deployment Descriptor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To specify an authentication mechanism, use the `login-config` element.
@@ -487,7 +456,6 @@ basic authentication scheme is chosen for the web application.
 * The `form-login-config` subelement specifies the login and error pages
 that should be used when form-based login is specified.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -501,7 +469,6 @@ Programmatically].
 
 |=======================================================================
 
- +
 
 When you try to access a web resource that is constrained by a
 `security-constraint` element, the web container activates the
@@ -597,20 +564,4 @@ The `@ServletSecurity` annotation cannot be used in this situation
 because its constraints apply to all URL patterns specified by the
 `@WebServlet` annotation.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-webtier001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-webtier003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

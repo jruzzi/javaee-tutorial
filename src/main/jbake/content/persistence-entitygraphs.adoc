@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating Fetch Plans with Entity Graphs
+next=persistence-entitygraphs001.html
+prev=persistence-locking002.html
 ~~~~~~
 Creating Fetch Plans with Entity Graphs
 =======================================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-locking002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-entitygraphs001.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABIJIAC]]
 
@@ -50,20 +27,4 @@ Graphs]
 * link:persistence-entitygraphs004.html#BABGJDAJ[Using Entity Graphs in
 Query Operations]
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-locking002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-entitygraphs001.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using the Standard Converters
+next=jsf-page-core002.html
+prev=jsf-page-core.html
 ~~~~~~
 Using the Standard Converters
 =============================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-page-core.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAST]]
 
@@ -72,7 +49,6 @@ Table 11-1 Converter Classes and Converter IDs
 |`ShortConverter` |`javax.faces.Short`
 |======================================================
 
- +
 
 A standard error message is associated with each of these converters. If
 you have registered one of these converters onto a component on your
@@ -269,7 +245,6 @@ date, a time, or both. Valid values are `date`, `time`, or `both`. If no
 value is specified, `date` is used.
 |=======================================================================
 
- +
 
 [[BNASX]]
 
@@ -367,22 +342,5 @@ formatted as a `number`, `currency`, or `percentage`. If not specified,
 `number` is used.
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-page-core.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

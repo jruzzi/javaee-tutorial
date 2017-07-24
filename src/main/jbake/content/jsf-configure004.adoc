@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Faces Flows
+next=jsf-configure005.html
+prev=jsf-configure003.html
 ~~~~~~
 Using Faces Flows
 =================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-configure003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[CHDGFCJF]]
 
@@ -83,12 +60,12 @@ interact.
 
 [[CHDIHDCD]]
 
-Figure 16-1 Two Faces Flows and Their Interactions
-
-image:img/javaeett_dt_017.png[Description of Figure 16-1 follows] +
-link:img_text/javaeett_dt_017.html[Description of "Figure 16-1 Two Faces
-Flows and Their Interactions"] +
- +
+.*Figure 16-1 Two Faces Flows and Their Interactions *
+image:img/javaeett_dt_017.png[
+"This figure shows two Faces flows, Flow A and Flow B. Each has a start
+node and two additional pages. Each has an associated managed bean. Each
+defines a return node, and each defines two parameters to be passed to
+the other flow."]
 
 In this figure, Flow A has a start node named `flow-a` and two
 additional pages, `next_a1` and `next_a2`. From `next_a2`, a user can
@@ -714,20 +691,4 @@ you will return to the first page of the calling flow. (You may see a
 warning, which you can ignore.) Click Exit Flow on that page to go to
 the specified return node.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-configure003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

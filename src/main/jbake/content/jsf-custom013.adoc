@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Binding Component Values and Instances to Managed Bean Properties
+next=jsf-custom014.html
+prev=jsf-custom012.html
 ~~~~~~
 Binding Component Values and Instances to Managed Bean Properties
 =================================================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-custom012.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom014.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNATG]]
 
@@ -126,7 +103,6 @@ Table 15-3 Examples of Value-Binding Expressions
 |A property of an object in an array of objects |`books[3].price`
 |=======================================================================
 
- +
 
 The next two sections explain how to use the `value` attribute to bind a
 component's value to a bean property or other data objects and how to
@@ -294,7 +270,6 @@ keyed by attribute name
 the `FacesRequest` for this request
 |=======================================================================
 
- +
 
 [[BNATL]]
 
@@ -354,20 +329,4 @@ link:jsf-develop002.html#BNAUK[Writing Properties Bound to Component
 Instances] explains how to write the bean properties bound to the
 example components.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-custom012.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom014.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The phonebilling Example Application
+next=batch-processing010.html
+prev=batch-processing008.html
 ~~~~~~
 The phonebilling Example Application
 ====================================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:batch-processing008.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing010.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BCGFCACD]]
 
@@ -594,20 +571,4 @@ mvn install
 http://localhost:8080/phonebilling/
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:batch-processing008.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing010.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

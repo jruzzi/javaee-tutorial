@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Examples: Securing Web Applications
+next=security-javaee.html
+prev=security-webtier003.html
 ~~~~~~
 Examples: Securing Web Applications
 ===================================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-webtier003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-javaee.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCBX]]
 
@@ -303,7 +280,7 @@ The application responds by saying "Hello" to the name you entered.
 [[BNCBY]]
 
 [[the-hello1-formauth-example-form-based-authentication-with-a-javaserver-faces-application]]
-48.4.4 The hello1-formauth Example: Form-Based Authentication with aJavaServer Faces Application
+48.4.4 The hello1-formauth Example: Form-Based Authentication with a JavaServer Faces Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example explains how to use form-based authentication with a
@@ -567,20 +544,4 @@ For additional testing and to see the login error page generated, close
 and reopen your browser, enter the application URL, and enter a user
 name and password that are not authorized.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-webtier003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-javaee.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

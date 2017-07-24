@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Registering Listeners on Components
+next=jsf-page-core003.html
+prev=jsf-page-core001.html
 ~~~~~~
 Registering Listeners on Components
 ===================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-page-core001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNASZ]]
 
@@ -85,7 +62,6 @@ property that accepts and returns a `ValueChangeListener`
 implementation.
 |=======================================================================
 
- +
 
 The following example shows a value-change listener registered on a
 component:
@@ -218,20 +194,4 @@ value expression `requestScope.book`, which is where the `book` object
 referenced by the `value` attribute is stored when the `commandLink` or
 the `commandButton` component is activated.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-page-core001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page-core003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

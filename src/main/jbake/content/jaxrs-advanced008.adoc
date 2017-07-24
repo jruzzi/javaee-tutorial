@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The customer Example Application
+next=partentbeans.html
+prev=jaxrs-advanced007.html
 ~~~~~~
 The customer Example Application
 ================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jaxrs-advanced007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:partentbeans.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKOIB]]
 
@@ -493,20 +470,4 @@ http://localhost:8080/customer/
 +
 The web client allows you to create and view customers.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jaxrs-advanced007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:partentbeans.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

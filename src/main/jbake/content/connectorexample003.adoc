@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The traffic Example
+next=interceptors.html
+prev=connectorexample002.html
 ~~~~~~
 The traffic Example
 ===================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:connectorexample002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:interceptors.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[CHDJEADB]]
 
@@ -59,12 +36,11 @@ adapter, the message-driven bean, and the web application
 
 [[CHDGFGHB]]
 
-Figure 53-3 The traffic Example
-
-image:img/javaeett_dt_056.png[Description of Figure 53-3 follows] +
-link:img_text/javaeett_dt_056.html[Description of "Figure 53-3 The traffic
-Example"] +
- +
+.*Figure 53-3 The traffic Example *
+image:img/javaeett_dt_056.png[
+"This figure shows the components of the traffic example: a WAR
+communicating with an enterprise bean using a JMS topic, and a RAR
+communicating with an EIS over a TCP socket."]
 
 The `traffic-eis` module is an auxiliary project that resembles a legacy
 traffic information system. It contains a Java SE program that sends
@@ -173,12 +149,10 @@ inbound resource adapter is shown in link:#CHDHADDC[Figure 53-4].
 
 [[CHDHADDC]]
 
-Figure 53-4 Architecture of the traffic Example
-
-image:img/javaeett_dt_057.png[Description of Figure 53-4 follows] +
-link:img_text/javaeett_dt_057.html[Description of "Figure 53-4 Architecture
-of the traffic Example"] +
- +
+.*Figure 53-4 Architecture of the traffic Example *
+image:img/javaeett_dt_057.png[
+"This figure shows the classes in each of the components of the traffic
+example."]
 
 The `traffic-rar` module implements the interfaces listed in
 link:#CHDEDEAF[Table 53-3].
@@ -202,7 +176,6 @@ this interface from the work management contract to wait for traffic
 updates on a separate thread.
 |=======================================================================
 
- +
 
 When an MDB activates the inbound resource adapter, the container
 invokes the `endpointActivation` method in the `TrafficResourceAdapter`
@@ -409,20 +382,4 @@ seconds.
 8.  After undeploying the `traffic-ear` application, press Ctrl+C in the
 first terminal window to close the `traffic-eis` application.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:connectorexample002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:interceptors.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

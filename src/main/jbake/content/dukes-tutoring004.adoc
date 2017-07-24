@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Running the Duke's Tutoring Case Study Application
+next=dukes-forest.html
+prev=dukes-tutoring003.html
 ~~~~~~
 Running the Duke's Tutoring Case Study Application
 ==================================================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:dukes-tutoring003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-forest.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKJNN]]
 
@@ -102,7 +79,6 @@ generated.
 
 |=======================================================================
 
- +
 7.  In the Projects tab, right-click the `dukes-tutoring` project and
 select Build.
 +
@@ -213,20 +189,4 @@ Facelets pages exist for these features. The application also makes no
 use of the properties in the `PersonDetails` entity. Feel free to modify
 the application to add these features.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:dukes-tutoring003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-forest.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

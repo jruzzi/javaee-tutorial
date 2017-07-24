@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Path Parameters
+next=websocket009.html
+prev=websocket007.html
 ~~~~~~
 Path Parameters
 ===============
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:websocket007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket009.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABEJIJI]]
 
@@ -81,20 +58,4 @@ public class ChatEndpoint {
 The path parameters used as arguments in these methods can be strings,
 primitive types, or the corresponding wrapper types.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:websocket007.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket009.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

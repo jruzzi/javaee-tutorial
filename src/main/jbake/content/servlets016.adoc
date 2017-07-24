@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The fileupload Example Application
+next=servlets017.html
+prev=servlets015.html
 ~~~~~~
 The fileupload Example Application
 ==================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:servlets015.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets017.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABDGFJJ]]
 
@@ -43,7 +20,6 @@ how to implement and use the file upload feature.
 The Duke's Forest case study provides a more complex example that
 uploads an image file and stores its content in a database.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -71,7 +47,6 @@ data that results from the download or use of content.
 
 |=======================================================================
 
- +
 
 The following topics are addressed here:
 
@@ -151,17 +126,17 @@ directory on the local file system:
 POST /fileupload/upload HTTP/1.1
 Host: localhost:8080
 Content-Type: multipart/form-data;
-boundary=---------------------------263081694432439Content-Length: 441
+boundary=---------------------------263081694432439 Content-Length: 441
 -----------------------------263081694432439
 Content-Disposition: form-data; name="file"; filename="sample.txt"
 Content-Type: text/plain
-Data from sample file
+ Data from sample file
 -----------------------------263081694432439
 Content-Disposition: form-data; name="destination"
-/tmp
+ /tmp
 -----------------------------263081694432439
 Content-Disposition: form-data; name="upload"
-Upload
+ Upload
 -----------------------------263081694432439--
 ----
 
@@ -347,20 +322,4 @@ specified.
 6.  Go to the directory that you specified in the Destination field and
 verify that the uploaded file is present.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:servlets015.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets017.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

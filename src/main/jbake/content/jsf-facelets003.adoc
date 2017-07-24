@@ -1,39 +1,16 @@
 type=page
 status=published
 title=Developing a Simple Facelets Application: The guessnumber-jsf Example Application
+next=jsf-facelets004.html
+prev=jsf-facelets002.html
 ~~~~~~
 Developing a Simple Facelets Application: The guessnumber-jsf Example Application
 =================================================================================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-facelets002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-facelets004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIPOB]]
 
 [[developing-a-simple-facelets-application-the-guessnumber-jsf-example-application]]
-8.3 Developing a Simple Facelets Application: The guessnumber-jsfExample Application
+8.3 Developing a Simple Facelets Application: The guessnumber-jsf Example Application
 -------------------------------------------------------------------------------------
 
 This section describes the general steps involved in developing a
@@ -424,20 +401,4 @@ You can continue to guess until you get the correct answer, or you can
 look in the server log, where the `UserNumberBean` constructor displays
 the correct answer.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-facelets002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-facelets004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Composite Components
+next=jsf-facelets006.html
+prev=jsf-facelets004.html
 ~~~~~~
 Composite Components
 ====================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-facelets004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-facelets006.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIQZR]]
 
@@ -99,7 +76,6 @@ is nested exposes an implementation of `ActionSource2` suitable for use
 as the target of attached objects in the using page.
 |=======================================================================
 
- +
 
 For more information and a complete list of Facelets composite tags, see
 the olink:JSFTL[JavaServer Faces Facelets Tag Library documentation].
@@ -184,20 +160,4 @@ http://localhost:8080/application-name/emuserpage.xhtml
 See link:jsf-advanced-cc.html#GKHXA[Chapter 14, "Composite Components:
 Advanced Topics and an Example,"] for more information and an example.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-facelets004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-facelets006.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

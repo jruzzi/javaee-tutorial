@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Determining Whether You Need a Custom Component or Renderer
+next=jsf-custom003.html
+prev=jsf-custom001.html
 ~~~~~~
 Determining Whether You Need a Custom Component or Renderer
 ===========================================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-custom001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAVH]]
 
@@ -223,22 +200,5 @@ a custom renderer, or custom validator |Custom component or standard
 component associated with a custom renderer
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-custom001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

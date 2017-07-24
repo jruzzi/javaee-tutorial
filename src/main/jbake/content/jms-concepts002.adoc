@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Basic JMS API Concepts
+next=jms-concepts003.html
+prev=jms-concepts001.html
 ~~~~~~
 Basic JMS API Concepts
 ======================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-concepts001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCDX]]
 
@@ -88,12 +65,10 @@ JMS provider.
 
 [[BNCDZ]]
 
-Figure 45-2 JMS API Architecture
-
-image:img/javaeett_dt_027.png[Description of Figure 45-2 follows] +
-link:img_text/javaeett_dt_027.html[Description of "Figure 45-2 JMS API
-Architecture"] +
- +
+.*Figure 45-2 JMS API Architecture *
+image:img/javaeett_dt_027.png[
+"Diagram of JMS API architecture, showing administrative tool, JMS
+client, JNDI namespace, and JMS provider"]
 
 [[BNCEA]]
 
@@ -138,12 +113,10 @@ the client sent the message.
 
 [[BNCEC]]
 
-Figure 45-3 Point-to-Point Messaging
-
-image:img/javaeett_dt_028.png[Description of Figure 45-3 follows] +
-link:img_text/javaeett_dt_028.html[Description of "Figure 45-3
-Point-to-Point Messaging"] +
- +
+.*Figure 45-3 Point-to-Point Messaging *
+image:img/javaeett_dt_028.png[
+"Diagram of point-to-point messaging, showing Client 1 sending a message
+to a queue, and Client 2 consuming and acknowledging the message"]
 
 Use PTP messaging when every message you send must be processed
 successfully by one consumer.
@@ -193,12 +166,10 @@ messaging.
 
 [[BNCEE]]
 
-Figure 45-4 Publish/Subscribe Messaging
-
-image:img/javaeett_dt_029.png[Description of Figure 45-4 follows] +
-link:img_text/javaeett_dt_029.html[Description of "Figure 45-4
-Publish/Subscribe Messaging"] +
- +
+.*Figure 45-4 Publish/Subscribe Messaging *
+image:img/javaeett_dt_029.png[
+"Diagram of pub/sub messaging, showing Client 1 sending a message to a
+topic, and the message being delivered to two consumers to the topic"]
 
 [[BNCEG]]
 
@@ -224,20 +195,4 @@ application, a message-driven bean serves as a message listener (it too
 has an `onMessage` method), but a client does not need to register it
 with a consumer.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-concepts001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

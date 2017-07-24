@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The Lifecycle of a JavaServer Faces Application
+next=jsf-intro008.html
+prev=jsf-intro006.html
 ~~~~~~
 The Lifecycle of a JavaServer Faces Application
 ===============================================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-intro006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAQQ]]
 
@@ -92,12 +69,11 @@ link:#BNAQR[Figure 7-3] illustrates these steps.
 
 [[BNAQR]]
 
-Figure 7-3 JavaServer Faces Standard Request-Response Lifecycle
-
-image:img/javaeett_dt_016.png[Description of Figure 7-3 follows] +
-link:img_text/javaeett_dt_016.html[Description of "Figure 7-3 JavaServer
-Faces Standard Request-Response Lifecycle"] +
- +
+.*Figure 7-3 JavaServer Faces Standard Request-Response Lifecycle *
+image:img/javaeett_dt_016.png[
+"Flow diagram of Faces request and Faces response, including event and
+validation processing, error handling, model updating, application
+invocation."]
 
 The request-response lifecycle handles two kinds of requests: initial
 requests and postbacks. An initial request occurs when a user makes a
@@ -339,20 +315,4 @@ After the content of the view is rendered, the state of the response is
 saved so that subsequent requests can access it. The saved state is
 available to the Restore View phase.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-intro006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

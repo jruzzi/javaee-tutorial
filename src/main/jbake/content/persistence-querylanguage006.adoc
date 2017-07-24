@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Full Query Language Syntax
+next=persistence-criteria.html
+prev=persistence-querylanguage005.html
 ~~~~~~
 Full Query Language Syntax
 ==========================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-querylanguage005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-criteria.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBUF]]
 
@@ -74,7 +51,6 @@ constructs on the right.
 a|
 `*`
 
- +
 
  |The preceding construct may occur zero or more times.
 
@@ -85,7 +61,6 @@ a|
 a|
 `|`
 
- +
 
  |An exclusive `OR`.
 
@@ -96,7 +71,6 @@ keywords are not case-sensitive.
 or a line feed.
 |=======================================================================
 
- +
 
 [[BNBUI]]
 
@@ -368,7 +342,6 @@ A query language identifier is case-sensitive, with two exceptions:
 An identifier cannot be the same as a query language keyword. Here is a
 list of query language keywords:
 
- +
 `ABS` +
 `ALL` +
 `AND` +
@@ -941,7 +914,6 @@ Table 39-2 Query Language Order Precedence
 
 |==================================
 
- +
 
 [[BNBVE]]
 
@@ -1039,7 +1011,6 @@ Table 39-3 LIKE Expression Examples
 
 |============================================================
 
- +
 
 [[BNBVI]]
 
@@ -1215,7 +1186,6 @@ Table 39-4 String Expressions
 |`UPPER(String)` |`String`
 |==============================================================
 
- +
 
 The `CONCAT` function concatenates two strings into one string.
 
@@ -1262,7 +1232,6 @@ Table 39-5 Arithmetic Expressions
 |`SIZE(Collection)` |`int`
 |==========================================
 
- +
 
 The `ABS` function takes a numeric expression and returns a number of
 the same type as the argument.
@@ -1290,7 +1259,6 @@ Table 39-6 Date/Time Expressions
 |`CURRENT_TIMESTAMP` |`java.sql.Timestamp`
 |=========================================
 
- +
 
 [[GJJND]]
 
@@ -1374,7 +1342,6 @@ Table 39-7 AND Operator Logic
 |U |U |F |U
 |============
 
- +
 
 [[sthref174]][[BNBVT]]
 
@@ -1388,7 +1355,6 @@ Table 39-8 OR Operator Logic
 |U |T |U |U
 |===========
 
- +
 
 [[BNBVU]]
 
@@ -1429,7 +1395,6 @@ Table 39-9 NOT Operator Logic
 |U |U
 |================
 
- +
 
 [[sthref176]][[BNBVW]]
 
@@ -1443,7 +1408,6 @@ Table 39-10 Conditional Test
 |Expression is unknown |F |F |T
 |==============================
 
- +
 
 [[BNBVX]]
 
@@ -1529,7 +1493,6 @@ set
  |Returns the sum of all the values in the result set
 |=======================================================================
 
- +
 
 For select method queries with an aggregate function (`AVG`, `COUNT`,
 `MAX`, `MIN`, or `SUM`) in the `SELECT` clause, the following rules
@@ -1681,20 +1644,4 @@ FROM CustomerOrder o JOIN o.customer c
 GROUP BY c.status HAVING c.status IN (1, 2, 3)
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-querylanguage005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-criteria.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

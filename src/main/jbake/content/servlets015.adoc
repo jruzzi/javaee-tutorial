@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The mood Example Application
+next=servlets016.html
+prev=servlets014.html
 ~~~~~~
 The mood Example Application
 ============================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:servlets014.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets016.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKCPG]]
 
@@ -169,20 +146,4 @@ The URL specifies the context root, followed by the URL pattern.
 A web page appears with the title "Servlet MoodServlet at /mood", a text
 string describing Duke's mood, and an illustrative graphic.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:servlets014.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets016.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

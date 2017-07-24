@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Filtering Requests and Responses
+next=servlets007.html
+prev=servlets005.html
 ~~~~~~
 Filtering Requests and Responses
 ================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:servlets005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets007.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAGB]]
 
@@ -184,12 +161,10 @@ to servlets S1 and S2.
 
 [[BNAGH]]
 
-Figure 17-1 Filter-to-Servlet Mapping
-
-image:img/javaeett_dt_018.png[Description of Figure 17-1 follows] +
-link:img_text/javaeett_dt_018.html[Description of "Figure 17-1
-Filter-to-Servlet Mapping"] +
- +
+.*Figure 17-1 Filter-to-Servlet Mapping *
+image:img/javaeett_dt_018.png[
+"Diagram of filter-to-servlet mapping with filters F1-F3 and servlets
+S1-S3. F1 filters S1-S3, then F2 filters S2, then F3 filters S1 and S2."]
 
 Recall that a filter chain is one of the objects passed to the
 `doFilter` method of a filter. This chain is formed indirectly by means
@@ -248,20 +223,4 @@ You can direct the filter to be applied to any combination of the
 preceding situations by selecting multiple dispatcher types. If no types
 are specified, the default option is REQUEST.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:servlets005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets007.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Authentication Mechanisms
+next=security-advanced003.html
+prev=security-advanced001.html
 ~~~~~~
 Authentication Mechanisms
 =========================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-advanced001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-advanced003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GLIEN]]
 
@@ -104,12 +81,9 @@ mutual authentication.
 
 [[GLIFJ]]
 
-Figure 50-1 Certificate-Based Mutual Authentication
-
-image:img/javaeett_dt_048.png[Description of Figure 50-1 follows] +
-link:img_text/javaeett_dt_048.html[Description of "Figure 50-1
-Certificate-Based Mutual Authentication"] +
- +
+.*Figure 50-1 Certificate-Based Mutual Authentication *
+image:img/javaeett_dt_048.png[
+"Diagram of six steps in mutual authentication with certificates"]
 
 In user name/password-based mutual authentication, the following actions
 occur.
@@ -128,12 +102,10 @@ name/password-based mutual authentication.
 
 [[GLIGQ]]
 
-Figure 50-2 User Name/Password-Based Mutual Authentication
-
-image:img/javaeett_dt_049.png[Description of Figure 50-2 follows] +
-link:img_text/javaeett_dt_049.html[Description of "Figure 50-2 User
-Name/Password-Based Mutual Authentication"] +
- +
+.*Figure 50-2 User Name/Password-Based Mutual Authentication *
+image:img/javaeett_dt_049.png[
+"Diagram of five steps in mutual authentication with user name and
+password"]
 
 [[BNBYH]]
 
@@ -260,20 +232,4 @@ Certificate was added to keystore
 ----
 5.  Restart GlassFish Server.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-advanced001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-advanced003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

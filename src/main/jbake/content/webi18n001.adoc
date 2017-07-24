@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Java Platform Localization Classes
+next=webi18n002.html
+prev=webi18n.html
 ~~~~~~
 Java Platform Localization Classes
 ==================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:webi18n.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webi18n002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAXV]]
 
@@ -64,20 +41,4 @@ name, `messages.properties`.
 For more details on internationalization and localization in the Java
 platform, see `http://docs.oracle.com/javase/tutorial/i18n/index.html`.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:webi18n.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webi18n002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

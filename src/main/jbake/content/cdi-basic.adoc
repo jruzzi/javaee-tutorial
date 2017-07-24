@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Introduction to Contexts and Dependency Injection for Java EE
+next=cdi-basic001.html
+prev=partcdi.html
 ~~~~~~
 Introduction to Contexts and Dependency Injection for Java EE
 =============================================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:partcdi.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic001.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIWHB]]
 
@@ -62,20 +39,4 @@ Methods]
 @PreDestroy Annotations with CDI Managed Bean Classes]
 * link:cdi-basic015.html#GIWEL[Further Information about CDI]
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:partcdi.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic001.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

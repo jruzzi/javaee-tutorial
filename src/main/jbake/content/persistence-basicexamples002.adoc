@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The order Application
+next=persistence-basicexamples003.html
+prev=persistence-basicexamples001.html
 ~~~~~~
 The order Application
 =====================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-basicexamples001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-basicexamples003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIQST]]
 
@@ -61,14 +38,10 @@ link:#CHDGGDIA[Figure 38-1].
 
 [[CHDGGDIA]]
 
-Figure 38-1 Database Schema for the order Application
+.*Figure 38-1 Database Schema for the order Application *
+image:img/javaeett_dt_024.png[
+"Diagram showing the database schema for the order application"]
 
-image:img/javaeett_dt_024.png[Description of Figure 38-1 follows] +
-link:img_text/javaeett_dt_024.html[Description of "Figure 38-1 Database
-Schema for the order Application"] +
- +
-
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -80,7 +53,6 @@ omitted from the table names.
 
 |=======================================================================
 
- +
 
 [[GIQRH]]
 
@@ -885,20 +857,4 @@ following URL:
 http://localhost:8080/order/
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-basicexamples001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-basicexamples003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

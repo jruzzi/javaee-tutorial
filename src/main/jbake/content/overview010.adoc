@@ -1,34 +1,11 @@
 type=page
 status=published
 title=GlassFish Server Tools
+next=usingexamples.html
+prev=overview009.html
 ~~~~~~
 GlassFish Server Tools
 ======================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:overview009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:usingexamples.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNADF]]
 
@@ -63,7 +40,6 @@ Table 1-1 GlassFish Server Tools
 a|
 Administration Console
 
- +
 
  |A web-based GUI GlassFish Server administration utility. Used to stop
 GlassFish Server and to manage users, resources, and applications.
@@ -101,22 +77,5 @@ generate all the required JAX-WS portable artifacts for web service
 deployment and invocation.
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:overview009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:usingexamples.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

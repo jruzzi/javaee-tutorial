@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Lock Modes
+next=persistence-entitygraphs.html
+prev=persistence-locking001.html
 ~~~~~~
 Lock Modes
 ==========
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-locking001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-entitygraphs.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKJIU]]
 
@@ -93,7 +70,6 @@ applications.
 |`NONE` |No additional locking will occur on the data in the database.
 |=======================================================================
 
- +
 
 [[GKJIK]]
 
@@ -196,7 +172,6 @@ thrown, but the current transaction will not be marked for rollback. If
 you set this property to `0`, the persistence provider should throw a
 `LockTimeoutException` if it cannot immediately obtain a lock.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -210,7 +185,6 @@ value of `javax.persistence.lock.timeout` is a hint, not a contract.
 
 |=======================================================================
 
- +
 
 This property may be set programmatically by passing it to the
 `EntityManager` methods that allow lock modes to be specified, the
@@ -227,20 +201,4 @@ will be determined in the following order:
 3.  The argument to the `Persistence.createEntityManagerFactory` method
 4.  The value in the `persistence.xml` deployment descriptor
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-locking001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-entitygraphs.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

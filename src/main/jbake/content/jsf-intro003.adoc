@@ -1,34 +1,11 @@
 type=page
 status=published
 title=JavaServer Faces Technology Benefits
+next=jsf-intro004.html
+prev=jsf-intro002.html
 ~~~~~~
 JavaServer Faces Technology Benefits
 ====================================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-intro002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAPJ]]
 
@@ -60,12 +37,11 @@ in link:#GJEPW[Figure 7-2].
 
 [[GJEPW]]
 
-Figure 7-2 Java Web Application Technologies
-
-image:img/javaeett_dt_015.png[Description of Figure 7-2 follows] +
-link:img_text/javaeett_dt_015.html[Description of "Figure 7-2 Java Web
-Application Technologies"] +
- +
+.*Figure 7-2 Java Web Application Technologies *
+image:img/javaeett_dt_015.png[
+"Diagram of web application technologies. JavaServer Pages, the JSP
+Standard Tag Library, and JavaServer Faces rest on Java Servlet
+technology."]
 
 This layering of APIs enables several important application use cases,
 such as using different presentation technologies, creating your own
@@ -92,20 +68,4 @@ applications.
 architecture for managing component state, processing component data,
 validating user input, and handling events.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-intro002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

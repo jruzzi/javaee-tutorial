@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Value and Method Expressions
+next=jsf-el004.html
+prev=jsf-el002.html
 ~~~~~~
 Value and Method Expressions
 ============================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-el002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-el004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAHU]]
 
@@ -434,7 +411,6 @@ EL expression.
 For basic information on lambda expressions, see
 `http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html`.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -447,7 +423,6 @@ expressions with Java SE 7, the Java version associated with the Java EE
 
 |=======================================================================
 
- +
 
 A lambda expression uses the arrow token (`->)` operator. The
 identifiers to the left of the operator are called lambda parameters.
@@ -484,20 +459,4 @@ A lambda expression can also be passed as an argument to a method and be
 invoked in the method. It can also be nested in another lambda
 expression.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-el002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-el004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

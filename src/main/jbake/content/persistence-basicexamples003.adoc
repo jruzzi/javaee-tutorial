@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The roster Application
+next=persistence-basicexamples004.html
+prev=persistence-basicexamples002.html
 ~~~~~~
 The roster Application
 ======================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-basicexamples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-basicexamples004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIQSQ]]
 
@@ -52,14 +29,10 @@ is shown in link:#CHDCHJHG[Figure 38-2].
 
 [[CHDCHJHG]]
 
-Figure 38-2 Database Schema for the roster Application
+.*Figure 38-2 Database Schema for the roster Application *
+image:img/javaeett_dt_025.png[
+"Diagram showing the database schema for the roster application"]
 
-image:img/javaeett_dt_025.png[Description of Figure 38-2 follows] +
-link:img_text/javaeett_dt_025.html[Description of "Figure 38-2 Database
-Schema for the roster Application"] +
- +
-
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -71,7 +44,6 @@ omitted from the table names.
 
 |=======================================================================
 
- +
 
 [[GIQSO]]
 
@@ -521,20 +493,4 @@ You will see the output, which begins as follows:
 [exec] P25 Frank Fletcher defender 399.0
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-basicexamples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-basicexamples004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

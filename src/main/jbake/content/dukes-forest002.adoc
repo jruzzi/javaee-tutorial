@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Design and Architecture of Duke's Forest
+next=dukes-forest003.html
+prev=dukes-forest001.html
 ~~~~~~
 Design and Architecture of Duke's Forest
 ========================================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:dukes-forest001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-forest003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GLNRJ]]
 
@@ -44,12 +21,10 @@ of the Events and Entities projects.
 
 [[GLNVM]]
 
-Figure 59-1 Architecture of the Duke's Forest Example Application
-
-image:img/javaeett_dt_062.png[Description of Figure 59-1 follows] +
-link:img_text/javaeett_dt_062.html[Description of "Figure 59-1 Architecture
-of the Duke's Forest Example Application"] +
- +
+.*Figure 59-1 Architecture of the Duke's Forest Example Application *
+image:img/javaeett_dt_062.png[
+"This figure shows the architecture of the main Duke's Forest projects
+and how they use the Events and Entities projects."]
 
 Duke's Forest uses the following Java EE 7 platform features:
 
@@ -116,12 +91,11 @@ service interact.
 
 [[CIHCHCAA]]
 
-Figure 59-2 Interactions between Duke's Forest Components
-
-image:img/javaeett_dt_063.png[Description of Figure 59-2 follows] +
-link:img_text/javaeett_dt_063.html[Description of "Figure 59-2 Interactions
-between Duke's Forest Components"] +
- +
+.*Figure 59-2 Interactions between Duke's Forest Components *
+image:img/javaeett_dt_063.png[
+"This figure shows the interactions between the Duke's Store and Duke's
+Shipment projects (using REST and HTTP), and between the Duke's Store
+and Duke's Payment projects (using REST and HTTP)."]
 
 As illustrated in link:#CIHCHCAA[Figure 59-2], the customer interacts
 with the main interface of Duke's Store, while the administrator
@@ -203,12 +177,10 @@ specified using Bean Validation.
 
 [[GLNXD]]
 
-Figure 59-3 Duke's Forest Database Tables and Their Relationships
-
-image:img/javaeett_dt_064.png[Description of Figure 59-3 follows] +
-link:img_text/javaeett_dt_064.html[Description of "Figure 59-3 Duke's Forest
-Database Tables and Their Relationships"] +
- +
+.*Figure 59-3 Duke's Forest Database Tables and Their Relationships *
+image:img/javaeett_dt_064.png[
+"This figure shows the database tables in Duke's Forest and their
+relationships."]
 
 The database schema contains eight tables:
 
@@ -668,20 +640,4 @@ Duke's Shipment uses the following deployment descriptors:
 Server
 * `web.xml`: The web application configuration file
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:dukes-forest001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-forest003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Overview of Entity Locking and Concurrency
+next=persistence-locking002.html
+prev=persistence-locking.html
 ~~~~~~
 Overview of Entity Locking and Concurrency
 ==========================================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-locking.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-locking002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKJHZ]]
 
@@ -70,7 +47,6 @@ until the lock has ended. Pessimistic locking is a better strategy than
 optimistic locking when the underlying data is frequently accessed and
 modified by many transactions.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -82,7 +58,6 @@ modification may result in decreased application performance.
 
 |=======================================================================
 
- +
 
 [[GKJJC]]
 
@@ -97,7 +72,6 @@ persistence provider reads and updates the version attribute when an
 entity instance is modified during a transaction. The application may
 read the version attribute, but must not modify the value.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -114,7 +88,6 @@ will be thrown.
 
 |=======================================================================
 
- +
 
 The `@Version` annotation has the following requirements.
 
@@ -143,20 +116,4 @@ entity with persistent properties:
 protected Short getVersion() { ... }
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-locking.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-locking002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Receiving Messages Asynchronously Using a Message-Driven Bean
+next=jms-examples008.html
+prev=jms-examples006.html
 ~~~~~~
 Receiving Messages Asynchronously Using a Message-Driven Bean
 =============================================================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-examples006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBPK]]
 
@@ -80,12 +57,10 @@ the message-driven bean, which then processes the messages.
 
 [[BNBPM]]
 
-Figure 46-3 The simplemessage Application
-
-image:img/javaeett_dt_036.png[Description of Figure 46-3 follows] +
-link:img_text/javaeett_dt_036.html[Description of "Figure 46-3 The
-simplemessage Application"] +
- +
+.*Figure 46-3 The simplemessage Application *
+image:img/javaeett_dt_036.png[
+"Diagram of application showing an application client sending a message
+to a queue, and the message being delivered to a message-driven bean"]
 
 The source code for this application is in the
 tut-install`/examples/jms/simplemessage/` directory.
@@ -345,20 +320,4 @@ which they were sent.
 4.  After you have finished running the application, undeploy it using
 the `mvn cargo:undeploy` command.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-examples006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-examples008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

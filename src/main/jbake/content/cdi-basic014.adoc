@@ -1,39 +1,16 @@
 type=page
 status=published
 title=Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
+next=cdi-basic015.html
+prev=cdi-basic013.html
 ~~~~~~
 Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
 ==================================================================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:cdi-basic013.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic015.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABJFEAI]]
 
 [[using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes]]
-23.14 Using the @PostConstruct and @PreDestroy Annotations with CDIManaged Bean Classes
+23.14 Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
 ----------------------------------------------------------------------------------------
 
 CDI managed bean classes and their superclasses support the annotations
@@ -67,7 +44,6 @@ When the managed bean is injected into a component, CDI calls the method
 after all injection has occurred and after all initializers have been
 called.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -80,7 +56,6 @@ class overrides the method.
 
 |=======================================================================
 
- +
 
 The `UserNumberBean` managed bean in
 link:cdi-basicexamples003.html#GJCXV[The guessnumber-cdi CDI Example]
@@ -101,7 +76,7 @@ public void reset () {
 [[CIHBAFAC]]
 
 [[to-prepare-for-the-destruction-of-a-managed-bean-using-the-predestroy-annotation]]
-23.14.2 To Prepare for the Destruction of a Managed Bean Using the@PreDestroy Annotation
+23.14.2 To Prepare for the Destruction of a Managed Bean Using the @PreDestroy Annotation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Preparing for the destruction of a managed bean specifies the lifecycle
@@ -118,20 +93,4 @@ destroyed, such as releasing a resource that the bean has been holding.
 
 CDI calls this method before starting to destroy the bean.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:cdi-basic013.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-basic015.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Encoders and Decoders
+next=websocket008.html
+prev=websocket006.html
 ~~~~~~
 Using Encoders and Decoders
 ===========================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:websocket006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABGADFG]]
 
@@ -58,7 +35,7 @@ WebSocket Messages into Java Objects"]
 [[CIHBIGBI]]
 
 [[implementing-encoders-to-convert-java-objects-into-websocket-messages]]
-18.7.1 Implementing Encoders to Convert Java Objects into WebSocketMessages
+18.7.1 Implementing Encoders to Convert Java Objects into WebSocket Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The procedure to implement and use encoders in endpoints follows.
@@ -128,7 +105,7 @@ instance at any given time.
 [[CIHGDJFG]]
 
 [[implementing-decoders-to-convert-websocket-messages-into-java-objects]]
-18.7.2 Implementing Decoders to Convert WebSocket Messages into JavaObjects
+18.7.2 Implementing Decoders to Convert WebSocket Messages into Java Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The procedure to implement and use decoders in endpoints follows.
@@ -150,7 +127,6 @@ messages and one decoder for text messages.
 
 |=======================================================================
 
- +
 2.  Add the names of your decoder implementations to the `decoders`
 optional parameter of the `ServerEndpoint` annotation.
 3.  Use the `OnMessage` annotation in the endpoint to designate a method
@@ -221,20 +197,4 @@ Like endpoints, decoder instances are associated with one and only one
 WebSocket connection and peer, so there is only one thread executing the
 code of a decoder instance at any given time.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:websocket006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

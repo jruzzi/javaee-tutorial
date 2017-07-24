@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Packaging Applications
+next=packaging002.html
+prev=packaging.html
 ~~~~~~
 Packaging Applications
 ======================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:packaging.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:packaging002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BCGDJDFB]]
 
@@ -60,12 +37,10 @@ specified in the source code.
 
 [[BCGHHIIH]]
 
-Figure 5-1 EAR File Structure
-
-image:img/javaeett_dt_010.png[Description of Figure 5-1 follows] +
-link:img_text/javaeett_dt_010.html[Description of "Figure 5-1 EAR File
-Structure"] +
- +
+.*Figure 5-1 EAR File Structure *
+image:img/javaeett_dt_010.png[
+"Diagram of EAR file structure. META-INF and web, application client,
+EJB, and resource adapter modules are under the assembly root."]
 
 The two types of deployment descriptors are Java EE and runtime. A Java
 EE deployment descriptor is defined by a Java EE specification and can
@@ -105,20 +80,4 @@ link:overview008.html#BNACZ[Java EE Connector Architecture]) for a
 particular EIS. Resource adapter modules are packaged as JAR files with
 an `.rar` (resource adapter archive) extension.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:packaging.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:packaging002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

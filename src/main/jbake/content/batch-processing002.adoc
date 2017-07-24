@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Batch Processing in Java EE
+next=batch-processing003.html
+prev=batch-processing001.html
 ~~~~~~
 Batch Processing in Java EE
 ===========================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:batch-processing001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BCGGIBHA]]
 
@@ -210,7 +187,6 @@ Table 55-1 Batch Status Values
 |`ABANDONED` |The job was marked abandoned.
 |============================================================
 
- +
 
 Java EE applications can submit jobs and access the batch status of a
 job using the `JobOperator` interface, as described in
@@ -238,20 +214,4 @@ access the exit status in the same manner as the batch status, described
 above. The default value for the exit status is the same as the batch
 status.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:batch-processing001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:batch-processing003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

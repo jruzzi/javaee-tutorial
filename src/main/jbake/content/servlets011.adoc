@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Uploading Files with Java Servlet Technology
+next=servlets012.html
+prev=servlets010.html
 ~~~~~~
 Uploading Files with Java Servlet Technology
 ============================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:servlets010.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets012.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABFGCHB]]
 
@@ -137,20 +114,4 @@ saved in the directory that is specified with the `location` attribute
 of the `@MultipartConfig` annotation or, in the case of the `fileupload`
 example, in the location specified by the Destination field in the form.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:servlets010.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:servlets012.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

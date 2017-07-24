@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Ajax with Facelets
+next=jsf-ajax004.html
+prev=jsf-ajax002.html
 ~~~~~~
 Using Ajax with Facelets
 ========================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-ajax002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax004.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKABR]]
 
@@ -129,7 +106,6 @@ a `Collection` of `String` objects. If not specified, the default value
 is `@none`.
 |=======================================================================
 
- +
 
 The keywords listed in link:#GKNLK[Table 13-2] can be used with the
 `execute` and `render` attributes of the `f:ajax` tag.
@@ -147,27 +123,10 @@ Table 13-2 Execute and Render Keywords
 |`@this` |The element that triggered the request
 |===============================================
 
- +
 
 Note that when you use the `f:ajax` tag in a Facelets page, the
 JavaScript resource library is loaded implicitly. This resource library
 can also be loaded explicitly as described in
 link:jsf-ajax010.html#GKAAM[Loading JavaScript as a Resource].
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-ajax002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax004.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

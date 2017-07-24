@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Introduction to Security in the Java EE Platform
+next=security-intro001.html
+prev=partsecurity.html
 ~~~~~~
 Introduction to Security in the Java EE Platform
 ================================================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:partsecurity.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro001.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBWJ]]
 
@@ -53,20 +30,4 @@ and Roles]
 Using SSL]
 * link:security-intro007.html#BNBYJ[Further Information about Security]
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:partsecurity.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro001.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

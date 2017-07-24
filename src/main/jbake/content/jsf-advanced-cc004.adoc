@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The compositecomponentexample Example Application
+next=jsf-custom.html
+prev=jsf-advanced-cc003.html
 ~~~~~~
 The compositecomponentexample Example Application
 =================================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-advanced-cc003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKHVN]]
 
@@ -274,20 +251,4 @@ The page reports the sum of the letters and whether the sum is prime. A
 validation error is reported if no value is entered or if the string
 contains more than 45 characters.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-advanced-cc003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-custom.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

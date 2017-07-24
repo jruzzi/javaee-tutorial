@@ -1,34 +1,11 @@
 type=page
 status=published
 title=What Is a Resource Adapter?
+next=resources002.html
+prev=resources.html
 ~~~~~~
 What Is a Resource Adapter?
 ===========================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:resources.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:resources002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GIPGL]]
 
@@ -46,12 +23,9 @@ facilitates communication between a Java EE application and an EIS.
 
 [[GJTZO]]
 
-Figure 52-1 Resource Adapters
-
-image:img/javaeett_dt_053.png[Description of Figure 52-1 follows] +
-link:img_text/javaeett_dt_053.html[Description of "Figure 52-1 Resource
-Adapters"] +
- +
+.*Figure 52-1 Resource Adapters *
+image:img/javaeett_dt_053.png[
+"Resource Adapter Contracts"]
 
 Stored in a Resource Adapter Archive (RAR) file, a resource adapter can
 be deployed on any Java EE server, much like a Java EE application. A
@@ -211,20 +185,4 @@ EIS that enable inbound connectivity from the EIS: pluggability
 contracts for message providers and contracts for importing
 transactions.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:resources.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:resources002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

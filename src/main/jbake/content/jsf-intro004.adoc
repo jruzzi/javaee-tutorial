@@ -1,34 +1,11 @@
 type=page
 status=published
 title=A Simple JavaServer Faces Application
+next=jsf-intro005.html
+prev=jsf-intro003.html
 ~~~~~~
 A Simple JavaServer Faces Application
 =====================================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-intro003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GJAAM]]
 
@@ -116,20 +93,4 @@ and the saved state is applied.
 For full details on the lifecycle, see link:jsf-intro007.html#BNAQQ[The
 Lifecycle of a JavaServer Faces Application].
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-intro003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-intro005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

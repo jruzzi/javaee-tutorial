@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating String-Based Queries
+next=persistence-string-queries003.html
+prev=persistence-string-queries001.html
 ~~~~~~
 Creating String-Based Queries
 =============================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-string-queries001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-string-queries003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKJBQ]]
 
@@ -60,7 +37,6 @@ Root<Pet> pet = cq.from(Pet.class);
 cq.where(cb.equal(pet.get(Pet_.name), "Fido"));
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -73,7 +49,6 @@ type mismatches will be caught at compile time.
 
 |=======================================================================
 
- +
 
 Joins are specified in the same way:
 
@@ -108,20 +83,4 @@ cq.select(pet);
 cq.orderBy(cb.desc(pet.get("birthday")));
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-string-queries001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-string-queries003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Adding Components to a Page Using HTML Tag Library Tags
+next=jsf-page003.html
+prev=jsf-page001.html
 ~~~~~~
 Adding Components to a Page Using HTML Tag Library Tags
 =======================================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-page001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNARF]]
 
@@ -131,7 +108,6 @@ items all displayed at once |An HTML `<select>` element |A box
 items |An HTML `<input type="radio">` element |A group of options
 |=======================================================================
 
- +
 
 The tags correspond to components in the `javax.faces.component`
 package. The components are discussed in more detail in
@@ -185,7 +161,6 @@ styles.
 expression.
 |=======================================================================
 
- +
 
 All the tag attributes except `id` can accept expressions, as defined by
 the EL, described in link:jsf-el.html#GJDDD[Expression Language].
@@ -311,7 +286,6 @@ use the arithmetic operators and literals that rvalue expressions can
 use but lvalue expressions cannot use. For example, the expression in
 the preceding example uses the `>` operator.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -326,7 +300,6 @@ Web Applications"].
 
 |=======================================================================
 
- +
 
 [[BNARK]]
 
@@ -442,13 +415,9 @@ Login button.
 
 [[BNARN]]
 
-Figure 10-1 A Typical Form
-
-image:img/javaeett_dt_065_frmcmpnt.png[Description of Figure 10-1
-follows] +
-link:img_text/javaeett_dt_065_frmcmpnt.html[Description of "Figure 10-1 A
-Typical Form"] +
- +
+.*Figure 10-1 A Typical Form *
+image:img/javaeett_dt_065_frmcmpnt.png[
+"Form with User Name and Password text fields and a Login button."]
 
 The `h:form` tag represents the form on the page and encloses all the
 components that display or collect data from the user, as shown here:
@@ -488,13 +457,10 @@ link:#BNARP[Figure 10-2] shows examples of these text components.
 
 [[BNARP]]
 
-Figure 10-2 Example Text Components
-
-image:img/javaeett_dt_068_txtcmpnts.png[Description of Figure 10-2
-follows] +
-link:img_text/javaeett_dt_068_txtcmpnts.html[Description of "Figure 10-2
-Example Text Components"] +
- +
+.*Figure 10-2 Example Text Components *
+image:img/javaeett_dt_068_txtcmpnts.png[
+"A form. "User Name" labels a field. "Password" labels a password field.
+"Comments" labels a multi-line field."]
 
 Text components can be categorized as either input or output. A
 JavaServer Faces output component, such as a label, is rendered as
@@ -526,7 +492,6 @@ with no spaces and displays it as a set of asterisks as it is entered
 of text
 |=======================================================================
 
- +
 
 The input tags support the tag attributes shown in link:#GKCNH[Table
 10-4] in addition to those described in link:#BNARG[Common Component Tag
@@ -581,7 +546,6 @@ Handles a Value-Change Event] for an example of using
 `valueChangeListener`.
 |=======================================================================
 
- +
 
 link:#GJFWE[Table 10-5] lists the tags that represent the output
 components.
@@ -604,7 +568,6 @@ without generating an action event
 |`h:outputText` |Displays a one-line text string
 |=======================================================================
 
- +
 
 The output tags support the `converter` tag attribute in addition to
 those listed in link:#BNARG[Common Component Tag Attributes].
@@ -818,7 +781,7 @@ Hello, Bill! You are visitor number 10 to the page.
 [[BNARW]]
 
 [[using-command-component-tags-for-performing-actions-and-navigation]]
-10.2.5 Using Command Component Tags for Performing Actions andNavigation
+10.2.5 Using Command Component Tags for Performing Actions and Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In JavaServer Faces applications, the button and link component tags are
@@ -904,7 +867,6 @@ This tag will render HTML that looks something like the following:
      return false;">My Early Years: Growing Up on Star7, by Duke</a>
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -917,7 +879,6 @@ technology.
 
 |=======================================================================
 
- +
 
 [[BNASB]]
 
@@ -989,7 +950,6 @@ Table 10-6 Panel Component Tags
 |`h:panelGroup` |`layout` |Groups a set of components under one parent
 |=======================================================================
 
- +
 
 The `h:panelGrid` tag is used to represent an entire table. The
 `h:panelGroup` tag is used to represent rows in a table. Other tags are
@@ -1115,12 +1075,9 @@ link:#BNASF[Figure 10-3] shows examples of these components.
 
 [[BNASF]]
 
-Figure 10-3 Example Components for Selecting One Item
-
-image:img/javaeett_dt_067_slctn.png[Description of Figure 10-3 follows] +
-link:img_text/javaeett_dt_067_slctn.html[Description of "Figure 10-3 Example
-Components for Selecting One Item"] +
- +
+.*Figure 10-3 Example Components for Selecting One Item *
+image:img/javaeett_dt_067_slctn.png[
+"Options, check box, and lists."]
 
 [[BNASG]]
 
@@ -1216,12 +1173,9 @@ link:#BNASJ[Figure 10-4] shows examples of these components.
 
 [[BNASJ]]
 
-Figure 10-4 Example Components for Selecting Multiple Values
-
-image:img/javaeett_dt_066_slctmny.png[Description of Figure 10-4 follows] +
-link:img_text/javaeett_dt_066_slctmny.html[Description of "Figure 10-4
-Example Components for Selecting Multiple Values"] +
- +
+.*Figure 10-4 Example Components for Selecting Multiple Values *
+image:img/javaeett_dt_066_slctmny.png[
+"Check box group, scrollable box, and unscrollable box."]
 
 These tags allow the user to select zero or more values from a set of
 values. This section explains the `h:selectManyCheckbox` tag. The
@@ -1567,7 +1521,6 @@ Table 10-7 Optional Attributes for the h:dataTable Tag
 |`styleClass` |The entire table
 |================================
 
- +
 
 Each of the attributes in link:#GKBUK[Table 10-7] can specify more than
 one style. If `columnClasses` or `rowClasses` specifies more than one
@@ -1874,7 +1827,7 @@ The name in the greeting changes to what you typed.
 [[GJGEP]]
 
 [[resource-relocation-using-houtputscript-and-houtputstylesheet-tags]]
-10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheetTags
+10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheet Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Resource relocation refers to the ability of a JavaServer Faces
@@ -1993,20 +1946,4 @@ component authors can define the resources for the component, such as a
 style sheet and script. This allows the page authors freedom from
 defining resource locations.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-page001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-page003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

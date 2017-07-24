@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Sending an Ajax Request
+next=jsf-ajax005.html
+prev=jsf-ajax003.html
 ~~~~~~
 Sending an Ajax Request
 =======================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-ajax003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKACE]]
 
@@ -45,7 +22,6 @@ link:jsf-ajax003.html#GKDER[Table 13-1] to create the Ajax request. The
 following sections explain the process of creating and sending an Ajax
 request using some of these attributes.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -58,7 +34,6 @@ posts the request to the JavaServer Faces lifecycle.
 
 |=======================================================================
 
- +
 
 The following topics are addressed here:
 
@@ -94,7 +69,6 @@ mouse click:
 <h:outputText id="result" value="#{userNumberBean.response}" />
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -107,7 +81,6 @@ not have the `on` prefix.
 
 |=======================================================================
 
- +
 
 For a command button, the default event is `click`, so you do not
 actually need to specify `event="click"` to obtain the desired behavior.
@@ -185,20 +158,4 @@ Whenever either the price or the number of tickets ordered changes, the
 `calculateTotal` method of `ReservationBean` recalculates the total cost
 of the tickets and displays it in the output component named `total`.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-ajax003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

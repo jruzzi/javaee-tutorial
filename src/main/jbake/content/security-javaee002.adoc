@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Securing Enterprise Beans
+next=security-javaee003.html
+prev=security-javaee001.html
 ~~~~~~
 Securing Enterprise Beans
 =========================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-javaee001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-javaee003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBYL]]
 
@@ -515,12 +492,10 @@ illustrates this concept.
 
 [[BNBZA]]
 
-Figure 49-1 Security Identity Propagation
-
-image:img/javaeett_dt_047.png[Description of Figure 49-1 follows] +
-link:img_text/javaeett_dt_047.html[Description of "Figure 49-1 Security
-Identity Propagation"] +
- +
+.*Figure 49-1 Security Identity Propagation *
+image:img/javaeett_dt_047.png[
+"Diagram of security identity propagation from client to intermediate
+container to target container"]
 
 In this illustration, an application client is making a call to an
 enterprise bean method in one EJB container. This enterprise bean
@@ -620,20 +595,4 @@ application.
 
 Deployment information is specific to a web or application server.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-javaee001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-javaee003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

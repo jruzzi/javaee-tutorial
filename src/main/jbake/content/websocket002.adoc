@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating WebSocket Applications in the Java EE Platform
+next=websocket003.html
+prev=websocket001.html
 ~~~~~~
 Creating WebSocket Applications in the Java EE Platform
 =======================================================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:websocket001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BABEAEFC]]
 
@@ -60,7 +37,6 @@ packages mentioned previously. After you have created an endpoint, you
 deploy it to an specific URI in the application so that remote clients
 can connect to it.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -73,7 +49,6 @@ a programmatic endpoint, but it focuses on annotated endpoints.
 
 |=======================================================================
 
- +
 
 [[sthref113]]
 
@@ -92,7 +67,6 @@ The process is slightly different for programmatic endpoints and
 annotated endpoints, and it is covered in detail in the following
 sections.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -108,22 +82,5 @@ code of an endpoint instance at any given time.
 
 |=======================================================================
 
- +
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:websocket001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:websocket003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

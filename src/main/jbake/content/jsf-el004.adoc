@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Operations on Collection Objects
+next=jsf-el005.html
+prev=jsf-el003.html
 ~~~~~~
 Operations on Collection Objects
 ================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-el003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-el005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[CIHGABHD]]
 
@@ -40,7 +17,6 @@ The EL supports operations on collection objects: sets, lists, and maps.
 It allows the dynamic creation of collection objects, which can then be
 operated on using streams and pipelines.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -53,7 +29,6 @@ Java version associated with the Java EE 7 platform.
 
 |=======================================================================
 
- +
 
 For example, you can construct a set as follows:
 
@@ -118,7 +93,6 @@ Streams and stream operations are documented in the Java SE 8 API
 documentation, available at `http://docs.oracle.com/javase/8/docs/api/`.
 The following subset of operations is supported by the EL:
 
- +
 `allMatch` +
 `anyMatch` +
 `average` +
@@ -145,20 +119,4 @@ The following subset of operations is supported by the EL:
 See the EL specification at `http://www.jcp.org/en/jsr/detail?id=341`
 for details on these operations.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-el003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-el005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

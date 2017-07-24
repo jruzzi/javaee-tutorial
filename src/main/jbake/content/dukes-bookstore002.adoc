@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The Duke's Bookstore Interface
+next=dukes-bookstore003.html
+prev=dukes-bookstore001.html
 ~~~~~~
 The Duke's Bookstore Interface
 ==============================
-2017-07-17T15:27:55Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:dukes-bookstore001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-bookstore003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GLQFD]]
 
@@ -182,7 +159,7 @@ Specifies the name `showcart`.
 [[GLQDX]]
 
 [[custom-components-and-other-custom-objects-used-in-dukes-bookstore]]
-57.2.4 Custom Components and Other Custom Objects Used in Duke'sBookstore
+57.2.4 Custom Components and Other Custom Objects Used in Duke's Bookstore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The map and area custom components for Duke's Bookstore, along with
@@ -302,20 +279,4 @@ component as well as the resource bundles for the application
 * `src/main/webapp/WEB-INF/web.xml`: The web application configuration
 file
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:dukes-bookstore001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:dukes-bookstore003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

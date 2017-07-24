@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The guessnumber-cdi CDI Example
+next=cdi-adv.html
+prev=cdi-basicexamples002.html
 ~~~~~~
 The guessnumber-cdi CDI Example
 ===============================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:cdi-basicexamples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GJCXV]]
 
@@ -473,20 +450,4 @@ If you get the right answer or run out of guesses, the input field and
 Guess button are grayed out.
 4.  Click Reset to play the game again with a new random number.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:cdi-basicexamples002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:cdi-adv.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

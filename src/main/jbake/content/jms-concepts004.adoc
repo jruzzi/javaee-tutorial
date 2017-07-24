@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Using Advanced JMS Features
+next=jms-concepts005.html
+prev=jms-concepts003.html
 ~~~~~~
 Using Advanced JMS Features
 ===========================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-concepts003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCFU]]
 
@@ -144,7 +121,6 @@ enterprise bean.
 
 |=======================================================================
 
- +
 * `JMSContext.DUPS_OK_ACKNOWLEDGE`: This option instructs the
 `JMSContext` to lazily acknowledge the delivery of messages. This is
 likely to result in the delivery of some duplicate messages if the JMS
@@ -467,12 +443,10 @@ illustrates this interaction.
 
 [[BNCGI]]
 
-Figure 45-8 Using JMS Local Transactions
-
-image:img/javaeett_dt_033.png[Description of Figure 45-8 follows] +
-link:img_text/javaeett_dt_033.html[Description of "Figure 45-8 Using JMS
-Local Transactions"] +
- +
+.*Figure 45-8 Using JMS Local Transactions *
+image:img/javaeett_dt_033.png[
+"Diagram of local transactions, showing separate transactions for sending
+and consuming a message"]
 
 The sending of one or more messages to one or more destinations by
 Client 1 can form a single transaction, because it forms a single set of
@@ -564,20 +538,4 @@ public void onException(Message message, Exception e) {
 }
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-concepts003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Configuring Navigation Rules
+next=jsf-configure011.html
+prev=jsf-configure009.html
 ~~~~~~
 Configuring Navigation Rules
 ============================
-2017-07-17T15:27:49Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-configure009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure011.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAXF]]
 
@@ -74,7 +51,6 @@ Table 16-3 Common Outcome Strings
 again.
 |=======================================================================
 
- +
 
 Usually, the action method performs some processing on the form data of
 the current page. For example, the method might check whether the user
@@ -161,20 +137,4 @@ the `action` expression specified by the component tag.
 When any of these cases is matched, the component tree defined by the
 `to-view-id` element will be selected for rendering.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-configure009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-configure011.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

@@ -1,34 +1,11 @@
 type=page
 status=published
 title=A Web Module That Uses Java Servlet Technology: The hello2 Example
+next=webapp005.html
+prev=webapp003.html
 ~~~~~~
 A Web Module That Uses Java Servlet Technology: The hello2 Example
 ==================================================================
-2017-07-17T15:27:47Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:webapp003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webapp005.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAEO]]
 
@@ -287,20 +264,4 @@ The application looks much like the `hello1` application. The major
 difference is that after you click Submit the response appears below the
 greeting, not on a separate page.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:webapp003.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:webapp005.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

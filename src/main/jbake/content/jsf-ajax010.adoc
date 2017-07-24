@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Loading JavaScript as a Resource
+next=jsf-ajax011.html
+prev=jsf-ajax009.html
 ~~~~~~
 Loading JavaScript as a Resource
 ================================
-2017-07-17T15:27:48Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jsf-ajax009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax011.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKAAM]]
 
@@ -133,7 +110,6 @@ call when an error occurs.
 in the request.
 |=======================================================================
 
- +
 +
 If no identifier is specified, the default assumed keyword for the
 `execute` attribute is `@this`, and for the `render` attribute it is
@@ -166,7 +142,6 @@ renderer for a component.
 
 |=======================================================================
 
- +
 +
 The following example shows how the resource is loaded in a bean class:
 +
@@ -175,20 +150,4 @@ The following example shows how the resource is loaded in a bean class:
 @ResourceDependency(name="jsf.js" library="javax.faces" target="head")
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jsf-ajax009.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jsf-ajax011.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

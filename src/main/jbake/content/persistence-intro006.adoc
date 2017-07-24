@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Database Schema Creation
+next=persistence-intro007.html
+prev=persistence-intro005.html
 ~~~~~~
 Database Schema Creation
 ========================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-intro005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-intro007.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[CHDBEGIC]]
 
@@ -105,7 +82,6 @@ the provider will create the database artifacts on deployment.
 deployment.
 |=======================================================================
 
- +
 
 In this example, the persistence provider will delete any remaining
 database artifacts and then create the artifacts when the application is
@@ -146,7 +122,6 @@ then the object/relational metadata to create and delete the database
 artifacts.
 |=======================================================================
 
- +
 
 In this example, the persistence provider will use a script packaged
 within the application to create the database artifacts:
@@ -194,20 +169,4 @@ In this example, the load script is a file called `data.sql` in the
           value="META-INF/sql/data.sql" />
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-intro005.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-intro007.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

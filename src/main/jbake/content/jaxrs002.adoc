@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating a RESTful Root Resource Class
+next=jaxrs003.html
+prev=jaxrs001.html
 ~~~~~~
 Creating a RESTful Root Resource Class
 ======================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jaxrs001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxrs003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GILIK]]
 
@@ -160,7 +137,6 @@ the URL mapping for the application. The path specified by
 `@ApplicationPath` to a subclass of `javax.ws.rs.core.Application`.
 |=======================================================================
 
- +
 
 [[GILQB]]
 
@@ -364,7 +340,6 @@ following variable names and values are used in the examples:
 * `location`: `Main%20Street`
 * `question`: `why`
 
- +
 
 [width="100%",cols="100%",]
 |====================================================
@@ -375,7 +350,6 @@ The value of the `name3` variable is an empty string.
 
 |====================================================
 
- +
 
 [[sthref136]][[GIPYM]]
 
@@ -395,7 +369,6 @@ Table 29-2 Examples of URI Path Templates
 |`http://example.com/{name3}/home/` |`http://example.com//home/`
 |=======================================================================
 
- +
 
 [[GIPYS]]
 
@@ -542,7 +515,6 @@ media types (`text/xml`, `application/xml`, and `application/*+xml`)
 |`StreamingOutput` |All media types (`*/*`), `MessageBodyWriter` only
 |=======================================================================
 
- +
 
 The following example shows how to use `MessageBodyReader` with the
 `@Consumes` and `@Provider` annotations:
@@ -1075,20 +1047,4 @@ using an `Application` subclass.
 </servlet-mapping>
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jaxrs001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxrs003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

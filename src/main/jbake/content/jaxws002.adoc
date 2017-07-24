@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Creating a Simple Web Service and Clients with JAX-WS
+next=jaxws003.html
+prev=jaxws001.html
 ~~~~~~
 Creating a Simple Web Service and Clients with JAX-WS
 =====================================================
-2017-07-17T15:27:50Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jaxws001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxws003.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNAYN]]
 
@@ -48,12 +25,10 @@ communication between a web service and a client.
 
 [[BNAYO]]
 
-Figure 28-1 Communication between a JAX-WS Web Service and a Client
-
-image:img/javaeett_dt_019.png[Description of Figure 28-1 follows] +
-link:img_text/javaeett_dt_019.html[Description of "Figure 28-1 Communication
-between a JAX-WS Web Service and a Client"] +
- +
+.*Figure 28-1 Communication between a JAX-WS Web Service and a Client *
+image:img/javaeett_dt_019.png[
+"Diagram showing a client and web service communicating through a SOAP
+message."]
 
 The starting point for developing a JAX-WS web service is a Java class
 annotated with the `javax.jws.WebService` annotation. The `@WebService`
@@ -651,20 +626,4 @@ http://localhost:8080/hello-webclient/HelloServlet
 +
 The output of the `sayHello` method appears in the window.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jaxws001.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jaxws003.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

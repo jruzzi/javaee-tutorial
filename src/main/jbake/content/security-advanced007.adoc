@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Configuring Security Using Deployment Descriptors
+next=security-advanced008.html
+prev=security-advanced006.html
 ~~~~~~
 Configuring Security Using Deployment Descriptors
 =================================================
-2017-07-17T15:27:54Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-advanced006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-advanced008.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GKHRL]]
 
@@ -53,7 +30,7 @@ Mapping in the Deployment Descriptor"]
 [[BNCCM]]
 
 [[specifying-security-for-basic-authentication-in-the-deployment-descriptor]]
-50.7.1 Specifying Security for Basic Authentication in the DeploymentDescriptor
+50.7.1 Specifying Security for Basic Authentication in the Deployment Descriptor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The elements of the deployment descriptor that add basic authentication
@@ -103,7 +80,7 @@ it from being read in transit.
 [[GKAFQ]]
 
 [[specifying-non-default-principal-to-role-mapping-in-the-deployment-descriptor]]
-50.7.2 Specifying Non-Default Principal-to-Role Mapping in theDeployment Descriptor
+50.7.2 Specifying Non-Default Principal-to-Role Mapping in the Deployment Descriptor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To map a role name permitted by the application or module to principals
@@ -137,20 +114,4 @@ the `security-role` element of the corresponding `web.xml` file or the
 role name defined in the `@DeclareRoles` and/or `@RolesAllowed`
 annotations.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-advanced006.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-advanced008.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

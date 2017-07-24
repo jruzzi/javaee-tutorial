@@ -1,39 +1,16 @@
 type=page
 status=published
 title=Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
+next=persistence-string-queries.html
+prev=persistence-criteria002.html
 ~~~~~~
 Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
 =========================================================================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-criteria002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-string-queries.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[GJIVM]]
 
 [[using-the-criteria-api-and-metamodel-api-to-create-basic-typesafe-queries]]
-40.3 Using the Criteria API and Metamodel API to Create Basic TypesafeQueries
+40.3 Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
 ------------------------------------------------------------------------------
 
 The basic semantics of a Criteria query consists of a `SELECT` clause, a
@@ -263,7 +240,6 @@ Table 40-1 Conditional Methods in the Expression Interface
 |`in` |Tests whether an expression is within a list of values
 |============================================================
 
- +
 
 The following query uses the `Expression.isNull` method to find all pets
 where the `color` attribute is null:
@@ -328,7 +304,6 @@ third expression in value
 |`like` |Tests whether the expression matches a given pattern
 |=======================================================================
 
- +
 
 The following code uses the `CriteriaBuilder.equal` method:
 
@@ -385,7 +360,6 @@ Table 40-3 Compound Predicate Methods in the CriteriaBuilder Interface
 |`not` |A logical negation of the given Boolean expression
 |=========================================================
 
- +
 
 The following code shows the use of compound predicates in queries:
 
@@ -562,20 +536,4 @@ TypedQuery<Pet> q = em.createQuery(cq);
 List<Pet> results = q.getResultList();
 ----
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-criteria002.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-string-queries.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

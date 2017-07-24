@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Overview of the JMS API
+next=jms-concepts002.html
+prev=jms-concepts.html
 ~~~~~~
 Overview of the JMS API
 =======================
-2017-07-17T15:27:52Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:jms-concepts.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNCDR]]
 
@@ -150,12 +127,9 @@ might work.
 
 [[BNCDV]]
 
-Figure 45-1 Messaging in an Enterprise Application
-
-image:img/javaeett_dt_026.png[Description of Figure 45-1 follows] +
-link:img_text/javaeett_dt_026.html[Description of "Figure 45-1 Messaging in
-an Enterprise Application"] +
- +
+.*Figure 45-1 Messaging in an Enterprise Application *
+image:img/javaeett_dt_026.png[
+"Diagram showing messaging between various departments in an enterprise"]
 
 Manufacturing is only one example of how an enterprise can use the JMS
 API. Retail applications, financial services applications, health
@@ -209,20 +183,4 @@ that can be plugged in to multiple application servers, and it allows
 application servers to support multiple JMS providers. For more
 information, see the Java EE Connector architecture specification, v1.7.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:jms-concepts.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:jms-concepts002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

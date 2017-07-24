@@ -1,34 +1,11 @@
 type=page
 status=published
 title=The Java Persistence Query Language
+next=persistence-querylanguage001.html
+prev=persistence-basicexamples004.html
 ~~~~~~
 The Java Persistence Query Language
 ===================================
-2017-07-17T15:27:51Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:persistence-basicexamples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-querylanguage001.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBTG]]
 
@@ -56,20 +33,4 @@ Syntax]
 * link:persistence-querylanguage006.html#BNBUF[Full Query Language
 Syntax]
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:persistence-basicexamples004.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:persistence-querylanguage001.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

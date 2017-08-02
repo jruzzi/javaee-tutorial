@@ -13,7 +13,7 @@ Overview
 1 Overview
 ----------
 
-Welcome to Java EE!
+Welcome to Java EE! next.
 
 This chapter introduces you to Java EE enterprise application
 development. Here you will review development basics, learn about the
